@@ -12,11 +12,11 @@ export default function Hero() {
   const { eyebrow, heading, description, actions } = heroData
 
   // Refs for animation targets
-  const bgRef       = useRef(null)
-  const eyebrowRef  = useRef(null)
+  const bgRef = useRef(null)
+  const eyebrowRef = useRef(null)
   const headlineRef = useRef(null)
-  const descRef     = useRef(null)
-  const btnsRef     = useRef(null)
+  const descRef = useRef(null)
+  const btnsRef = useRef(null)
 
   useEffect(() => {
     // ── Master timeline: cinematic page-load entrance ──

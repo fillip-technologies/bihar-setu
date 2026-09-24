@@ -1,15 +1,15 @@
 import { useRef } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-// Existing sector assets used as high-res placeholders (user can replace images later)
-import educationImg from '../../../assets/sectors/education.jpg'
-import technologyImg from '../../../assets/sectors/technology.jpg'
-import healthcareImg from '../../../assets/sectors/healthcare.jpg'
-import agricultureImg from '../../../assets/sectors/agriculture.jpg'
-import tourismImg from '../../../assets/sectors/tourism.jpg'
-import stupaImg from '../../../assets/about_stupa.jpg'
-import bridgeImg from '../../../assets/why_bridge.jpg'
-import heroImg from '../../../assets/home/hero-section-1.png'
+// High-resolution realistic images generated specifically for each stakeholder category
+import institutionsImg from '../../../assets/stakeholders/institutions.jpg'
+import businessesImg from '../../../assets/stakeholders/businesses.jpg'
+import professionalsImg from '../../../assets/stakeholders/professionals.jpg'
+import entrepreneursImg from '../../../assets/stakeholders/entrepreneurs.jpg'
+import studentsImg from '../../../assets/stakeholders/students.jpg'
+import communityImg from '../../../assets/stakeholders/community.jpg'
+import researchersImg from '../../../assets/stakeholders/researchers.jpg'
+import mediaImg from '../../../assets/stakeholders/media.jpg'
 import leafShadowImg from '../../../assets/leaf_shadow.jpg'
 
 // ─────────────────────────────────────────────
@@ -21,7 +21,7 @@ const stakeholderCategories = [
     title: 'Institutions',
     description:
       'Educational, professional, social and development-focused institutions seeking meaningful collaboration.',
-    image: educationImg,
+    image: institutionsImg,
     tag: 'Education & Civil',
   },
   {
@@ -29,7 +29,7 @@ const stakeholderCategories = [
     title: 'Businesses and Industries',
     description:
       'Companies, MSMEs, start-ups and business organisations interested in sector development and partnership opportunities.',
-    image: technologyImg,
+    image: businessesImg,
     tag: 'Commerce & Industry',
   },
   {
@@ -37,7 +37,7 @@ const stakeholderCategories = [
     title: 'Professionals and Experts',
     description:
       'Industry professionals, consultants, subject experts and experienced individuals willing to contribute knowledge.',
-    image: healthcareImg,
+    image: professionalsImg,
     tag: 'Domain Expertise',
   },
   {
@@ -45,7 +45,7 @@ const stakeholderCategories = [
     title: 'Entrepreneurs',
     description:
       'Existing and aspiring entrepreneurs looking for connections, guidance, visibility and opportunities.',
-    image: agricultureImg,
+    image: entrepreneursImg,
     tag: 'Startups & MSME',
   },
   {
@@ -53,7 +53,7 @@ const stakeholderCategories = [
     title: 'Students and Young Professionals',
     description:
       'Young people interested in learning, volunteering, building skills and contributing to Bihar’s future.',
-    image: tourismImg,
+    image: studentsImg,
     tag: 'Youth & Skills',
   },
   {
@@ -61,7 +61,7 @@ const stakeholderCategories = [
     title: 'Community Organisations',
     description:
       'Organisations and groups working at the district, town, village or community level.',
-    image: stupaImg,
+    image: communityImg,
     tag: 'Grassroots Impact',
   },
   {
@@ -69,7 +69,7 @@ const stakeholderCategories = [
     title: 'Researchers and Knowledge Partners',
     description:
       'Individuals and institutions interested in research, documentation, knowledge sharing and sector development.',
-    image: bridgeImg,
+    image: researchersImg,
     tag: 'Policy & Insights',
   },
   {
@@ -77,7 +77,7 @@ const stakeholderCategories = [
     title: 'Media and Content Professionals',
     description:
       'Media organisations, journalists, creators and communication professionals interested in development stories and initiatives.',
-    image: heroImg,
+    image: mediaImg,
     tag: 'Narrative & Media',
   },
 ]
