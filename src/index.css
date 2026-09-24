@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Lora', Georgia, Cambria, serif;
+  --font-display: 'Lora', Georgia, serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-devanagari: 'Noto Sans Devanagari', sans-serif;
+
+  --color-primary: #17382E;
+  --color-primary-hover: #112B23;
+  --color-primary-dark: #0B1E18;
+  --color-primary-light: #235243;
+  --color-forest: #17382E;
+  --color-forest-hover: #112B23;
+  --color-navy: #0B192C;
+  --color-navy-light: #1E3E62;
+  --color-navy-dark: #050B14;
+  --color-saffron: #F97316;
+  --color-saffron-hover: #EA580C;
+  --color-gold: #F5A623;
+  --color-gold-hover: #D97706;
+  --color-ganga-cyan: #06B6D4;
+  --color-teal-accent: #0D9488;
+  --color-surface-dark: #050811;
+  --color-surface-card: #0E1626;
+  --color-surface-border: #1E293B;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #050811;
+    color: #F8FAFC;
+    min-height: 100vh;
+  }
+}
