@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   Search,
   BookOpen,
@@ -127,8 +128,9 @@ function StepCard({ step, index, isLast }) {
       )}
 
       {/* Card */}
-      <div
-        className={`group relative flex flex-col bg-white rounded-2xl border ${step.borderColor} overflow-hidden hover:shadow-lg hover:shadow-black/6 hover:-translate-y-1 transition-all duration-300 cursor-default h-full`}
+      <Link
+        to="/how-we-work"
+        className={`group relative flex flex-col bg-white rounded-2xl border ${step.borderColor} overflow-hidden hover:shadow-lg hover:shadow-black/6 hover:-translate-y-1 transition-all duration-300 h-full`}
       >
         {/* Colored top bar */}
         <div className="h-[3px] w-full" style={{ backgroundColor: step.color }} />
@@ -173,7 +175,8 @@ function StepCard({ step, index, isLast }) {
           </p>
 
           {/* Arrow */}
-          <div className="flex items-center mt-1">
+          <div className="flex items-center justify-between mt-1 text-xs font-semibold" style={{ color: step.color }}>
+            <span className="text-[10px] tracking-wide uppercase opacity-0 group-hover:opacity-100 transition-opacity">Learn More</span>
             <span
               className="w-5 h-5 rounded-full flex items-center justify-center border transition-all group-hover:translate-x-0.5"
               style={{ color: step.color, borderColor: `${step.color}40` }}
@@ -182,7 +185,7 @@ function StepCard({ step, index, isLast }) {
             </span>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }
@@ -253,9 +256,9 @@ export default function HowWeWork() {
             </p>
           </div>
 
-          {/* Right: step count badge */}
-          <div className="hidden lg:flex items-center gap-3 shrink-0 mb-1">
-            <div className="flex items-center gap-1">
+          {/* Right: step count badge & CTA button */}
+          <div className="flex flex-wrap items-center gap-3 shrink-0 mb-1">
+            <div className="hidden lg:flex items-center gap-1">
               {steps.map((s) => (
                 <span
                   key={s.id}
@@ -263,10 +266,18 @@ export default function HowWeWork() {
                   style={{ backgroundColor: s.color }}
                 />
               ))}
+              <span className="text-[11px] font-semibold text-[#94A3B8] tracking-wide ml-2">
+                7-Step Process
+              </span>
             </div>
-            <span className="text-[11px] font-semibold text-[#94A3B8] tracking-wide">
-              7-Step Process
-            </span>
+
+            <Link
+              to="/how-we-work"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group"
+            >
+              <span>Explore Methodology</span>
+              <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] transition-transform group-hover:translate-x-0.5" />
+            </Link>
           </div>
         </div>
       </div>

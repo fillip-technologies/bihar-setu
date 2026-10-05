@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   Lightbulb,
   Settings,
@@ -5,6 +6,7 @@ import {
   BarChart3,
   Leaf,
   TrendingUp,
+  ArrowRight,
 } from 'lucide-react'
 import bridgeImage from '../../../assets/why_bridge.jpg'
 
@@ -17,6 +19,7 @@ const bridgeCards = [
     icon: Lightbulb,
     color: '#E06222',
     bgTint: 'bg-[#FDF0E6]',
+    link: '/initiatives',
   },
   {
     id: 'challenges',
@@ -26,6 +29,7 @@ const bridgeCards = [
     icon: Settings,
     color: '#2563EB',
     bgTint: 'bg-[#EBF3FE]',
+    link: '/how-we-work',
   },
   {
     id: 'institutions',
@@ -35,6 +39,7 @@ const bridgeCards = [
     icon: Users,
     color: '#16A34A',
     bgTint: 'bg-[#EAF7EE]',
+    link: '/partner-with-us',
   },
   {
     id: 'skills',
@@ -44,6 +49,7 @@ const bridgeCards = [
     icon: BarChart3,
     color: '#D97706',
     bgTint: 'bg-[#FEF3E7]',
+    link: '/focus-areas',
   },
   {
     id: 'tradition',
@@ -53,6 +59,7 @@ const bridgeCards = [
     icon: Leaf,
     color: '#059669',
     bgTint: 'bg-[#E8F8EE]',
+    link: '/initiatives',
   },
   {
     id: 'potential',
@@ -62,6 +69,7 @@ const bridgeCards = [
     icon: TrendingUp,
     color: '#0284C7',
     bgTint: 'bg-[#E0F2FE]',
+    link: '/about',
   },
 ]
 
@@ -192,6 +200,16 @@ export default function WhyBiharSetu() {
             challenges and solutions, ideas and implementation, institutions and
             communities, and Bihar&apos;s potential and its future.
           </p>
+
+          <div className="mt-5">
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group w-fit"
+            >
+              <span>Explore The Bihar Setu Vision</span>
+              <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] transition-transform duration-200 group-hover:translate-x-0.5" />
+            </Link>
+          </div>
         </div>
 
         {/* RIGHT: Editorial quotation card */}
@@ -222,9 +240,10 @@ export default function WhyBiharSetu() {
           {bridgeCards.map((card) => {
             const IconComponent = card.icon
             return (
-              <div
+              <Link
                 key={card.id}
-                className="group px-5 sm:px-6 py-6 xl:py-7 flex flex-col gap-2.5 hover:bg-white/90 hover:shadow-xs transition-all duration-200 cursor-default relative overflow-hidden"
+                to={card.link}
+                className="group px-5 sm:px-6 py-6 xl:py-7 flex flex-col gap-2.5 hover:bg-white/90 hover:shadow-xs transition-all duration-200 relative overflow-hidden"
               >
                 {/* Subtle top indicator hover line */}
                 <div
@@ -241,17 +260,20 @@ export default function WhyBiharSetu() {
                 </div>
 
                 {/* Two-line bold title */}
-                <h3 className="text-[12.5px] sm:text-[13px] font-bold text-[#111827] leading-snug">
-                  {card.title[0]}
-                  <br />
-                  <span style={{ color: card.color }}>{card.title[1]}</span>
+                <h3 className="text-[12.5px] sm:text-[13px] font-bold text-[#111827] leading-snug flex items-center justify-between gap-1">
+                  <span>
+                    {card.title[0]}
+                    <br />
+                    <span style={{ color: card.color }}>{card.title[1]}</span>
+                  </span>
+                  <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all shrink-0" style={{ color: card.color }} />
                 </h3>
 
                 {/* Description */}
                 <p className="text-[11px] sm:text-[11.5px] text-[#64748B] leading-[1.65]">
                   {card.description}
                 </p>
-              </div>
+              </Link>
             )
           })}
         </div>

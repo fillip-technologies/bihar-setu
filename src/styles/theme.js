@@ -41,6 +41,16 @@ export const theme = {
       gold: '#F5A623',
       dark: '#0B192C',
     },
+    light: {
+      ivory: '#FAF7F2',
+      ivoryDeep: '#F5F1EA',
+      ink: '#111827',
+      inkSoft: '#475569',
+      inkMuted: '#64748B',
+      terracotta: '#E06222',
+      heritage: '#C67D33',
+      heritageInk: '#8C5E35',
+    },
     status: {
       success: '#10B981',
       warning: '#F59E0B',

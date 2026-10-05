@@ -10,7 +10,7 @@ export const heroData = {
   actions: [
     {
       label: 'Explore Bihar Setu',
-      path: '/explore',
+      path: '/about',
       variant: 'primary',
     },
     {
@@ -20,7 +20,7 @@ export const heroData = {
     },
     {
       label: 'Tourism Summit 2026',
-      path: '/tourism-summit-2026',
+      path: '/initiatives#tourism-summit-section',
       variant: 'tertiary',
       hasCalendar: true,
     },

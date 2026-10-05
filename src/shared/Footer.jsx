@@ -6,10 +6,11 @@ import {
   ShieldCheck,
   Calendar,
   Sparkles,
-  Send,
   Building2,
   Globe,
   CheckCircle2,
+  MapPin,
+  Clock,
 } from 'lucide-react'
 
 // ─────────────────────────────────────────────
@@ -17,29 +18,23 @@ import {
 // ─────────────────────────────────────────────
 const quickLinks = [
   { name: 'Home', path: '/' },
-  { name: 'About Bihar Setu', path: '/#about' },
-  { name: 'Focus Areas', path: '/#focus-areas' },
+  { name: 'About Bihar Setu', path: '/about' },
+  { name: 'Focus Areas', path: '/focus-areas' },
   { name: 'Why Bihar Setu', path: '/#why-bihar-setu' },
   { name: 'Our Mission', path: '/#our-mission' },
-  { name: 'How We Work', path: '/#how-we-work' },
+  { name: 'How We Work', path: '/how-we-work' },
   { name: 'Who Can Connect', path: '/#who-can-connect' },
+  { name: 'Partner With Us', path: '/partner-with-us' },
+  { name: 'Contact Bihar Setu', path: '/contact' },
 ]
 
 const focusSectors = [
-  { name: 'Heritage & Eco-Tourism', path: '/#focus-areas' },
-  { name: 'Agro-Processing & Rural MSME', path: '/#focus-areas' },
-  { name: 'IT, Innovation & Startups', path: '/#focus-areas' },
-  { name: 'Education & Skill Building', path: '/#focus-areas' },
-  { name: 'Healthcare & Wellness', path: '/#focus-areas' },
-  { name: 'Infrastructure & Connectivity', path: '/#focus-areas' },
-]
-
-const initiatives = [
-  { name: 'Bihar Tourism Summit 2026', badge: 'Upcoming', path: '/tourism-summit-2026' },
-  { name: '38 District Civic Network', badge: 'Active', path: '/#who-can-connect' },
-  { name: 'MSME & Startup Mentorship', badge: 'Programs', path: '/#who-can-connect' },
-  { name: 'Youth Skills & Internship Cell', badge: 'New', path: '/#who-can-connect' },
-  { name: 'Diaspora Knowledge Exchange', badge: 'Global', path: '/#who-can-connect' },
+  { name: 'Heritage & Eco-Tourism', path: '/focus-areas' },
+  { name: 'Agro-Processing & Rural MSME', path: '/focus-areas' },
+  { name: 'IT, Innovation & Startups', path: '/focus-areas' },
+  { name: 'Education & Skill Building', path: '/focus-areas' },
+  { name: 'Healthcare & Wellness', path: '/focus-areas' },
+  { name: 'Infrastructure & Connectivity', path: '/focus-areas' },
 ]
 
 const sampleDistricts = [
@@ -147,7 +142,7 @@ export default function Footer() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E06222]/15 border border-[#E06222]/30 text-[#F97316] text-[11px] font-bold tracking-wider uppercase mb-3">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>बिहार सेतु जन-भागीदारी</span>
+                <span>Civic & Partner Collaboration</span>
               </div>
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight leading-snug">
                 Ready to Be Part of Bihar&apos;s Transformative Growth Story?
@@ -160,19 +155,19 @@ export default function Footer() {
             {/* Right actions */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto shrink-0">
               <Link
-                to="/tourism-summit-2026"
+                to="/focus-areas"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#E06222] hover:bg-[#EA580C] text-white text-[13px] font-bold shadow-lg shadow-[#E06222]/20 transition-all hover:scale-[1.02] active:scale-95 text-center"
               >
                 <Calendar className="w-4 h-4" />
-                <span>Tourism Summit 2026</span>
+                <span>Explore Focus Areas</span>
               </Link>
-              <a
-                href="#who-can-connect"
+              <Link
+                to="/partner-with-us"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/15 text-[13px] font-semibold transition-all hover:scale-[1.02] active:scale-95 text-center"
               >
                 <span>Partner With Us</span>
                 <ArrowRight className="w-4 h-4 text-[#F97316]" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -182,14 +177,13 @@ export default function Footer() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-12 border-b border-white/[0.08]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
 
-          {/* COL 1: Brand & Identity (5 cols on lg) */}
+          {/* COL 1: Brand & Identity (4 cols on lg) */}
           <div className="lg:col-span-4 flex flex-col">
             <Link to="/" className="inline-flex flex-col items-start group">
               {/* Brand titles */}
               <div className="flex items-baseline gap-2">
                 <span className="text-2xl font-black tracking-tight text-white">BIHAR</span>
                 <span className="text-2xl font-black tracking-tight text-[#34D399]">SETU</span>
-                <span className="text-sm font-semibold text-[#F97316] font-devanagari">बिहार सेतु</span>
               </div>
               <span className="text-[8.5px] font-semibold tracking-[0.2em] text-[#869A93] uppercase mt-1">
                 Connecting Bihar | Creating Opportunities
@@ -245,23 +239,13 @@ export default function Footer() {
             <ul className="space-y-2.5 text-[12.5px]">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  {link.path.startsWith('/#') ? (
-                    <a
-                      href={link.path.replace('/', '')}
-                      className="text-[#93A7A0] hover:text-[#34D399] transition-colors flex items-center gap-1.5 group"
-                    >
-                      <span className="w-1 h-1 rounded-full bg-[#235243] group-hover:bg-[#34D399] transition-colors" />
-                      <span>{link.name}</span>
-                    </a>
-                  ) : (
-                    <Link
-                      to={link.path}
-                      className="text-[#93A7A0] hover:text-[#34D399] transition-colors flex items-center gap-1.5 group"
-                    >
-                      <span className="w-1 h-1 rounded-full bg-[#235243] group-hover:bg-[#34D399] transition-colors" />
-                      <span>{link.name}</span>
-                    </Link>
-                  )}
+                  <Link
+                    to={link.path}
+                    className="text-[#93A7A0] hover:text-[#34D399] transition-colors flex items-center gap-1.5 group"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-[#235243] group-hover:bg-[#34D399] transition-colors" />
+                    <span>{link.name}</span>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -276,36 +260,16 @@ export default function Footer() {
             <ul className="space-y-2.5 text-[12.5px] mb-5">
               {focusSectors.map((sector) => (
                 <li key={sector.name}>
-                  <a
-                    href="#focus-areas"
+                  <Link
+                    to={sector.path}
                     className="text-[#93A7A0] hover:text-[#F97316] transition-colors flex items-center gap-1.5 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-[#235243] group-hover:bg-[#F97316] transition-colors" />
                     <span>{sector.name}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
-
-            <h5 className="text-[11px] font-bold text-[#869A93] tracking-wider uppercase mb-2">
-              Featured Initiatives
-            </h5>
-            <div className="space-y-2">
-              {initiatives.slice(0, 3).map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className="flex items-center justify-between p-2 rounded-lg bg-[#0F241C] border border-[#1B3E32] hover:border-[#34D399]/40 transition-all group"
-                >
-                  <span className="text-[11.5px] text-[#A7B9B2] group-hover:text-white transition-colors truncate">
-                    {item.name}
-                  </span>
-                  <span className="text-[9.5px] font-bold px-1.5 py-0.5 rounded bg-[#17382E] text-[#34D399] border border-[#235243] shrink-0 ml-2">
-                    {item.badge}
-                  </span>
-                </Link>
-              ))}
-            </div>
           </div>
 
           {/* COL 4: Connect & Contact (3 cols on lg) */}
@@ -316,7 +280,6 @@ export default function Footer() {
             </h4>
 
             <div className="space-y-3.5 text-[12.5px] text-[#93A7A0]">
-
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-[#06B6D4] shrink-0" />
                 <a
@@ -329,48 +292,34 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[#34D399] shrink-0" />
+                <a
+                  href="tel:+916122207890"
+                  className="text-[#A7B9B2] hover:text-white transition-colors"
+                >
+                  +91 (0612) 220-7890 / Helpline
+                </a>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 text-[#F97316] shrink-0 mt-0.5" />
                 <span className="text-[#A7B9B2]">
-                  +91 (0612) 220-XXXX / Toll Free
+                  Central Secretariat, Patna, Bihar 800001
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <Globe className="w-4 h-4 text-[#F5A623] shrink-0" />
+                <Clock className="w-4 h-4 text-[#F5A623] shrink-0" />
+                <span className="text-[11.5px] text-[#7F948D]">
+                  Mon – Sat: 9:30 AM – 6:00 PM IST
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Globe className="w-4 h-4 text-[#06B6D4] shrink-0" />
                 <span className="text-[11.5px] text-[#7F948D]">
                   Statewide Coverage: All 38 Districts
                 </span>
               </div>
-            </div>
-
-            {/* Newsletter / Updates Subscription */}
-            <div className="mt-5 p-3.5 rounded-xl bg-[#0F241C] border border-[#1E4337]">
-              <span className="text-[11px] font-bold text-white block mb-1">
-                Stay Updated on Bihar&apos;s Progress
-              </span>
-              <p className="text-[10.5px] text-[#7F948D] mb-2.5">
-                Receive monthly updates on summits, initiatives, and opportunities.
-              </p>
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault()
-                  alert('Thank you for subscribing to Bihar Setu updates!')
-                }}
-                className="flex items-center gap-1.5"
-              >
-                <input
-                  type="email"
-                  required
-                  placeholder="Enter your email"
-                  className="w-full px-2.5 py-1.5 rounded-lg bg-[#07130F] border border-[#1E4337] text-[11.5px] text-white placeholder-[#5E726B] focus:outline-none focus:border-[#34D399]"
-                />
-                <button
-                  type="submit"
-                  aria-label="Subscribe"
-                  className="p-1.5 rounded-lg bg-[#17382E] hover:bg-[#235243] text-[#34D399] border border-[#34D399]/30 transition-colors shrink-0"
-                >
-                  <Send className="w-3.5 h-3.5" />
-                </button>
-              </form>
             </div>
           </div>
 
@@ -404,24 +353,25 @@ export default function Footer() {
           {/* Copyright */}
           <div className="flex items-center gap-1.5 text-center sm:text-left">
             <span>© {new Date().getFullYear()}</span>
-            <strong className="text-white font-semibold">Bihar Setu</strong>
-            <span className="font-devanagari text-[#34D399]">(बिहार सेतु)</span>.
+            <strong className="text-white font-semibold">Bihar Setu</strong>.
             <span>All rights reserved.</span>
           </div>
 
           {/* Legal Links */}
           <div className="flex items-center gap-4 text-[11px]">
-            <a href="#about" className="hover:text-white transition-colors">
+            <Link
+              to="/privacy-policy"
+              className="text-[#93A7A0] hover:text-[#34D399] transition-colors"
+            >
               Privacy Policy
-            </a>
+            </Link>
             <span className="text-white/10">•</span>
-            <a href="#about" className="hover:text-white transition-colors">
+            <Link
+              to="/terms-of-use"
+              className="text-[#93A7A0] hover:text-[#34D399] transition-colors"
+            >
               Terms of Use
-            </a>
-            <span className="text-white/10">•</span>
-            <a href="#about" className="hover:text-white transition-colors">
-              Sitemap
-            </a>
+            </Link>
           </div>
         </div>
       </div>

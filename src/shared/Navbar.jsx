@@ -75,17 +75,17 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links */}
-          {/* Desktop Nav Links */}
           <nav ref={linksRef} className="hidden lg:flex items-center space-x-6 xl:space-x-7">
             {navLinks.map((link) => {
-              const isHome = link.name === 'Home'
+              const hasOwnRoute = link.path !== '/' || link.name === 'Home'
               return (
                 <NavLink
                   key={link.name}
                   to={link.path}
+                  end
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className={({ isActive }) => {
-                    const activeState = isHome && isActive
+                    const activeState = hasOwnRoute && isActive
                     return `relative py-1 text-[13.5px] font-medium transition-colors duration-200 ${
                       activeState
                         ? 'text-[#17382E] font-semibold'
@@ -94,7 +94,7 @@ export default function Navbar() {
                   }}
                 >
                   {({ isActive }) => {
-                    const activeState = isHome && isActive
+                    const activeState = hasOwnRoute && isActive
                     return (
                       <>
                         <span>{link.name}</span>
@@ -113,7 +113,20 @@ export default function Navbar() {
           <div ref={ctaRef} className="hidden sm:flex items-center">
             <Link
               to={navCta.path}
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={(e) => {
+                if (navCta.path.includes('#')) {
+                  const [route, hash] = navCta.path.split('#')
+                  if (window.location.pathname === route) {
+                    e.preventDefault()
+                    const element = document.getElementById(hash)
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    }
+                  }
+                } else {
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }
+              }}
               className="inline-flex items-center gap-2.5 px-4.5 py-2.5 bg-[#17382E] hover:bg-[#112B23] active:bg-[#0B1E18] text-white font-semibold text-xs sm:text-[13px] rounded-lg shadow-md shadow-[#17382E]/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
             >
               <Calendar className="w-4 h-4 stroke-[2]" />
@@ -141,17 +154,18 @@ export default function Navbar() {
         <div className="lg:hidden border-t border-black/5 bg-[#FAF7F2] px-5 py-6 space-y-4 shadow-xl">
           <nav className="flex flex-col space-y-3">
             {navLinks.map((link) => {
-              const isHome = link.name === 'Home'
+              const hasOwnRoute = link.path !== '/' || link.name === 'Home'
               return (
                 <NavLink
                   key={link.name}
                   to={link.path}
+                  end
                   onClick={() => {
                     setMobileMenuOpen(false)
                     window.scrollTo({ top: 0, behavior: 'smooth' })
                   }}
                   className={({ isActive }) => {
-                    const activeState = isHome && isActive
+                    const activeState = hasOwnRoute && isActive
                     return `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                       activeState
                         ? 'text-[#17382E] bg-[#17382E]/10 font-semibold'
@@ -167,9 +181,20 @@ export default function Navbar() {
           <div className="pt-2 border-t border-black/5">
             <Link
               to={navCta.path}
-              onClick={() => {
+              onClick={(e) => {
                 setMobileMenuOpen(false)
-                window.scrollTo({ top: 0, behavior: 'smooth' })
+                if (navCta.path.includes('#')) {
+                  const [route, hash] = navCta.path.split('#')
+                  if (window.location.pathname === route) {
+                    e.preventDefault()
+                    const element = document.getElementById(hash)
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    }
+                  }
+                } else {
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }
               }}
               className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs sm:text-[13px] rounded-lg shadow-md"
             >

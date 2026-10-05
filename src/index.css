@@ -28,6 +28,16 @@
   --color-text-primary: #F8FAFC;
   --color-text-secondary: #94A3B8;
   --color-text-muted: #64748B;
+
+  /* Light civic canvas (current site theme) */
+  --color-ivory: #FAF7F2;
+  --color-ivory-deep: #F5F1EA;
+  --color-ink: #111827;
+  --color-ink-soft: #475569;
+  --color-ink-muted: #64748B;
+  --color-terracotta: #E06222;
+  --color-heritage: #C67D33;
+  --color-heritage-ink: #8C5E35;
 }
 
 @layer base {
@@ -36,8 +46,13 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #050811;
-    color: #F8FAFC;
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
     min-height: 100vh;
+  }
+
+  /* Keep anchor targets clear of the sticky 5rem navbar */
+  [id] {
+    scroll-margin-top: 5rem;
   }
 }

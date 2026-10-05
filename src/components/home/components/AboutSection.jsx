@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {
   Users,
   TrendingUp,
@@ -152,43 +152,52 @@ export default function AboutSection() {
           {/* Right: 4 stats with vertical dividers */}
           <div className="flex-1 grid grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-slate-200 gap-6 lg:gap-0">
             {/* Stat 1 */}
-            <div className="lg:px-8">
+            <Link to="/focus-areas" className="lg:px-8 group block hover:opacity-95 transition-opacity">
               <div className="flex items-center gap-2 mb-1">
-                <LayoutGrid className="w-5 h-5 text-[#E06222] shrink-0 stroke-[2.2]" />
+                <LayoutGrid className="w-5 h-5 text-[#E06222] shrink-0 stroke-[2.2] group-hover:scale-110 transition-transform" />
                 <span className="text-[28px] sm:text-[32px] font-bold text-[#111827] tracking-tight leading-none">9+</span>
               </div>
-              <div className="text-[13px] font-bold text-[#111827]">Focus Areas</div>
+              <div className="text-[13px] font-bold text-[#111827] group-hover:text-[#17382E] transition-colors flex items-center gap-1">
+                <span>Focus Areas</span>
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
               <div className="text-[11px] text-[#64748B] mt-0.5 leading-snug">Key sectors for inclusive growth</div>
-            </div>
+            </Link>
 
             {/* Stat 2 */}
-            <div className="lg:px-8">
+            <Link to="/partner-with-us" className="lg:px-8 group block hover:opacity-95 transition-opacity">
               <div className="flex items-center gap-2 mb-1">
-                <Users className="w-5 h-5 text-[#E06222] shrink-0 stroke-[2.2]" />
+                <Users className="w-5 h-5 text-[#E06222] shrink-0 stroke-[2.2] group-hover:scale-110 transition-transform" />
                 <span className="text-[28px] sm:text-[32px] font-bold text-[#111827] tracking-tight leading-none">100+</span>
               </div>
-              <div className="text-[13px] font-bold text-[#111827]">Stakeholders</div>
+              <div className="text-[13px] font-bold text-[#111827] group-hover:text-[#17382E] transition-colors flex items-center gap-1">
+                <span>Stakeholders</span>
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
               <div className="text-[11px] text-[#64748B] mt-0.5 leading-snug">Institutions, industries and communities</div>
-            </div>
+            </Link>
 
             {/* Stat 3 */}
-            <div className="lg:px-8">
+            <Link to="/about" className="lg:px-8 group block hover:opacity-95 transition-opacity">
               <div className="flex items-center gap-2 mb-1">
-                <Target className="w-5 h-5 text-[#E06222] shrink-0 stroke-[2.2]" />
+                <Target className="w-5 h-5 text-[#E06222] shrink-0 stroke-[2.2] group-hover:scale-110 transition-transform" />
                 <span className="text-[28px] sm:text-[32px] font-bold text-[#111827] tracking-tight leading-none">1</span>
               </div>
-              <div className="text-[13px] font-bold text-[#111827]">Shared Purpose</div>
+              <div className="text-[13px] font-bold text-[#111827] group-hover:text-[#17382E] transition-colors flex items-center gap-1">
+                <span>Shared Purpose</span>
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
               <div className="text-[11px] text-[#64748B] mt-0.5 leading-snug">Sustainable development for all</div>
-            </div>
+            </Link>
 
             {/* Stat 4 */}
-            <div className="lg:px-8">
+            <Link to="/initiatives" className="lg:px-8 group block hover:opacity-95 transition-opacity">
               <div className="flex items-center gap-2 mb-1">
-                <InfinityIcon className="w-6 h-6 text-[#E06222] shrink-0 stroke-[2.2]" />
+                <InfinityIcon className="w-6 h-6 text-[#E06222] shrink-0 stroke-[2.2] group-hover:scale-110 transition-transform" />
                 <span className="text-[18px] sm:text-[20px] font-bold text-[#111827] tracking-tight leading-none">Opportunities</span>
               </div>
               <div className="text-[11px] text-[#64748B] mt-0.5 leading-snug">For a stronger<br />and brighter Bihar</div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

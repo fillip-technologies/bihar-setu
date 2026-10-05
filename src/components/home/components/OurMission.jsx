@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   Users,
   Lightbulb,
@@ -30,6 +31,7 @@ const missionCards = [
     image: tourismImg,
     color: '#E06222',
     bgTint: 'bg-[#FDF0E6]',
+    link: '/partner-with-us',
   },
   {
     id: 'opportunities',
@@ -41,6 +43,7 @@ const missionCards = [
     image: educationImg,
     color: '#2563EB',
     bgTint: 'bg-[#EBF3FE]',
+    link: '/initiatives',
   },
   {
     id: 'initiatives',
@@ -52,6 +55,7 @@ const missionCards = [
     image: technologyImg,
     color: '#16A34A',
     bgTint: 'bg-[#EAF7EE]',
+    link: '/initiatives',
   },
   {
     id: 'collaboration',
@@ -63,6 +67,7 @@ const missionCards = [
     image: agricultureImg,
     color: '#7C3AED',
     bgTint: 'bg-[#F4F0FD]',
+    link: '/partner-with-us',
   },
   {
     id: 'local-potential',
@@ -74,6 +79,7 @@ const missionCards = [
     image: healthcareImg,
     color: '#D97706',
     bgTint: 'bg-[#FEF3E7]',
+    link: '/focus-areas',
   },
   {
     id: 'entrepreneurship',
@@ -85,6 +91,7 @@ const missionCards = [
     image: aboutImg,
     color: '#0284C7',
     bgTint: 'bg-[#E0F2FE]',
+    link: '/focus-areas',
   },
   {
     id: 'impact',
@@ -96,6 +103,7 @@ const missionCards = [
     image: tourismImg,
     color: '#DC2626',
     bgTint: 'bg-[#FEE2E2]',
+    link: '/how-we-work',
   },
 ]
 
@@ -105,7 +113,10 @@ const missionCards = [
 function MissionCard({ card }) {
   const IconComp = card.icon
   return (
-    <div className="group relative flex flex-col bg-white rounded-2xl border border-stone-200/60 overflow-hidden hover:shadow-xl hover:shadow-black/8 hover:-translate-y-1 transition-all duration-300 cursor-default">
+    <Link
+      to={card.link}
+      className="group relative flex flex-col bg-white rounded-2xl border border-stone-200/60 overflow-hidden hover:shadow-xl hover:shadow-black/8 hover:-translate-y-1 transition-all duration-300"
+    >
 
       {/* ── Top: Image with overlaid number + icon ── */}
       <div className="relative w-full h-[110px] overflow-hidden shrink-0">
@@ -142,7 +153,7 @@ function MissionCard({ card }) {
 
       {/* ── Bottom: Content ── */}
       <div className="flex flex-col flex-1 px-3.5 pt-3 pb-3.5">
-        <h3 className="text-[12.5px] sm:text-[13px] font-bold text-[#111827] leading-snug tracking-tight">
+        <h3 className="text-[12.5px] sm:text-[13px] font-bold text-[#111827] leading-snug tracking-tight group-hover:text-[#17382E] transition-colors">
           {card.title}
         </h3>
 
@@ -150,7 +161,8 @@ function MissionCard({ card }) {
           {card.description}
         </p>
 
-        <div className="mt-2.5 flex items-center">
+        <div className="mt-2.5 flex items-center justify-between text-xs font-semibold" style={{ color: card.color }}>
+          <span className="text-[10px] tracking-wide uppercase opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>
           <span
             className="w-5 h-5 rounded-full flex items-center justify-center border transition-all group-hover:translate-x-0.5"
             style={{ color: card.color, borderColor: `${card.color}50` }}
@@ -159,7 +171,7 @@ function MissionCard({ card }) {
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
@@ -226,6 +238,17 @@ export default function OurMission() {
             challenges and support initiatives that drive long-term, inclusive
             and impact-oriented development across Bihar.
           </p>
+
+          {/* Action CTA */}
+          <div className="mt-3">
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group w-fit"
+            >
+              <span>Explore Our Mission & Values</span>
+              <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] transition-transform duration-200 group-hover:translate-x-0.5" />
+            </Link>
+          </div>
         </div>
 
         {/* RIGHT: Hero image with editorial tag overlay */}

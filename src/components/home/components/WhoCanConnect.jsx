@@ -1,5 +1,6 @@
 import { useRef } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
 
 // High-resolution realistic images generated specifically for each stakeholder category
 import institutionsImg from '../../../assets/stakeholders/institutions.jpg'
@@ -161,24 +162,34 @@ export default function WhoCanConnect() {
             </p>
           </div>
 
-          {/* Navigation Scroll Buttons */}
-          <div className="flex items-center gap-2 self-start md:self-end z-10">
-            <button
-              type="button"
-              onClick={() => scroll('left')}
-              className="w-8 h-8 rounded-full bg-white border border-slate-200 text-[#17382E] shadow-xs flex items-center justify-center hover:bg-[#17382E] hover:text-white hover:border-[#17382E] transition-all"
-              aria-label="Scroll left"
+          {/* CTA & Navigation Scroll Buttons */}
+          <div className="flex flex-wrap items-center gap-3 self-start md:self-end z-10">
+            <Link
+              to="/partner-with-us"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group shrink-0"
             >
-              <ChevronLeft className="w-4 h-4" />
-            </button>
-            <button
-              type="button"
-              onClick={() => scroll('right')}
-              className="w-8 h-8 rounded-full bg-white border border-slate-200 text-[#17382E] shadow-xs flex items-center justify-center hover:bg-[#17382E] hover:text-white hover:border-[#17382E] transition-all"
-              aria-label="Scroll right"
-            >
-              <ChevronRight className="w-4 h-4" />
-            </button>
+              <span>Join as a Stakeholder</span>
+              <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] transition-transform group-hover:translate-x-0.5" />
+            </Link>
+
+            <div className="flex items-center gap-1.5">
+              <button
+                type="button"
+                onClick={() => scroll('left')}
+                className="w-8 h-8 rounded-full bg-white border border-slate-200 text-[#17382E] shadow-xs flex items-center justify-center hover:bg-[#17382E] hover:text-white hover:border-[#17382E] transition-all cursor-pointer"
+                aria-label="Scroll left"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scroll('right')}
+                className="w-8 h-8 rounded-full bg-white border border-slate-200 text-[#17382E] shadow-xs flex items-center justify-center hover:bg-[#17382E] hover:text-white hover:border-[#17382E] transition-all cursor-pointer"
+                aria-label="Scroll right"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           </div>
         </div>
 
@@ -188,9 +199,10 @@ export default function WhoCanConnect() {
           className="flex overflow-x-auto lg:grid lg:grid-cols-8 gap-4 sm:gap-5 pb-6 pt-2 scroll-smooth no-scrollbar snap-x"
         >
           {stakeholderCategories.map((item) => (
-            <div
+            <Link
               key={item.id}
-              className="group flex flex-col items-center shrink-0 w-[150px] sm:w-[165px] lg:w-auto snap-start cursor-pointer select-none"
+              to="/partner-with-us"
+              className="group flex flex-col items-center shrink-0 w-[150px] sm:w-[165px] lg:w-auto snap-start select-none"
             >
               {/* Stadium / Capsule Shaped Pill Image */}
               <div className="relative w-full aspect-[1/1.7] rounded-full overflow-hidden bg-[#E8E4DC] shadow-md group-hover:shadow-xl transition-all duration-300 ring-1 ring-black/5 group-hover:-translate-y-2">
@@ -205,8 +217,9 @@ export default function WhoCanConnect() {
 
                 {/* Hover overlay hint badge */}
                 <div className="absolute inset-x-2 bottom-3 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-xs text-[9px] font-bold text-[#17382E] shadow-xs truncate max-w-[120px]">
-                    {item.tag}
+                  <span className="px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-xs text-[9px] font-bold text-[#17382E] shadow-xs truncate max-w-[120px] flex items-center gap-1">
+                    <span>{item.tag}</span>
+                    <ArrowRight className="w-2.5 h-2.5 text-[#E06222]" />
                   </span>
                 </div>
               </div>
@@ -215,7 +228,7 @@ export default function WhoCanConnect() {
               <h3 className="mt-3.5 text-[12.5px] sm:text-[13px] lg:text-[13.5px] font-bold text-[#141A24] text-center group-hover:text-[#17382E] transition-colors leading-tight px-1 min-h-[34px] flex items-center justify-center">
                 {item.title}
               </h3>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
