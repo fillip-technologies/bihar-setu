@@ -47,9 +47,46 @@ export default function ContactInfo({ contactInfo, categories }) {
                       </span>
                     )}
                   </div>
-                  <p className="mt-0.5 text-[13px] text-[#475569] leading-relaxed break-words">
-                    {item.desc}
-                  </p>
+                  {item.icon === 'Phone' ? (
+                    <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-[#475569]">
+                      <a
+                        href="tel:6206804300"
+                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                      >
+                        6206804300
+                      </a>
+                      <span className="text-stone-300">/</span>
+                      <a
+                        href="tel:9153881025"
+                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                      >
+                        9153881025
+                      </a>
+                    </div>
+                  ) : item.icon === 'Mail' ? (
+                    <p className="mt-0.5 text-[13px] text-[#475569] leading-relaxed break-words">
+                      <a
+                        href="mailto:Biharsetu@gmail.com"
+                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                      >
+                        Biharsetu@gmail.com
+                      </a>
+                    </p>
+                  ) : item.icon === 'Globe' ? (
+                    <p className="mt-0.5 text-[13px] text-[#475569] leading-relaxed break-words">
+                      <a
+                        href="mailto:Biharsetu@gmail.com"
+                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                      >
+                        Biharsetu@gmail.com
+                      </a>{' '}
+                      <span className="text-[#64748B]">/ Direct Inquiries Wing</span>
+                    </p>
+                  ) : (
+                    <p className="mt-0.5 text-[13px] text-[#475569] leading-relaxed break-words">
+                      {item.desc}
+                    </p>
+                  )}
                 </div>
               </div>
             )
@@ -87,10 +124,10 @@ export default function ContactInfo({ contactInfo, categories }) {
         {/* Knowledge & Documentation note */}
         <div className="mt-5 pt-4 border-t border-stone-200/80">
           <a
-            href="mailto:connect@biharsetu.in"
+            href="mailto:Biharsetu@gmail.com"
             className="inline-flex items-center gap-1.5 text-[12px] font-bold text-[#17382E] hover:text-[#E06222] transition-colors"
           >
-            <span>Have an institutional pitch deck? Email us directly</span>
+            <span>Have an institutional pitch deck? Email us directly at Biharsetu@gmail.com</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
         </div>

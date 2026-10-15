@@ -286,7 +286,7 @@ export default function PartnerForm({
 
               <div className="mt-6 text-[12.5px] text-[#64748B] flex items-center justify-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#10B981]" />
-                <span>Official communication will be initiated from partnerships@biharsetu.in</span>
+                <span>Official communication will be initiated from Biharsetu@gmail.com</span>
               </div>
 
               <div className="mt-8 flex justify-center">

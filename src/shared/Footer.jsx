@@ -283,27 +283,36 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-[#06B6D4] shrink-0" />
                 <a
-                  href="mailto:contact@biharsetu.org"
+                  href="mailto:Biharsetu@gmail.com"
                   className="text-[#A7B9B2] hover:text-white transition-colors underline-offset-2 hover:underline"
                 >
-                  contact@biharsetu.org
+                  Biharsetu@gmail.com
                 </a>
               </div>
 
-              <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-[#34D399] shrink-0" />
-                <a
-                  href="tel:+916122207890"
-                  className="text-[#A7B9B2] hover:text-white transition-colors"
-                >
-                  +91 (0612) 220-7890 / Helpline
-                </a>
+              <div className="flex items-start gap-3">
+                <Phone className="w-4 h-4 text-[#34D399] shrink-0 mt-0.5" />
+                <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
+                  <a
+                    href="tel:6206804300"
+                    className="text-[#A7B9B2] hover:text-white transition-colors"
+                  >
+                    6206804300
+                  </a>
+                  <span className="text-[#34D399]/40">•</span>
+                  <a
+                    href="tel:9153881025"
+                    className="text-[#A7B9B2] hover:text-white transition-colors"
+                  >
+                    9153881025
+                  </a>
+                </div>
               </div>
 
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#F97316] shrink-0 mt-0.5" />
                 <span className="text-[#A7B9B2]">
-                  Central Secretariat, Patna, Bihar 800001
+                  Ramkrishna Nagar Patna-800027
                 </span>
               </div>
 

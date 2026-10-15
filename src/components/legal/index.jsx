@@ -200,7 +200,12 @@ export default function LegalPage() {
                   </div>
                   <div>
                     <div className="text-xs text-slate-500 font-medium">Official Privacy Contact:</div>
-                    <div className="text-sm font-bold text-slate-900">contact@biharsetu.org</div>
+                    <a
+                      href="mailto:Biharsetu@gmail.com"
+                      className="text-sm font-bold text-slate-900 hover:text-[#0D9488] transition-colors"
+                    >
+                      Biharsetu@gmail.com
+                    </a>
                   </div>
                 </div>
                 <Link
@@ -316,7 +321,12 @@ export default function LegalPage() {
                   </div>
                   <div>
                     <div className="text-xs text-slate-500 font-medium">Inquiries Regarding Terms:</div>
-                    <div className="text-sm font-bold text-slate-900">contact@biharsetu.org</div>
+                    <a
+                      href="mailto:Biharsetu@gmail.com"
+                      className="text-sm font-bold text-slate-900 hover:text-[#E06222] transition-colors"
+                    >
+                      Biharsetu@gmail.com
+                    </a>
                   </div>
                 </div>
                 <Link

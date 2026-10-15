@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Calendar, ArrowRight, Menu, X } from 'lucide-react'
+import { Calendar, ArrowRight, Menu, X, Phone, Mail, MapPin } from 'lucide-react'
 import { gsap } from 'gsap'
 import { navLinks, navCta } from '../data/navigation'
 import { useScrollPosition } from '../hooks/useScrollPosition'
@@ -202,6 +202,29 @@ export default function Navbar() {
               <span>{navCta.label}</span>
               <ArrowRight className="w-4 h-4 stroke-[2]" />
             </Link>
+          </div>
+
+          {/* Quick Contact Info */}
+          <div className="pt-3 border-t border-black/10 flex flex-col gap-2 text-[12px] text-[#475569]">
+            <div className="flex items-center gap-2">
+              <Phone className="w-3.5 h-3.5 text-[#17382E] shrink-0" />
+              <div className="flex items-center gap-1.5 flex-wrap">
+                <a href="tel:6206804300" className="hover:text-[#17382E] font-medium transition-colors">6206804300</a>
+                <span className="text-stone-300">,</span>
+                <a href="tel:9153881025" className="hover:text-[#17382E] font-medium transition-colors">9153881025</a>
+              </div>
+            </div>
+            <a
+              href="mailto:Biharsetu@gmail.com"
+              className="flex items-center gap-2 hover:text-[#17382E] transition-colors"
+            >
+              <Mail className="w-3.5 h-3.5 text-[#E06222] shrink-0" />
+              <span className="font-medium">Biharsetu@gmail.com</span>
+            </a>
+            <div className="flex items-center gap-2 text-stone-600">
+              <MapPin className="w-3.5 h-3.5 text-[#8C5E35] shrink-0" />
+              <span>Ramkrishna Nagar Patna-27</span>
+            </div>
           </div>
         </div>
       )}

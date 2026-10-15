@@ -68,25 +68,25 @@ export const contactPageData = {
   contactInfo: [
     {
       title: 'State Coordination Office',
-      desc: 'Bihar Setu Secretariat, Vikas Bhawan, Bailey Road, Patna, Bihar 800015',
+      desc: 'Ramkrishna Nagar, Patna - 800027, Bihar',
       icon: 'Building2',
       badge: 'Headquarters',
     },
     {
       title: 'Official Email Assistance',
-      desc: 'connect@biharsetu.in / partnerships@biharsetu.in',
+      desc: 'Biharsetu@gmail.com',
       icon: 'Mail',
       badge: 'Quick Response',
     },
     {
       title: 'Citizen & Helpline Desk',
-      desc: '+91 612 2215 000 / Toll Free: 1800 345 6120',
+      desc: '+91 6206804300 / +91 9153881025',
       icon: 'Phone',
       badge: 'Mon - Sat, 9 AM - 6 PM',
     },
     {
       title: 'Media & Communications',
-      desc: 'media@biharsetu.in / Press & Public Relations Wing',
+      desc: 'Biharsetu@gmail.com / Direct Inquiries Wing',
       icon: 'Globe',
       badge: 'Press Desk',
     },
