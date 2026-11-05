@@ -19,6 +19,7 @@ import biharSetuLogo from '../assets/bihar-setu-logo-white.png'
 // ─────────────────────────────────────────────
 const quickLinks = [
   { name: 'Home', path: '/' },
+  { name: 'Tourism Summit 2026', path: '/tourism-summit-2026' },
   { name: 'About Bihar Setu', path: '/about' },
   { name: 'Focus Areas', path: '/focus-areas' },
   { name: 'Why Bihar Setu', path: '/#why-bihar-setu' },

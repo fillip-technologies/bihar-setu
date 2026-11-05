@@ -10,7 +10,7 @@ import {
   ArrowRight,
 } from 'lucide-react'
 
-import tourismImg from '../../../assets/sectors/tourism.jpg'
+import tourismImg from '../../../assets/summit-images/summit-2.png'
 import educationImg from '../../../assets/sectors/education.jpg'
 import agricultureImg from '../../../assets/sectors/agriculture.jpg'
 import technologyImg from '../../../assets/sectors/technology.jpg'

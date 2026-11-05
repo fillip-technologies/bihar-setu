@@ -10,6 +10,6 @@ export const navLinks = [
 
 export const navCta = {
   label: 'Tourism Summit 2026',
-  path: '/initiatives#tourism-summit-section',
+  path: '/tourism-summit-2026',
   icon: 'Calendar',
 }

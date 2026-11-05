@@ -7,6 +7,7 @@ import Contact from '../pages/Contact'
 import Partner from '../pages/Partner'
 import HowWeWork from '../pages/HowWeWork'
 import Initiatives from '../pages/Initiatives'
+import TourismSummit from '../pages/TourismSummit'
 import Legal from '../pages/Legal'
 import NotFound from '../pages/NotFound'
 
@@ -21,7 +22,9 @@ export default function AppRoutes() {
         <Route path="initiatives" element={<Initiatives />} />
         <Route path="our-initiatives" element={<Initiatives />} />
         <Route path="innovaties" element={<Initiatives />} />
-        <Route path="tourism-summit-2026" element={<Initiatives />} />
+        <Route path="tourism-summit-2026" element={<TourismSummit />} />
+        <Route path="tourism-summit" element={<TourismSummit />} />
+        <Route path="summit" element={<TourismSummit />} />
         <Route path="explore" element={<About />} />
         <Route path="partner-with-us" element={<Partner />} />
         <Route path="partner" element={<Partner />} />

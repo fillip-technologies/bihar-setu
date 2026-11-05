@@ -9,7 +9,7 @@ import {
   Infinity as InfinityIcon,
 } from 'lucide-react'
 import { aboutData } from '../../../data/aboutData'
-import stupaImage from '../../../assets/about_stupa.jpg'
+import stupaImage from '../../../assets/summit-images/summit-1.png'
 
 const highlightIconMap = {
   Users: Users,
@@ -30,8 +30,8 @@ export default function AboutSection() {
           {/* Topographic ripple arcs watermark */}
           <div className="absolute top-0 left-0 w-48 h-48 pointer-events-none opacity-40 select-none">
             <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-              <circle cx="15" cy="15" r="50"  stroke="#C38B34" strokeWidth="0.7" strokeDasharray="3 3" />
-              <circle cx="15" cy="15" r="85"  stroke="#C38B34" strokeWidth="0.7" />
+              <circle cx="15" cy="15" r="50" stroke="#C38B34" strokeWidth="0.7" strokeDasharray="3 3" />
+              <circle cx="15" cy="15" r="85" stroke="#C38B34" strokeWidth="0.7" />
               <circle cx="15" cy="15" r="120" stroke="#C38B34" strokeWidth="0.7" strokeDasharray="4 4" />
               <circle cx="15" cy="15" r="160" stroke="#C38B34" strokeWidth="0.7" />
               <circle cx="15" cy="15" r="200" stroke="#C38B34" strokeWidth="0.7" strokeDasharray="3 4" />

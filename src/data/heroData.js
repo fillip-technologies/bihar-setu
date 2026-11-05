@@ -20,7 +20,7 @@ export const heroData = {
     },
     {
       label: 'Tourism Summit 2026',
-      path: '/initiatives#tourism-summit-section',
+      path: '/tourism-summit-2026',
       variant: 'tertiary',
       hasCalendar: true,
     },

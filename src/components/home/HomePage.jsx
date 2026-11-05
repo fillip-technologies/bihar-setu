@@ -1,10 +1,12 @@
 import Hero from './components/Hero'
 import AboutSection from './components/AboutSection'
+import HomeSummitShowcase from './components/HomeSummitShowcase'
+import FocusAreas from './components/FocusAreas'
 import WhyBiharSetu from './components/WhyBiharSetu'
 import OurMission from './components/OurMission'
 import HowWeWork from './components/HowWeWork'
 import WhoCanConnect from './components/WhoCanConnect'
-import FocusAreas from './components/FocusAreas'
+import HomeFormsSection from './components/HomeFormsSection'
 
 export default function HomePage() {
   return (
@@ -13,6 +15,10 @@ export default function HomePage() {
 
       <div id="about">
         <AboutSection />
+      </div>
+
+      <div id="tourism-summit">
+        <HomeSummitShowcase />
       </div>
 
       <div id="focus-areas">
@@ -33,6 +39,10 @@ export default function HomePage() {
 
       <div id="who-can-connect">
         <WhoCanConnect />
+      </div>
+
+      <div id="homepage-forms">
+        <HomeFormsSection />
       </div>
     </div>
   )

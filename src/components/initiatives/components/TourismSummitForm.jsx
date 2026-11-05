@@ -302,7 +302,7 @@ export default function TourismSummitForm({ data }) {
                   </div>
 
                   <div className="sm:col-span-2 pt-2 border-t border-stone-200/80 flex items-center gap-2 text-slate-500 text-xs">
-                    <Calendar className="w-3.5 h-3.5 text-[#E06222]" />
+                    <Calendar className="w-3.5 h-3.5 text-[#C38B34]" />
                     <span>Registered on: {submittedAt}</span>
                   </div>
                 </div>

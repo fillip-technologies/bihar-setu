@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 import { gsap } from 'gsap'
 import { heroData } from '../../../data/heroData'
-import heroBackground from '../../../assets/home/hero-bg-5.png'
+import heroBackground from '../../../assets/home/hero-section-4.png'
 
 export default function Hero() {
   const { eyebrow, heading, description, actions } = heroData

@@ -10,11 +10,13 @@ import {
   ShieldCheck,
   RotateCcw,
 } from 'lucide-react'
+import { partnerPageData } from '../../../data/partnerData'
 
 export default function PartnerForm({
-  formDataProp,
+  formDataProp = partnerPageData.form,
   selectedCategory,
   onCategoryChange,
+  className,
 }) {
   const { title, highlight, subtitle, sectors, categories, districts } =
     formDataProp
@@ -206,7 +208,7 @@ export default function PartnerForm({
     <section
       id="partnership-form"
       aria-labelledby="partner-form-heading"
-      className="relative pt-6 sm:pt-8 lg:pt-10 pb-14 sm:pb-18 lg:pb-20 bg-[#FAF6EE]"
+      className={className || "relative pt-6 sm:pt-8 lg:pt-10 pb-14 sm:pb-18 lg:pb-20 bg-[#FAF6EE]"}
     >
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header: Aligned and free of extra eyebrow clutter */}

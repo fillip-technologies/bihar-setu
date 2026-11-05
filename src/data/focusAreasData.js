@@ -188,7 +188,7 @@ export const focusAreasPageData = {
       ],
       ctaAction: {
         label: 'Register for Tourism Summit',
-        path: '/initiatives#summit-registration-form',
+        path: '/tourism-summit-2026',
       },
     },
     {

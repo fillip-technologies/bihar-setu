@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   UtensilsCrossed,
   Hotel,
@@ -5,12 +6,13 @@ import {
   TrendingUp,
   Camera,
   Users,
+  ArrowRight,
 } from 'lucide-react'
 import summitMapImg from '../../../assets/innovaties/summit.png'
-import nalandaImg from '../../../assets/sectors/tourism.jpg'
-import cultureImg from '../../../assets/focus-areas/culture.jpg'
-import spiritualImg from '../../../assets/innovaties/spiritual.jpg'
-import culinaryImg from '../../../assets/innovaties/culinary.jpg'
+import gatewayImg from '../../../assets/summit-images/summit-6.png'
+import heritageImg from '../../../assets/summit-images/summit-3.png'
+import districtImg from '../../../assets/summit-images/summit-1.png'
+import stageImg from '../../../assets/summit-images/summit-5.png'
 
 const summitPillars = [
   {
@@ -47,24 +49,24 @@ const summitPillars = [
 
 const summitHighlights = [
   {
-    image: nalandaImg,
-    alt: 'Ancient Nalanda Heritage Circuit',
-    title: 'Heritage & Stupa Circuits',
+    image: gatewayImg,
+    alt: 'Arrival Gateway with Sponsor Pillars',
+    title: 'Arrival Gateway & Sponsor Pillars',
   },
   {
-    image: cultureImg,
-    alt: 'Cultural & Living Traditions of Bihar',
-    title: 'Culture & Living Traditions',
+    image: heritageImg,
+    alt: 'Cultural Walk: Heritage Panels',
+    title: 'Cultural Walk: Heritage Panels',
   },
   {
-    image: spiritualImg,
-    alt: 'Bodh Gaya & Spiritual Circuits',
-    title: 'Spiritual & Peace Circuits',
+    image: districtImg,
+    alt: 'District Storytelling Panels',
+    title: 'District Storytelling Panels',
   },
   {
-    image: culinaryImg,
-    alt: 'Bihar Culinary & Gastronomy Trails',
-    title: "Bihar's Culinary Identity",
+    image: stageImg,
+    alt: 'Main Stage and Backdrop',
+    title: 'Main Stage & Plenary Hall',
   },
 ]
 
@@ -87,8 +89,8 @@ export default function InitiativesTourismSummit() {
               Bihar Setu <span className="text-[#370C01]">Tourism Summit 2026</span>
             </h2>
 
-            <div className="text-base sm:text-lg font-bold text-[#E06222] mb-3">
-              Season 1
+            <div className="text-base sm:text-lg font-bold text-[#C38B34] mb-3">
+              Chapter 1 · 7th & 8th December 2026 · Urja Auditorium, Patna
             </div>
 
             <p className="text-lg sm:text-xl font-bold text-[#370C01] tracking-tight mb-6">
@@ -108,7 +110,16 @@ export default function InitiativesTourismSummit() {
               </p>
             </div>
 
-            {/* Summit Pillars Grid */}
+            {/* Direct Link to Dedicated Summit Page */}
+            <div className="mt-2 mb-8 flex flex-wrap items-center gap-3">
+              <Link
+                to="/tourism-summit-2026"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#370C01] hover:bg-[#260800] text-white font-bold text-[13px] shadow-md transition-all duration-200 hover:-translate-y-0.5 group"
+              >
+                <span>Visit Official Summit 2026 Portal</span>
+                <ArrowRight className="w-4 h-4 stroke-[2.2] group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
               {summitPillars.map((pillar, idx) => {
                 const IconComponent = pillar.icon
@@ -157,21 +168,22 @@ export default function InitiativesTourismSummit() {
               {/* Four Rectangular Images filling the 2x2 grid */}
               <div className="grid grid-cols-2 gap-3.5 w-full mt-5">
                 {summitHighlights.map((item, idx) => (
-                  <div
+                  <Link
                     key={idx}
-                    className="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200/90 aspect-[16/10] bg-slate-100 transition-all"
+                    to="/tourism-summit-2026"
+                    className="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200/90 aspect-[16/10] bg-slate-100 transition-all block"
                   >
                     <img
                       src={item.image}
                       alt={item.alt}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-2.5 sm:p-3">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex items-end p-2.5 sm:p-3">
                       <span className="text-[11px] sm:text-xs font-bold text-white drop-shadow-sm leading-tight">
                         {item.title}
                       </span>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
 

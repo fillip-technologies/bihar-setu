@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { MessageSquare, ShieldCheck, Clock, MapPin } from 'lucide-react'
 import { gsap } from 'gsap'
-import aboutHeroBg from '../../../assets/about/about-bg.png'
+import aboutHeroBg from '../../../assets/about/bihar-contact.jpg'
 
 export default function ContactHero({ data }) {
   const { eyebrow, title, headline, lead } = data
