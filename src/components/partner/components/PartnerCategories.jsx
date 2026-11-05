@@ -66,17 +66,17 @@ export default function PartnerCategories({
     <section
       id="partnership-categories"
       aria-labelledby="partner-categories-heading"
-      className="relative py-12 sm:py-16 bg-[#FAF7F2]"
+      className="relative py-12 sm:py-16 bg-[#FAF6EE]"
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header (Eyebrow removed) */}
         <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
           <h2
             id="partner-categories-heading"
-            className="text-[28px] sm:text-[36px] lg:text-[42px] font-serif font-bold text-[#111827] leading-[1.15] tracking-[-0.02em]"
+            className="text-[28px] sm:text-[36px] lg:text-[42px] font-serif font-bold text-[#231515] leading-[1.15] tracking-[-0.02em]"
           >
             {title}{' '}
-            <span className="text-[#A15D1C] font-serif font-bold">
+            <span className="text-[#C38B34] font-serif font-bold">
               {highlight}
             </span>
           </h2>
@@ -111,21 +111,21 @@ export default function PartnerCategories({
 
                   {/* Overlapping Floating Icon Badge */}
                   <div className="-mt-5 ml-5 relative z-10">
-                    <div className="w-10 h-10 rounded-xl bg-white shadow-md border border-stone-100 flex items-center justify-center text-[#17382E] group-hover:bg-[#17382E] group-hover:text-white transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-xl bg-white shadow-md border border-stone-100 flex items-center justify-center text-[#370C01] group-hover:bg-[#370C01] group-hover:text-white transition-colors duration-300">
                       <Icon className="w-4.5 h-4.5 stroke-[2]" />
                     </div>
                   </div>
 
                   {/* Content with Aligned Arrow */}
                   <div className="p-5 pt-2.5 pb-4">
-                    <h3 className="text-[15.5px] sm:text-[16.5px] font-bold text-[#111827] group-hover:text-[#A15D1C] transition-colors leading-snug">
+                    <h3 className="text-[15.5px] sm:text-[16.5px] font-bold text-[#231515] group-hover:text-[#C38B34] transition-colors leading-snug">
                       {cat.title}
                     </h3>
                     <div className="mt-1.5 flex items-end justify-between gap-3">
                       <p className="text-[12.5px] text-[#64748B] leading-relaxed flex-1">
                         {cat.desc}
                       </p>
-                      <div className="w-7 h-7 rounded-full bg-[#FAF7F2] border border-stone-200 flex items-center justify-center text-[#8C5E35] group-hover:bg-[#A15D1C] group-hover:text-white group-hover:border-[#A15D1C] transition-all duration-200 shadow-2xs shrink-0 mb-0.5">
+                      <div className="w-7 h-7 rounded-full bg-[#FAF6EE] border border-stone-200 flex items-center justify-center text-[#7A3F16] group-hover:bg-[#C38B34] group-hover:text-white group-hover:border-[#C38B34] transition-all duration-200 shadow-2xs shrink-0 mb-0.5">
                         <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] group-hover:translate-x-0.5 transition-transform" />
                       </div>
                     </div>

@@ -36,7 +36,7 @@ export default function FocusEducation({ data }) {
   return (
     <section
       id="education-skill-development"
-      className="relative w-full bg-[#FAF7F2] border-b border-stone-200/80 py-14 sm:py-18 lg:py-22 overflow-hidden"
+      className="relative w-full bg-[#F2EADD] border-b border-[#E8DCCF] py-14 sm:py-18 lg:py-22 overflow-hidden"
     >
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -45,7 +45,7 @@ export default function FocusEducation({ data }) {
           <div className="lg:col-span-5 flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative w-full max-w-[460px] sm:max-w-[480px] lg:max-w-[500px]">
               {/* Outer Decorative Glow */}
-              <div className="absolute -inset-2 bg-gradient-to-tr from-[#2563EB]/15 to-[#17382E]/15 rounded-[32px] blur-xl opacity-60 pointer-events-none" />
+              <div className="absolute -inset-2 bg-gradient-to-tr from-[#2563EB]/15 to-[#370C01]/15 rounded-[32px] blur-xl opacity-60 pointer-events-none" />
 
               {/* Main Photo Card */}
               <div className="relative rounded-3xl overflow-hidden shadow-xl border border-stone-200/90 aspect-[16/10] sm:aspect-[4/3] w-full bg-stone-100 group">
@@ -63,13 +63,13 @@ export default function FocusEducation({ data }) {
             {/* Sector Eyebrow */}
             <div className="inline-flex items-center gap-2 mb-3">
               <span className="w-5 h-[2px] bg-[#2563EB] rounded-full shrink-0" />
-              <span className="text-[11px] font-extrabold tracking-[0.22em] text-[#8C5E35] uppercase font-sans">
+              <span className="text-[11px] font-extrabold tracking-[0.22em] text-[#7A3F16] uppercase font-sans">
                 Sector {num || '04'} • Priority Focus Area
               </span>
             </div>
 
             {/* Topic Title */}
-            <h2 className="text-[30px] sm:text-[40px] lg:text-[44px] font-serif font-bold text-[#111827] leading-[1.15] tracking-[-0.02em]">
+            <h2 className="text-[30px] sm:text-[40px] lg:text-[44px] font-serif font-bold text-[#231515] leading-[1.15] tracking-[-0.02em]">
               {title}
             </h2>
 
@@ -86,7 +86,7 @@ export default function FocusEducation({ data }) {
                     <Check className="w-3 h-3 stroke-[2.5]" />
                   </span>
                   <div className="text-[13.5px] sm:text-[14px] leading-snug">
-                    <span className="font-bold text-[#111827]">{point.title}: </span>
+                    <span className="font-bold text-[#231515]">{point.title}: </span>
                     <span className="text-[#556376]">{point.desc}</span>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function FocusEducation({ data }) {
             <div className="mt-8 pt-6 border-t border-stone-200/80 flex items-center">
               <Link
                 to={ctaAction?.path || '/initiatives#summit-registration-form'}
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#17382E] text-white text-[13px] sm:text-[13.5px] font-bold hover:bg-[#2563EB] transition-colors duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#370C01] text-white text-[13px] sm:text-[13.5px] font-bold hover:bg-[#2563EB] transition-colors duration-200 shadow-sm"
               >
                 <span>{ctaAction?.label || 'Submit Education Proposal'}</span>
                 <ArrowRight className="w-4 h-4 stroke-[2.2]" />

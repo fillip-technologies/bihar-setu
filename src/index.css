@@ -7,37 +7,45 @@
   --font-outfit: 'Outfit', sans-serif;
   --font-devanagari: 'Noto Sans Devanagari', sans-serif;
 
-  --color-primary: #17382E;
-  --color-primary-hover: #112B23;
-  --color-primary-dark: #0B1E18;
-  --color-primary-light: #235243;
-  --color-forest: #17382E;
-  --color-forest-hover: #112B23;
-  --color-navy: #0B192C;
-  --color-navy-light: #1E3E62;
-  --color-navy-dark: #050B14;
-  --color-saffron: #F97316;
-  --color-saffron-hover: #EA580C;
-  --color-gold: #F5A623;
-  --color-gold-hover: #D97706;
+  /* Primary Brand: Royal Mahogany (from Logo "BIHAR") */
+  --color-primary: #370C01;
+  --color-primary-hover: #260800;
+  --color-primary-dark: #1A0500;
+  --color-primary-light: #4F1707;
+  --color-forest: #370C01;
+  --color-forest-hover: #260800;
+
+  /* Deep Authority Surfaces (Footer & Dark Sections) */
+  --color-navy: #190904;
+  --color-navy-light: #2D140A;
+  --color-navy-dark: #100502;
+
+  /* Heritage Gold & Amber (from Logo "SETU", Bodhi tree & Bridge) */
+  --color-gold: #C38B34;
+  --color-gold-hover: #AF7625;
+  --color-gold-light: #E0A34B;
+  --color-saffron: #D97706;
+  --color-saffron-hover: #B45309;
   --color-ganga-cyan: #06B6D4;
   --color-teal-accent: #0D9488;
-  --color-surface-dark: #050811;
-  --color-surface-card: #0E1626;
-  --color-surface-border: #1E293B;
-  --color-text-primary: #F8FAFC;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
 
-  /* Light civic canvas (current site theme) */
-  --color-ivory: #FAF7F2;
-  --color-ivory-deep: #F5F1EA;
-  --color-ink: #111827;
-  --color-ink-soft: #475569;
-  --color-ink-muted: #64748B;
-  --color-terracotta: #E06222;
-  --color-heritage: #C67D33;
-  --color-heritage-ink: #8C5E35;
+  /* Dark Surface Tokens */
+  --color-surface-dark: #100502;
+  --color-surface-card: #1D0A04;
+  --color-surface-border: #2E150B;
+  --color-text-primary: #FDFBF7;
+  --color-text-secondary: #C7B5A7;
+  --color-text-muted: #957F71;
+
+  /* Light Civic Canvas (Derived directly from sample image) */
+  --color-ivory: #FAF6EE;
+  --color-ivory-deep: #F2EADD;
+  --color-ink: #231515;
+  --color-ink-soft: #5C443C;
+  --color-ink-muted: #8A7268;
+  --color-terracotta: #A84E1A;
+  --color-heritage: #C38B34;
+  --color-heritage-ink: #7A3F16;
 }
 
 @layer base {

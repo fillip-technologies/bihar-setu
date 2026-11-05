@@ -23,7 +23,7 @@ export default function ContactInfo({ contactInfo, categories }) {
       <div className="bg-white rounded-2xl border border-stone-200/90 shadow-sm p-6 sm:p-7">
         <div className="flex items-center gap-2 mb-5 pb-3 border-b border-stone-100">
           <span className="w-2 h-2 rounded-full bg-[#E06222]" />
-          <h3 className="text-[17px] font-serif font-bold text-[#111827]">
+          <h3 className="text-[17px] font-serif font-bold text-[#231515]">
             Direct State Desks
           </h3>
         </div>
@@ -33,16 +33,16 @@ export default function ContactInfo({ contactInfo, categories }) {
             const Icon = iconMap[item.icon] || Building2
             return (
               <div key={idx} className="flex items-start gap-3.5 group">
-                <div className="w-10 h-10 rounded-xl bg-[#FAF7F2] border border-stone-200 flex items-center justify-center text-[#17382E] shrink-0 group-hover:bg-[#17382E] group-hover:text-white transition-colors duration-200">
+                <div className="w-10 h-10 rounded-xl bg-[#FAF6EE] border border-stone-200 flex items-center justify-center text-[#370C01] shrink-0 group-hover:bg-[#370C01] group-hover:text-white transition-colors duration-200">
                   <Icon className="w-4.5 h-4.5" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between gap-2">
-                    <h4 className="text-[13.5px] font-bold text-[#111827]">
+                    <h4 className="text-[13.5px] font-bold text-[#231515]">
                       {item.title}
                     </h4>
                     {item.badge && (
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-[#8C5E35] bg-[#FAF7F2] border border-stone-200 px-2 py-0.5 rounded-full shrink-0">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-[#7A3F16] bg-[#FAF6EE] border border-stone-200 px-2 py-0.5 rounded-full shrink-0">
                         {item.badge}
                       </span>
                     )}
@@ -51,14 +51,14 @@ export default function ContactInfo({ contactInfo, categories }) {
                     <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-[#475569]">
                       <a
                         href="tel:6206804300"
-                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                        className="font-semibold text-[#370C01] hover:text-[#E06222] transition-colors"
                       >
                         6206804300
                       </a>
                       <span className="text-stone-300">/</span>
                       <a
                         href="tel:9153881025"
-                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                        className="font-semibold text-[#370C01] hover:text-[#E06222] transition-colors"
                       >
                         9153881025
                       </a>
@@ -67,7 +67,7 @@ export default function ContactInfo({ contactInfo, categories }) {
                     <p className="mt-0.5 text-[13px] text-[#475569] leading-relaxed break-words">
                       <a
                         href="mailto:Biharsetu@gmail.com"
-                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                        className="font-semibold text-[#370C01] hover:text-[#E06222] transition-colors"
                       >
                         Biharsetu@gmail.com
                       </a>
@@ -76,7 +76,7 @@ export default function ContactInfo({ contactInfo, categories }) {
                     <p className="mt-0.5 text-[13px] text-[#475569] leading-relaxed break-words">
                       <a
                         href="mailto:Biharsetu@gmail.com"
-                        className="font-semibold text-[#17382E] hover:text-[#E06222] transition-colors"
+                        className="font-semibold text-[#370C01] hover:text-[#E06222] transition-colors"
                       >
                         Biharsetu@gmail.com
                       </a>{' '}
@@ -101,10 +101,10 @@ export default function ContactInfo({ contactInfo, categories }) {
       </div>
 
       {/* ── Enquiry Categories Explainer Card ── */}
-      <div className="bg-[#FAF7F2] rounded-2xl border border-stone-200/90 p-6 sm:p-7">
+      <div className="bg-[#FAF6EE] rounded-2xl border border-stone-200/90 p-6 sm:p-7">
         <div className="flex items-center gap-2 mb-3">
-          <HelpCircle className="w-4 h-4 text-[#17382E]" />
-          <h3 className="text-[15px] font-serif font-bold text-[#111827]">
+          <HelpCircle className="w-4 h-4 text-[#370C01]" />
+          <h3 className="text-[15px] font-serif font-bold text-[#231515]">
             Enquiry Streams We Handle
           </h3>
         </div>
@@ -116,7 +116,7 @@ export default function ContactInfo({ contactInfo, categories }) {
           {categories.map((cat, i) => (
             <li key={i} className="flex items-center gap-2">
               <CheckCircle className="w-3.5 h-3.5 text-[#10B981] shrink-0" />
-              <span className="font-medium text-[#111827]">{cat}</span>
+              <span className="font-medium text-[#231515]">{cat}</span>
             </li>
           ))}
         </ul>
@@ -125,7 +125,7 @@ export default function ContactInfo({ contactInfo, categories }) {
         <div className="mt-5 pt-4 border-t border-stone-200/80">
           <a
             href="mailto:Biharsetu@gmail.com"
-            className="inline-flex items-center gap-1.5 text-[12px] font-bold text-[#17382E] hover:text-[#E06222] transition-colors"
+            className="inline-flex items-center gap-1.5 text-[12px] font-bold text-[#370C01] hover:text-[#E06222] transition-colors"
           >
             <span>Have an institutional pitch deck? Email us directly at Biharsetu@gmail.com</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

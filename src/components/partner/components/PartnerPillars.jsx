@@ -22,12 +22,12 @@ export default function PartnerPillars({ pillars }) {
                 }`}
               >
                 {/* Circular Icon Badge */}
-                <div className="w-12 h-12 rounded-full bg-[#FAF7F2] border border-stone-200/80 flex items-center justify-center text-[#A15D1C] group-hover:bg-[#A15D1C] group-hover:text-white transition-all duration-300 mb-3 shadow-2xs">
+                <div className="w-12 h-12 rounded-full bg-[#FAF6EE] border border-stone-200/80 flex items-center justify-center text-[#C38B34] group-hover:bg-[#C38B34] group-hover:text-white transition-all duration-300 mb-3 shadow-2xs">
                   <Icon className="w-5 h-5 stroke-[2]" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-[15px] sm:text-[16px] font-bold text-[#111827] leading-snug">
+                <h3 className="text-[15px] sm:text-[16px] font-bold text-[#231515] leading-snug">
                   {pillar.title}
                 </h3>
 

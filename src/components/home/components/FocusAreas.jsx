@@ -40,7 +40,7 @@ export default function FocusAreas() {
   }
 
   return (
-    <section className="relative pt-6 sm:pt-10 pb-16 sm:pb-24 bg-[#FAF7F2] overflow-hidden border-t border-black/5">
+    <section className="relative pt-6 sm:pt-10 pb-16 sm:pb-24 bg-[#FAF6EE] overflow-hidden border-t border-black/5">
       {/* Cultural Heritage Texture: Mithila / Madhubani Sun Motif & Setu Architectural Lines */}
       <div className="absolute top-0 right-0 w-[420px] lg:w-[540px] h-[360px] pointer-events-none select-none overflow-hidden z-0 opacity-40">
         <svg
@@ -92,7 +92,7 @@ export default function FocusAreas() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 sm:mb-10">
           <div>
             {/* Title */}
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-medium text-[#111827] leading-[1.16] tracking-[-0.015em] font-serif">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-medium text-[#231515] leading-[1.16] tracking-[-0.015em] font-serif">
               {title.line1}
               <br />
               {title.line2}
@@ -120,12 +120,12 @@ export default function FocusAreas() {
               <div className="flex items-center gap-1.5 px-1">
                 <span
                   className={`w-2 h-2 rounded-full transition-colors ${
-                    activeSlide === 0 ? 'bg-[#17382E]' : 'bg-slate-300'
+                    activeSlide === 0 ? 'bg-[#370C01]' : 'bg-slate-300'
                   }`}
                 />
                 <span
                   className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                    activeSlide > 0 ? 'bg-[#17382E]' : 'bg-slate-300'
+                    activeSlide > 0 ? 'bg-[#370C01]' : 'bg-slate-300'
                   }`}
                 />
               </div>
@@ -133,7 +133,7 @@ export default function FocusAreas() {
               <button
                 type="button"
                 onClick={handleNext}
-                className="w-8 h-8 rounded-full bg-white border border-[#17382E]/40 flex items-center justify-center text-[#17382E] hover:bg-[#17382E] hover:text-white shadow-2xs transition-all active:scale-95"
+                className="w-8 h-8 rounded-full bg-white border border-[#370C01]/40 flex items-center justify-center text-[#370C01] hover:bg-[#370C01] hover:text-white shadow-2xs transition-all active:scale-95"
                 aria-label="Next slide"
               >
                 <ChevronRight className="w-4 h-4 stroke-[2]" />
@@ -146,7 +146,7 @@ export default function FocusAreas() {
             {/* Explore Link */}
             <Link
               to={cta.path}
-              className="text-xs sm:text-[13px] font-semibold text-[#111827] hover:text-[#17382E] transition-colors"
+              className="text-xs sm:text-[13px] font-semibold text-[#231515] hover:text-[#370C01] transition-colors"
             >
               {cta.label}
             </Link>
@@ -188,7 +188,7 @@ export default function FocusAreas() {
                   </div>
 
                   {/* Sector Title */}
-                  <h3 className="text-sm sm:text-[15px] font-bold text-[#111827] tracking-tight">
+                  <h3 className="text-sm sm:text-[15px] font-bold text-[#231515] tracking-tight">
                     {sector.title}
                   </h3>
 
@@ -211,12 +211,12 @@ export default function FocusAreas() {
           })}
 
           {/* Inspirational Quote Card: Takes the 6th equal column */}
-          <div className="flex flex-col justify-center items-start p-4 sm:p-5 rounded-2xl bg-gradient-to-b from-white/90 to-[#FAF7F2]/80 border border-slate-200/80 relative overflow-hidden shadow-xs h-full">
+          <div className="flex flex-col justify-center items-start p-4 sm:p-5 rounded-2xl bg-gradient-to-b from-white/90 to-[#FAF6EE]/80 border border-slate-200/80 relative overflow-hidden shadow-xs h-full">
             {/* Soft decorative contour in background */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#FAF2E8] via-transparent to-transparent pointer-events-none" />
 
             {/* Giant Primary Quotation Mark */}
-            <span className="text-4xl sm:text-5xl font-serif text-[#17382E]/45 leading-none select-none mb-1">
+            <span className="text-4xl sm:text-5xl font-serif text-[#370C01]/45 leading-none select-none mb-1">
               &ldquo;
             </span>
 
@@ -226,7 +226,7 @@ export default function FocusAreas() {
             </p>
 
             {/* Small Primary Accent Line */}
-            <span className="w-8 h-[2.5px] bg-[#17382E] rounded-full mt-4 relative z-10" />
+            <span className="w-8 h-[2.5px] bg-[#370C01] rounded-full mt-4 relative z-10" />
           </div>
         </div>
       </div>

@@ -19,17 +19,17 @@ export default function HowWeWorkPillars({ metrics }) {
                 } group cursor-default`}
               >
                 {/* Icon Badge */}
-                <div className="w-12 h-12 rounded-2xl bg-[#FAF7F2] border border-stone-200 flex items-center justify-center text-[#A15D1C] shrink-0 group-hover:bg-[#A15D1C] group-hover:text-white transition-all duration-300 shadow-2xs">
+                <div className="w-12 h-12 rounded-2xl bg-[#FAF6EE] border border-stone-200 flex items-center justify-center text-[#C38B34] shrink-0 group-hover:bg-[#C38B34] group-hover:text-white transition-all duration-300 shadow-2xs">
                   <Icon className="w-5 h-5 stroke-[2]" />
                 </div>
 
                 {/* Metric Info */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-1.5">
-                    <span className="text-[20px] sm:text-[22px] font-bold text-[#111827] leading-none tracking-tight">
+                    <span className="text-[20px] sm:text-[22px] font-bold text-[#231515] leading-none tracking-tight">
                       {item.value}
                     </span>
-                    <ArrowUpRight className="w-4 h-4 text-[#A15D1C] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowUpRight className="w-4 h-4 text-[#C38B34] opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <p className="mt-1 text-[12.5px] sm:text-[13px] text-[#64748B] font-medium leading-snug">
                     {item.label}

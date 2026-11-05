@@ -7,7 +7,7 @@ import { aboutPageData } from '../../data/aboutData'
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col w-full bg-[#FAF7F2]">
+    <div className="flex flex-col w-full bg-[#FAF6EE]">
       {/* ── Section 1: Hero Section ── */}
       <AboutHero data={aboutPageData.hero} />
 

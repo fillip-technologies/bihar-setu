@@ -11,7 +11,7 @@ export default function PartnerPage() {
   const [selectedCategory, setSelectedCategory] = useState('')
 
   return (
-    <div className="flex flex-col w-full bg-[#FAF7F2] min-h-screen">
+    <div className="flex flex-col w-full bg-[#FAF6EE] min-h-screen">
       {/* ── Section 1: Hero Section ── */}
       <PartnerHero data={partnerPageData.hero} />
 

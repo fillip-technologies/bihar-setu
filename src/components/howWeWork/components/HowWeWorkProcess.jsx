@@ -47,14 +47,14 @@ export default function HowWeWorkProcess({ data }) {
     <section
       id="process"
       aria-labelledby="process-heading"
-      className="relative py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] overflow-hidden"
+      className="relative py-16 sm:py-20 lg:py-24 bg-[#FAF6EE] overflow-hidden"
     >
       {/* ── Faint heritage architectural background silhouettes ── */}
       <div
         className="absolute inset-0 pointer-events-none select-none opacity-[0.04]"
         aria-hidden="true"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect x='50' y='300' width='60' height='200' fill='%2317382E' rx='4'/%3E%3Crect x='60' y='280' width='40' height='30' fill='%2317382E' rx='2'/%3E%3Cpolygon points='80,230 120,280 40,280' fill='%2317382E'/%3E%3Ccircle cx='80' cy='220' r='12' fill='%2317382E'/%3E%3Crect x='680' y='300' width='60' height='200' fill='%2317382E' rx='4'/%3E%3Crect x='690' y='280' width='40' height='30' fill='%2317382E' rx='2'/%3E%3Cpolygon points='710,230 750,280 670,280' fill='%2317382E'/%3E%3Ccircle cx='710' cy='220' r='12' fill='%2317382E'/%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect x='50' y='300' width='60' height='200' fill='%23370C01' rx='4'/%3E%3Crect x='60' y='280' width='40' height='30' fill='%23370C01' rx='2'/%3E%3Cpolygon points='80,230 120,280 40,280' fill='%23370C01'/%3E%3Ccircle cx='80' cy='220' r='12' fill='%23370C01'/%3E%3Crect x='680' y='300' width='60' height='200' fill='%23370C01' rx='4'/%3E%3Crect x='690' y='280' width='40' height='30' fill='%23370C01' rx='2'/%3E%3Cpolygon points='710,230 750,280 670,280' fill='%23370C01'/%3E%3Ccircle cx='710' cy='220' r='12' fill='%23370C01'/%3E%3C/svg%3E")`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}
@@ -65,26 +65,26 @@ export default function HowWeWorkProcess({ data }) {
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           {/* Eyebrow */}
           <div className="inline-flex items-center justify-center gap-2 mb-3">
-            <span className="w-8 border-t border-[#A15D1C]/40" />
-            <Sun className="w-4 h-4 text-[#A15D1C]" />
-            <span className="text-[11.5px] font-bold tracking-[0.2em] uppercase text-[#A15D1C]">
+            <span className="w-8 border-t border-[#C38B34]/40" />
+            <Sun className="w-4 h-4 text-[#C38B34]" />
+            <span className="text-[11.5px] font-bold tracking-[0.2em] uppercase text-[#C38B34]">
               {eyebrow}
             </span>
-            <Sun className="w-4 h-4 text-[#A15D1C]" />
-            <span className="w-8 border-t border-[#A15D1C]/40" />
+            <Sun className="w-4 h-4 text-[#C38B34]" />
+            <span className="w-8 border-t border-[#C38B34]/40" />
           </div>
 
           {/* Title */}
           <h2
             id="process-heading"
-            className="text-[30px] sm:text-[38px] lg:text-[44px] font-serif font-bold text-[#0B192C] leading-tight tracking-[-0.02em]"
+            className="text-[30px] sm:text-[38px] lg:text-[44px] font-serif font-bold text-[#231515] leading-tight tracking-[-0.02em]"
           >
             {title}{' '}
-            <span className="text-[#A15D1C] italic">{highlight}</span>
+            <span className="text-[#370C01] italic">{highlight}</span>
           </h2>
 
           {/* Subtitle */}
-          <p className="mt-3 text-[14px] sm:text-[15px] text-[#64748B] max-w-xl mx-auto leading-relaxed">
+          <p className="mt-3 text-[14px] sm:text-[15px] text-[#5C443C] max-w-xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </div>
@@ -119,20 +119,20 @@ export default function HowWeWorkProcess({ data }) {
                     >
                       {/* Bold Number */}
                       <span
-                        className="text-[56px] sm:text-[64px] lg:text-[72px] font-black text-[#17382E] leading-none select-none"
+                        className="text-[56px] sm:text-[64px] lg:text-[72px] font-black text-[#370C01] leading-none select-none"
                         style={{ fontFamily: 'Plus Jakarta Sans, system-ui, sans-serif' }}
                       >
                         {step.number}
                       </span>
 
                       {/* Icon Square */}
-                      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-[#C67D33]/30 flex items-center justify-center text-[#A15D1C] shadow-sm">
+                      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-[#C67D33]/30 flex items-center justify-center text-[#C38B34] shadow-sm">
                         <Icon className="w-5 h-5 stroke-[1.75]" />
                       </div>
                     </div>
 
                     {/* Step Title */}
-                    <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-bold text-[#0B192C] leading-snug mb-2">
+                    <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-bold text-[#190904] leading-snug mb-2">
                       {step.title}
                     </h3>
 
@@ -179,7 +179,7 @@ export default function HowWeWorkProcess({ data }) {
                       height="64"
                       viewBox="0 0 110 64"
                       fill="none"
-                      className="text-[#A15D1C] opacity-55"
+                      className="text-[#C38B34] opacity-55"
                     >
                       {isLeft ? (
                         <>

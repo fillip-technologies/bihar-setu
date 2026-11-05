@@ -74,7 +74,7 @@ export default function InitiativesHero({ data }) {
     <section
       ref={sectionRef}
       aria-labelledby="initiatives-hero-heading"
-      className="relative min-h-[380px] sm:min-h-[420px] lg:min-h-[450px] flex flex-col justify-center overflow-hidden bg-[#07130F] text-white"
+      className="relative min-h-[380px] sm:min-h-[420px] lg:min-h-[450px] flex flex-col justify-center overflow-hidden bg-[#100502] text-white"
     >
       {/* ── Background Image Layer (Full Cover) ── */}
       <div
@@ -92,19 +92,19 @@ export default function InitiativesHero({ data }) {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(to right, rgba(7, 19, 15, 0.95) 0%, rgba(7, 19, 15, 0.82) 42%, rgba(7, 19, 15, 0.45) 70%, rgba(7, 19, 15, 0.25) 100%)',
+              'linear-gradient(to right, rgba(16, 5, 2, 0.95) 0%, rgba(16, 5, 2, 0.82) 42%, rgba(16, 5, 2, 0.45) 70%, rgba(16, 5, 2, 0.25) 100%)',
           }}
         />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(to top, rgba(7, 19, 15, 0.95) 0%, transparent 40%, rgba(7, 19, 15, 0.6) 100%)',
+              'linear-gradient(to top, rgba(16, 5, 2, 0.95) 0%, transparent 40%, rgba(16, 5, 2, 0.6) 100%)',
           }}
         />
-        {/* Subtle radial cyan light accent */}
+        {/* Subtle radial gold light accent */}
         <div
-          className="absolute top-1/3 right-1/4 w-[350px] h-[350px] rounded-full bg-[#06B6D4]/15 blur-[100px] pointer-events-none"
+          className="absolute top-1/3 right-1/4 w-[350px] h-[350px] rounded-full bg-[#C38B34]/15 blur-[100px] pointer-events-none"
           aria-hidden="true"
         />
       </div>
@@ -118,13 +118,13 @@ export default function InitiativesHero({ data }) {
             data-init="title"
             className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.15] mb-3.5"
           >
-            {titleLine1} <span className="text-[#34D399]">{titleLine2}</span>
+            {titleLine1} <span className="text-[#C38B34]">{titleLine2}</span>
           </h1>
 
           {/* Subtitle / Description */}
           <p
             data-init="desc"
-            className="text-sm sm:text-base lg:text-[16.5px] text-[#CBD5E1] leading-relaxed font-normal max-w-2xl mb-6"
+            className="text-sm sm:text-base lg:text-[16.5px] text-[#C7B5A7] leading-relaxed font-normal max-w-2xl mb-6"
           >
             {desc}
           </p>
@@ -137,7 +137,7 @@ export default function InitiativesHero({ data }) {
             <a
               href={primaryCta.href}
               onClick={(e) => handleScrollTo(e, primaryCta.href)}
-              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:py-3 rounded-xl bg-[#E06222] hover:bg-[#EA580C] text-white font-bold text-xs sm:text-sm tracking-wide shadow-lg shadow-[#E06222]/30 transition-all hover:scale-[1.02] active:scale-95 text-center"
+              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:py-3 rounded-xl bg-[#C38B34] hover:bg-[#AF7625] text-white font-bold text-xs sm:text-sm tracking-wide shadow-lg shadow-[#C38B34]/30 transition-all hover:scale-[1.02] active:scale-95 text-center"
             >
               <Compass className="w-4 h-4 text-white" />
               <span>{primaryCta.label}</span>
@@ -148,7 +148,7 @@ export default function InitiativesHero({ data }) {
               className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-xs sm:text-sm border border-white/20 backdrop-blur-md transition-all hover:scale-[1.02] active:scale-95 text-center group"
             >
               <span>{secondaryCta.label}</span>
-              <ArrowRight className="w-4 h-4 text-[#34D399] transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 text-[#C38B34] transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
 

@@ -72,8 +72,7 @@ export default function HowWeWorkHero({ data }) {
     <section
       ref={sectionRef}
       aria-labelledby="how-we-work-hero-heading"
-      style={{ backgroundColor: '#CED3D7' }}
-      className="relative min-h-[380px] sm:min-h-[420px] lg:min-h-[460px] xl:min-h-[480px] flex flex-col justify-center overflow-hidden border-b border-stone-300/80"
+      className="relative min-h-[380px] sm:min-h-[420px] lg:min-h-[460px] xl:min-h-[480px] flex flex-col justify-center overflow-hidden border-b border-[#E8DCCF] bg-[#FAF6EE]"
     >
       {/* ── Background Image Layer (Full Image Visibility) ── */}
       <div
@@ -91,7 +90,7 @@ export default function HowWeWorkHero({ data }) {
           className="hidden lg:block absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(to right, rgba(206, 211, 215, 0.98) 0%, rgba(206, 211, 215, 0.88) 32%, rgba(206, 211, 215, 0.2) 48%, transparent 60%)',
+              'linear-gradient(to right, rgba(250, 246, 238, 0.98) 0%, rgba(250, 246, 238, 0.9) 35%, rgba(250, 246, 238, 0.3) 50%, transparent 65%)',
           }}
         />
 
@@ -100,7 +99,7 @@ export default function HowWeWorkHero({ data }) {
           className="lg:hidden absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(to bottom, rgba(206, 211, 215, 0.94) 0%, rgba(206, 211, 215, 0.88) 60%, rgba(206, 211, 215, 0.7) 100%)',
+              'linear-gradient(to bottom, rgba(250, 246, 238, 0.95) 0%, rgba(250, 246, 238, 0.88) 60%, rgba(250, 246, 238, 0.7) 100%)',
           }}
         />
       </div>
@@ -111,8 +110,8 @@ export default function HowWeWorkHero({ data }) {
           {/* Eyebrow Badge */}
           {badge && (
             <div data-hw="badge" className="inline-flex items-center gap-2 mb-3">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/80 border border-stone-300/90 text-[#8B4D14] text-[11px] sm:text-[12px] font-bold tracking-wide uppercase shadow-2xs backdrop-blur-xs">
-                <Sparkles className="w-3.5 h-3.5 text-[#A15D1C]" />
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/80 border border-[#E8DCCF] text-[#370C01] text-[11px] sm:text-[12px] font-bold tracking-wide uppercase shadow-2xs backdrop-blur-xs">
+                <Sparkles className="w-3.5 h-3.5 text-[#C38B34]" />
                 {badge}
               </span>
             </div>
@@ -122,10 +121,10 @@ export default function HowWeWorkHero({ data }) {
           <h1
             id="how-we-work-hero-heading"
             data-hw="title"
-            className="text-[30px] sm:text-[40px] lg:text-[46px] xl:text-[50px] font-serif font-bold text-[#111827] leading-[1.1] tracking-[-0.02em]"
+            className="text-[30px] sm:text-[40px] lg:text-[46px] xl:text-[50px] font-serif font-bold text-[#231515] leading-[1.1] tracking-[-0.02em]"
           >
             {title}{' '}
-            <span className="text-[#A15D1C] font-serif font-bold">
+            <span className="text-[#370C01] font-serif font-bold">
               {highlight}
             </span>
           </h1>
@@ -133,7 +132,7 @@ export default function HowWeWorkHero({ data }) {
           {/* Description */}
           <p
             data-hw="desc"
-            className="mt-3.5 text-[14.5px] sm:text-[15.5px] text-[#243242] leading-relaxed max-w-lg font-normal"
+            className="mt-3.5 text-[14.5px] sm:text-[15.5px] text-[#5C443C] leading-relaxed max-w-lg font-normal"
           >
             {desc}
           </p>
@@ -147,7 +146,7 @@ export default function HowWeWorkHero({ data }) {
               <a
                 href={primaryCta.href}
                 onClick={(e) => handleScrollTo(e, primaryCta.href)}
-                className="inline-flex items-center gap-2 px-5.5 py-3 rounded-full bg-[#17382E] text-white text-[13.5px] font-bold shadow-md hover:bg-[#112B23] hover:shadow-lg transition-all transform active:scale-95 group cursor-pointer"
+                className="inline-flex items-center gap-2 px-5.5 py-3 rounded-full bg-[#370C01] text-white text-[13.5px] font-bold shadow-md hover:bg-[#260800] hover:shadow-lg transition-all transform active:scale-95 group cursor-pointer"
               >
                 <span>{primaryCta.label}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -157,7 +156,7 @@ export default function HowWeWorkHero({ data }) {
             {secondaryCta && (
               <Link
                 to={secondaryCta.href}
-                className="inline-flex items-center gap-2 px-5.5 py-3 rounded-full bg-white/90 border border-stone-300 text-[#111827] text-[13.5px] font-bold hover:bg-white hover:text-[#A15D1C] transition-all shadow-2xs active:scale-95"
+                className="inline-flex items-center gap-2 px-5.5 py-3 rounded-full bg-white/90 border border-[#E8DCCF] text-[#231515] text-[13.5px] font-bold hover:bg-white hover:text-[#370C01] transition-all shadow-2xs active:scale-95"
               >
                 <span>{secondaryCta.label}</span>
               </Link>

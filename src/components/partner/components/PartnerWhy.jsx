@@ -25,7 +25,7 @@ export default function PartnerWhy({ data }) {
     <section
       id="why-partner"
       aria-labelledby="why-partner-heading"
-      className="relative pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 lg:pb-12 bg-[#FAF7F2] border-t border-stone-200/80"
+      className="relative pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 lg:pb-12 bg-[#F2EADD] border-t border-[#E8DCCF]"
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -44,14 +44,14 @@ export default function PartnerWhy({ data }) {
               {/* Floating Quote Box on Bottom-Left */}
               <div className="absolute bottom-5 left-5 right-5 sm:right-6 bg-white/95 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-2xl border border-white/80">
                 <div className="flex items-start gap-3.5">
-                  <div className="w-8 h-8 rounded-full bg-[#FAF7F2] border border-[#C67D33]/40 flex items-center justify-center text-[#A15D1C] shrink-0 mt-0.5 shadow-2xs">
+                  <div className="w-8 h-8 rounded-full bg-[#FAF6EE] border border-[#C67D33]/40 flex items-center justify-center text-[#C38B34] shrink-0 mt-0.5 shadow-2xs">
                     <Quote className="w-4 h-4 fill-current stroke-none" />
                   </div>
                   <div>
-                    <p className="text-[13.5px] sm:text-[14.5px] font-medium text-[#111827] leading-snug font-sans">
+                    <p className="text-[13.5px] sm:text-[14.5px] font-medium text-[#231515] leading-snug font-sans">
                       &ldquo;{quote}&rdquo;
                     </p>
-                    <div className="w-12 h-[2.5px] bg-[#A15D1C] rounded-full mt-2.5" />
+                    <div className="w-12 h-[2.5px] bg-[#C38B34] rounded-full mt-2.5" />
                   </div>
                 </div>
               </div>
@@ -63,10 +63,10 @@ export default function PartnerWhy({ data }) {
             <div className="mb-5 sm:mb-6">
               <h2
                 id="why-partner-heading"
-                className="text-[30px] sm:text-[38px] lg:text-[44px] font-serif font-bold text-[#111827] leading-[1.12] tracking-[-0.02em]"
+                className="text-[30px] sm:text-[38px] lg:text-[44px] font-serif font-bold text-[#231515] leading-[1.12] tracking-[-0.02em]"
               >
                 {heading}{' '}
-                <span className="text-[#A15D1C] font-serif font-bold">
+                <span className="text-[#C38B34] font-serif font-bold">
                   {highlight}
                 </span>
               </h2>
@@ -84,16 +84,16 @@ export default function PartnerWhy({ data }) {
                 return (
                   <div
                     key={idx}
-                    className="p-3 sm:p-3.5 flex items-start gap-3.5 rounded-2xl hover:bg-[#FAF7F2] transition-colors group cursor-default"
+                    className="p-3 sm:p-3.5 flex items-start gap-3.5 rounded-2xl hover:bg-[#FAF6EE] transition-colors group cursor-default"
                   >
                     {/* Golden Icon Badge */}
-                    <div className="w-10 h-10 rounded-xl bg-[#FAF7F2] border border-[#C67D33]/30 flex items-center justify-center text-[#A15D1C] shrink-0 group-hover:bg-[#A15D1C] group-hover:text-white transition-colors duration-200 shadow-2xs mt-0.5">
+                    <div className="w-10 h-10 rounded-xl bg-[#FAF6EE] border border-[#C67D33]/30 flex items-center justify-center text-[#C38B34] shrink-0 group-hover:bg-[#C38B34] group-hover:text-white transition-colors duration-200 shadow-2xs mt-0.5">
                       <Icon className="w-5 h-5 stroke-[2]" />
                     </div>
 
                     {/* Point Content */}
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-[14px] sm:text-[14.5px] font-bold text-[#111827] leading-snug group-hover:text-[#A15D1C] transition-colors">
+                      <h3 className="text-[14px] sm:text-[14.5px] font-bold text-[#231515] leading-snug group-hover:text-[#C38B34] transition-colors">
                         {pt.text}
                       </h3>
                       {pt.desc && (

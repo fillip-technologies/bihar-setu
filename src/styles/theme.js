@@ -1,56 +1,64 @@
 /**
  * Master Design System Tokens: Colors, Typography & Shadows
- * Single source of truth for Bihar Setu (AGENTS.md guideline)
+ * Single source of truth for Bihar Setu (Derived directly from the official logo)
  */
 
 export const theme = {
   colors: {
+    // Primary Brand: Royal Mahogany (exact shade extracted from "BIHAR" text and Bodhi tree in logo)
     primary: {
-      base: '#17382E',
-      hover: '#112B23',
-      dark: '#0B1E18',
-      light: '#235243',
-      forest: '#17382E',
-      forestLight: '#235243',
-      forestDark: '#0B1E18',
-      navy: '#0B192C',
-      navyLight: '#1E3E62',
-      navyDark: '#050B14',
-      navyGlass: 'rgba(11, 25, 44, 0.75)',
+      base: '#370C01',
+      hover: '#260800',
+      dark: '#1A0500',
+      light: '#4F1707',
+      mahogany: '#370C01',
+      forest: '#370C01', // backwards-compatible alias
+      forestLight: '#4F1707',
+      forestDark: '#1A0500',
+      navy: '#190904', // Deep mahogany surface
+      navyLight: '#2D140A',
+      navyDark: '#100502',
+      navyGlass: 'rgba(25, 9, 4, 0.85)',
     },
+    // Accent: Heritage Gold & Amber (extracted from "SETU", Bodhi leaves, bridge & sun in logo)
     accent: {
-      saffron: '#F97316',
-      saffronHover: '#EA580C',
-      gold: '#F59E0B',
-      goldHover: '#D97706',
-      goldWarm: '#F5A623',
+      gold: '#C38B34',
+      goldHover: '#AF7625',
+      goldLight: '#E0A34B',
+      goldWarm: '#D97706',
+      saffron: '#D97706',
+      saffronHover: '#B45309',
       gangaCyan: '#06B6D4',
       teal: '#0D9488',
     },
+    // Dark Surfaces (Footer, Dark cards & dialogs)
     surface: {
-      dark: '#050811',
-      card: '#0E1626',
-      cardHover: '#131F35',
-      border: '#1E293B',
-      glassBorder: 'rgba(255, 255, 255, 0.08)',
+      dark: '#100502',
+      card: '#1D0A04',
+      cardHover: '#2A1108',
+      border: '#2E150B',
+      glassBorder: 'rgba(195, 139, 52, 0.15)',
     },
+    // Text Hierarchy
     text: {
-      primary: '#F8FAFC',
-      secondary: '#94A3B8',
-      muted: '#64748B',
-      gold: '#F5A623',
-      dark: '#0B192C',
+      primary: '#FDFBF7',
+      secondary: '#C7B5A7',
+      muted: '#957F71',
+      gold: '#C38B34',
+      dark: '#231515', // Rich espresso ink from logo tagline
     },
+    // Light Civic Canvas (Warm Heritage Parchment/Ivory from user sample)
     light: {
-      ivory: '#FAF7F2',
-      ivoryDeep: '#F5F1EA',
-      ink: '#111827',
-      inkSoft: '#475569',
-      inkMuted: '#64748B',
-      terracotta: '#E06222',
-      heritage: '#C67D33',
-      heritageInk: '#8C5E35',
+      ivory: '#FAF6EE',
+      ivoryDeep: '#F2EADD',
+      ink: '#231515', // Rich espresso ink from logo tagline
+      inkSoft: '#5C443C',
+      inkMuted: '#8A7268',
+      terracotta: '#A84E1A',
+      heritage: '#C38B34',
+      heritageInk: '#7A3F16',
     },
+    // Status Feedback
     status: {
       success: '#10B981',
       warning: '#F59E0B',

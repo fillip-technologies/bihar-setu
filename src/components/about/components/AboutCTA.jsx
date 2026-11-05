@@ -5,7 +5,7 @@ export default function AboutCTA({ data }) {
   const { eyebrow, title, description, primaryAction, secondaryAction } = data
 
   return (
-    <section id="join-us" className="relative w-full bg-[#FAF7F2] py-16 sm:py-20 overflow-hidden">
+    <section id="join-us" className="relative w-full bg-[#FAF6EE] py-16 sm:py-20 overflow-hidden">
       {/* ── Background Aesthetics ── */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         <div
@@ -17,13 +17,13 @@ export default function AboutCTA({ data }) {
         <div
           className="absolute bottom-0 -left-10 w-[500px] h-[400px] rounded-full blur-3xl opacity-25"
           style={{
-            background: 'radial-gradient(circle, rgba(23, 56, 46, 0.1) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(55, 12, 1, 0.12) 0%, transparent 65%)',
           }}
         />
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-3xl bg-gradient-to-r from-[#17382E] via-[#112B23] to-[#0A1813] text-white p-8 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
+        <div className="relative rounded-3xl bg-gradient-to-r from-[#370C01] via-[#260800] to-[#100502] text-white p-8 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
 
           {/* Background Motif lines */}
           <div className="absolute right-0 bottom-0 w-96 h-96 opacity-10 pointer-events-none">
@@ -35,7 +35,7 @@ export default function AboutCTA({ data }) {
           </div>
 
           <div className="relative z-10 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#E06222] border border-white/15 mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#C38B34] border border-white/15 mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               <span className="text-[11px] font-bold uppercase tracking-widest text-white">
                 {eyebrow}
@@ -53,7 +53,7 @@ export default function AboutCTA({ data }) {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 to={primaryAction.path}
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#E06222] hover:bg-[#EA580C] text-white font-bold text-[13.5px] shadow-lg shadow-[#E06222]/30 transition-all duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#C38B34] hover:bg-[#AF7625] text-white font-bold text-[13.5px] shadow-lg shadow-[#C38B34]/30 transition-all duration-200 hover:-translate-y-0.5"
               >
                 <Compass className="w-4 h-4 stroke-[2.2]" />
                 <span>{primaryAction.label}</span>

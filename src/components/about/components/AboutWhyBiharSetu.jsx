@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom'
 import {
-  Lightbulb,
-  ShieldCheck,
   Users,
+  Building2,
+  Landmark,
+  Handshake,
+  GraduationCap,
+  Network,
+  MapPin,
+  Lightbulb,
+  Globe,
+  ShieldCheck,
   Briefcase,
   Cpu,
   TrendingUp,
@@ -11,9 +18,16 @@ import {
 import patnaMapImg from '../../../assets/about/patna-removebg.png'
 
 const iconMap = {
-  Lightbulb,
-  ShieldCheck,
   Users,
+  Building2,
+  Landmark,
+  Handshake,
+  GraduationCap,
+  Network,
+  MapPin,
+  Lightbulb,
+  Globe,
+  ShieldCheck,
   Briefcase,
   Cpu,
   TrendingUp,
@@ -23,28 +37,28 @@ export default function AboutWhyBiharSetu({ data }) {
   const { eyebrow, headline, definition, bridges, quote } = data
 
   return (
-    <section id="why-bihar-setu" className="relative w-full bg-white border-b border-stone-200/70 overflow-hidden pt-6 sm:pt-10 pb-14 sm:pb-18">
+    <section id="why-bihar-setu" className="relative w-full bg-[#F2EADD] border-b border-[#E8DCCF] overflow-hidden pt-6 sm:pt-10 pb-14 sm:pb-18">
       {/* ── Subtle Background Elements ── */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         {/* Saffron glow top left */}
         <div
           className="absolute -top-32 -left-20 w-[600px] h-[500px] rounded-full blur-3xl opacity-30"
           style={{
-            background: 'radial-gradient(circle, rgba(224, 98, 34, 0.12) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(195, 139, 52, 0.12) 0%, transparent 65%)',
           }}
         />
         {/* Forest green glow bottom right */}
         <div
           className="absolute -bottom-32 right-0 w-[550px] h-[500px] rounded-full blur-3xl opacity-25"
           style={{
-            background: 'radial-gradient(circle, rgba(23, 56, 46, 0.08) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(55, 12, 1, 0.08) 0%, transparent 65%)',
           }}
         />
         {/* Grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
-            backgroundImage: 'radial-gradient(#17382E 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(#370C01 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -58,18 +72,18 @@ export default function AboutWhyBiharSetu({ data }) {
           {/* Left Text: Eyebrow + Headline + Definition */}
           <div className="lg:col-span-7 flex flex-col">
             <div className="flex items-center gap-2.5 mb-3">
-              <span className="w-6 h-[2px] bg-[#E06222] rounded-full shrink-0" />
-              <span className="text-[10.5px] font-extrabold tracking-[0.22em] text-[#8C5E35] uppercase">
+              <span className="w-6 h-[2px] bg-[#370C01] rounded-full shrink-0" />
+              <span className="text-[10.5px] font-extrabold tracking-[0.22em] text-[#7A3F16] uppercase">
                 {eyebrow}
               </span>
             </div>
 
-            <h2 className="text-[30px] sm:text-[40px] lg:text-[46px] font-serif font-bold text-[#111827] leading-[1.12] tracking-[-0.02em]">
+            <h2 className="text-[30px] sm:text-[40px] lg:text-[46px] font-serif font-bold text-[#231515] leading-[1.12] tracking-[-0.02em]">
               {headline.replace('Bridge', '')}
-              <span className="text-[#E06222] italic font-serif">Bridge</span>
+              <span className="text-[#C38B34] italic font-serif">Bridge</span>
             </h2>
 
-            <div className="mt-4 space-y-3.5 text-[15px] sm:text-[16px] text-[#475569] leading-[1.8] max-w-2xl">
+            <div className="mt-4 space-y-3.5 text-[15px] sm:text-[16px] text-[#5C443C] leading-[1.8] max-w-2xl">
               {Array.isArray(definition) ? (
                 definition.map((para, i) => (
                   <p key={i}>
@@ -86,7 +100,7 @@ export default function AboutWhyBiharSetu({ data }) {
               {['Challenges → Solutions', 'Ideas → Implementation', 'Institutions → Communities', 'Potential → Progress'].map((item) => (
                 <span
                   key={item}
-                  className="px-3 py-1.5 rounded-full bg-[#FAF7F2] text-[12px] font-semibold text-[#17382E] border border-stone-200/90"
+                  className="px-3 py-1.5 rounded-full bg-white/80 text-[12px] font-semibold text-[#370C01] border border-[#E8DCCF]"
                 >
                   {item}
                 </span>
@@ -105,16 +119,16 @@ export default function AboutWhyBiharSetu({ data }) {
 
         </div>
 
-        {/* ── 6 Bridges Interactive Grid ── */}
+        {/* ── 9 Bridges Interactive Grid ── */}
         <div className="pt-12 sm:pt-16">
           <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-            <span className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#E06222]">
-              The Six Bridges
+            <span className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#C38B34]">
+              The Bridges of Bihar Setu
             </span>
-            <h3 className="text-[24px] sm:text-[30px] font-serif font-bold text-[#111827] mt-1.5">
+            <h3 className="text-[24px] sm:text-[30px] font-serif font-bold text-[#231515] mt-1.5">
               Transforming Every Dimension of Bihar
             </h3>
-            <p className="text-[13.5px] text-[#64748B] mt-2">
+            <p className="text-[13.5px] text-[#5C443C] mt-2">
               Structured pathways connecting foundational challenges to sustainable development outcomes.
             </p>
           </div>
@@ -125,7 +139,7 @@ export default function AboutWhyBiharSetu({ data }) {
               return (
                 <div
                   key={bridge.id}
-                  className="group relative bg-[#FAF7F2] hover:bg-white rounded-2xl border border-stone-200/90 p-6 sm:p-7 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                  className="group relative bg-[#FAF6EE] hover:bg-white rounded-2xl border border-[#E8DCCF] p-6 sm:p-7 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
                 >
                   {/* Top indicator bar */}
                   <div
@@ -143,20 +157,20 @@ export default function AboutWhyBiharSetu({ data }) {
                         <IconComp className="w-5 h-5 stroke-[2.2]" />
                       </div>
 
-                      <span className="text-[12px] font-black tracking-widest text-[#94A3B8] group-hover:text-[#111827] transition-colors">
+                      <span className="text-[12px] font-black tracking-widest text-[#94A3B8] group-hover:text-[#231515] transition-colors">
                         STEP {bridge.step}
                       </span>
                     </div>
 
                     {/* From → To Pill Pathway */}
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white group-hover:bg-[#FAF7F2] border border-stone-200 text-[11px] font-bold text-[#475569] mb-3">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white group-hover:bg-[#FAF6EE] border border-stone-200 text-[11px] font-bold text-[#475569] mb-3">
                       <span>{bridge.from}</span>
-                      <ArrowRight className="w-3 h-3 text-[#E06222]" />
+                      <ArrowRight className="w-3 h-3 text-[#C38B34]" />
                       <span style={{ color: bridge.color }}>{bridge.to}</span>
                     </div>
 
                     {/* Bridge Title */}
-                    <h4 className="text-[17px] sm:text-[18px] font-bold text-[#111827] leading-snug tracking-tight">
+                    <h4 className="text-[17px] sm:text-[18px] font-bold text-[#231515] leading-snug tracking-tight">
                       {bridge.title}
                     </h4>
 
@@ -174,7 +188,7 @@ export default function AboutWhyBiharSetu({ data }) {
                         e.preventDefault()
                         document.querySelector(bridge.path)?.scrollIntoView({ behavior: 'smooth' })
                       }}
-                      className="mt-6 pt-4 border-t border-stone-200/60 flex items-center justify-between text-[11px] font-bold text-[#64748B] group-hover:text-[#111827] transition-colors cursor-pointer"
+                      className="mt-6 pt-4 border-t border-stone-200/60 flex items-center justify-between text-[11px] font-bold text-[#64748B] group-hover:text-[#231515] transition-colors cursor-pointer"
                     >
                       <span className="font-semibold">{bridge.ctaLabel || 'Core Pathway'}</span>
                       <span
@@ -187,7 +201,7 @@ export default function AboutWhyBiharSetu({ data }) {
                   ) : (
                     <Link
                       to={bridge.path || '#'}
-                      className="mt-6 pt-4 border-t border-stone-200/60 flex items-center justify-between text-[11px] font-bold text-[#64748B] group-hover:text-[#111827] transition-colors"
+                      className="mt-6 pt-4 border-t border-stone-200/60 flex items-center justify-between text-[11px] font-bold text-[#64748B] group-hover:text-[#231515] transition-colors"
                     >
                       <span className="font-semibold">{bridge.ctaLabel || 'Core Pathway'}</span>
                       <span
@@ -204,7 +218,7 @@ export default function AboutWhyBiharSetu({ data }) {
           </div>
 
           {/* ── Concluding Statement Banner (Compact Sleek Showcase) ── */}
-          <div className="mt-8 sm:mt-10 relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#17382E] via-[#0E241E] to-[#081511] text-white py-5 sm:py-6 lg:py-7 px-6 sm:px-10 lg:px-12 shadow-xl border border-white/10 group">
+          <div className="mt-8 sm:mt-10 relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#370C01] via-[#100502] to-[#100502] text-white py-5 sm:py-6 lg:py-7 px-6 sm:px-10 lg:px-12 shadow-xl border border-white/10 group">
             {/* Ambient Background Glows */}
             <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
               {/* Warm saffron ambient light */}

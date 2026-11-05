@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 import { gsap } from 'gsap'
 import { heroData } from '../../../data/heroData'
-import heroBackground from '../../../assets/home/hero-section-1.png'
+import heroBackground from '../../../assets/home/hero-bg-5.png'
 
 export default function Hero() {
   const { eyebrow, heading, description, actions } = heroData
@@ -77,7 +77,7 @@ export default function Hero() {
           className="w-full h-full object-cover object-[75%_center] sm:object-center"
         />
         {/* Soft mobile readability scrim so text never clashes with graphics */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F2]/90 via-[#FAF7F2]/65 via-60% to-transparent sm:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF6EE]/90 via-[#FAF6EE]/65 via-60% to-transparent sm:hidden" />
       </div>
 
       {/* Main Content */}
@@ -86,8 +86,8 @@ export default function Hero() {
 
           {/* Eyebrow */}
           <div ref={eyebrowRef} className="flex items-center gap-2 mb-2 sm:mb-3" style={{ opacity: 0 }}>
-            <span className="w-5 sm:w-6 h-[2px] bg-[#17382E] rounded-full" />
-            <span className="text-[9px] sm:text-[10.5px] font-bold tracking-[0.18em] sm:tracking-[0.2em] text-[#17382E] uppercase drop-shadow-xs">
+            <span className="w-5 sm:w-6 h-[2px] bg-[#370C01] rounded-full" />
+            <span className="text-[9px] sm:text-[10.5px] font-bold tracking-[0.18em] sm:tracking-[0.2em] text-[#370C01] uppercase drop-shadow-xs">
               {eyebrow}
             </span>
           </div>
@@ -96,11 +96,11 @@ export default function Hero() {
           <div className="space-y-2.5 sm:space-y-3">
             <h1
               ref={headlineRef}
-              className="text-[22px] sm:text-3xl lg:text-[40px] xl:text-[44px] font-medium text-[#111827] leading-[1.2] sm:leading-[1.18] tracking-[-0.01em] font-serif"
+              className="text-[22px] sm:text-3xl lg:text-[40px] xl:text-[44px] font-medium text-[#231515] leading-[1.2] sm:leading-[1.18] tracking-[-0.01em] font-serif"
             >
               <span className="hero-line inline-block" style={{ opacity: 0 }}>
                 {heading.line1Prefix}
-                <span className="text-[#17382E] italic font-medium ml-1">
+                <span className="text-[#370C01] italic font-medium ml-1">
                   {heading.line1Highlight}
                 </span>
               </span>
@@ -112,7 +112,7 @@ export default function Hero() {
 
             <p
               ref={descRef}
-              className="text-[12px] sm:text-[14px] text-[#334155] sm:text-[#475569] max-w-sm sm:max-w-lg leading-relaxed font-normal"
+              className="text-[12px] sm:text-[14px] text-[#5C443C] max-w-sm sm:max-w-lg leading-relaxed font-normal"
               style={{ opacity: 0 }}
             >
               {description}
@@ -128,7 +128,7 @@ export default function Hero() {
                     key={act.label}
                     to={act.path}
                     style={{ opacity: 0 }}
-                    className="inline-flex items-center gap-2 px-4.5 py-2 sm:px-5 sm:py-2.5 bg-[#17382E] hover:bg-[#112B23] active:bg-[#0B1E18] text-white font-semibold text-xs rounded-lg shadow-sm hover:shadow transition-all duration-200 hover:-translate-y-0.5"
+                    className="inline-flex items-center gap-2 px-4.5 py-2 sm:px-5 sm:py-2.5 bg-[#370C01] hover:bg-[#260800] active:bg-[#1A0500] text-white font-semibold text-xs rounded-lg shadow-sm hover:shadow transition-all duration-200 hover:-translate-y-0.5"
                   >
                     <span>{act.label}</span>
                     <ArrowRight className="w-3.5 h-3.5 stroke-[2.2]" />
@@ -142,7 +142,7 @@ export default function Hero() {
                     key={act.label}
                     to={act.path}
                     style={{ opacity: 0 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 sm:px-4.5 sm:py-2.5 bg-white/90 hover:bg-white text-[#1B2533] border border-slate-300/80 hover:border-slate-400 font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5"
+                    className="inline-flex items-center gap-2 px-4 py-2 sm:px-4.5 sm:py-2.5 bg-white/90 hover:bg-white text-[#231515] border border-[#E8DCCF] font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5"
                   >
                     <span>{act.label}</span>
                     <ArrowRight className="w-3.5 h-3.5 stroke-[2]" />
@@ -155,9 +155,9 @@ export default function Hero() {
                   key={act.label}
                   to={act.path}
                   style={{ opacity: 0 }}
-                  className="inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2.5 bg-[#E6ECE3]/90 hover:bg-[#D9E2D5] text-[#1B2533] border border-[#CBD7C6]/80 font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2.5 bg-[#F2EADD]/90 hover:bg-[#E8DFC9] text-[#231515] border border-[#E8DCCF] font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5"
                 >
-                  {act.hasCalendar && <Calendar className="w-3.5 h-3.5 text-[#2D3748] stroke-[2]" />}
+                  {act.hasCalendar && <Calendar className="w-3.5 h-3.5 text-[#370C01] stroke-[2]" />}
                   <span>{act.label}</span>
                   <ArrowRight className="w-3.5 h-3.5 stroke-[2]" />
                 </Link>

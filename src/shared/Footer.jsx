@@ -12,6 +12,7 @@ import {
   MapPin,
   Clock,
 } from 'lucide-react'
+import biharSetuLogo from '../assets/bihar-setu-logo-white.png'
 
 // ─────────────────────────────────────────────
 // Navigation & Content Data
@@ -99,18 +100,18 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#07130F] text-white overflow-hidden border-t border-[#17382E]/40 font-sans">
+    <footer className="relative bg-[#100502] text-white overflow-hidden border-t border-[#370C01]/60 font-sans">
       {/* ── BACKGROUND SUBTLE TEXTURES & ACCENTS ── */}
       <div
-        className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#17382E] via-[#F97316] via-45% via-[#F5A623] to-[#06B6D4]"
+        className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#370C01] via-[#C38B34] via-45% via-[#E0A34B] to-[#370C01]"
         aria-hidden="true"
       />
       <div
-        className="absolute -top-40 right-[-10%] w-[600px] h-[600px] rounded-full bg-[#17382E]/25 blur-[120px] pointer-events-none"
+        className="absolute -top-40 right-[-10%] w-[600px] h-[600px] rounded-full bg-[#370C01]/25 blur-[120px] pointer-events-none"
         aria-hidden="true"
       />
       <div
-        className="absolute bottom-0 left-[-10%] w-[500px] h-[500px] rounded-full bg-[#E06222]/10 blur-[130px] pointer-events-none"
+        className="absolute bottom-0 left-[-10%] w-[500px] h-[500px] rounded-full bg-[#C38B34]/10 blur-[130px] pointer-events-none"
         aria-hidden="true"
       />
 
@@ -130,24 +131,24 @@ export default function Footer() {
 
       {/* ── PRE-FOOTER CTA CARD ── */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-10">
-        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-[#0F2820] via-[#17382E] to-[#0B1E18] border border-[#235243]/60 p-6 sm:p-8 lg:p-10 shadow-2xl">
+        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-[#240A03] via-[#370C01] to-[#1A0500] border border-[#4F1707]/60 p-6 sm:p-8 lg:p-10 shadow-2xl">
           {/* Subtle glow inside card */}
           <div
-            className="absolute top-0 right-0 w-80 h-80 bg-[#E06222]/15 rounded-full blur-[80px] pointer-events-none"
+            className="absolute top-0 right-0 w-80 h-80 bg-[#C38B34]/15 rounded-full blur-[80px] pointer-events-none"
             aria-hidden="true"
           />
 
           <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-10">
             {/* Left copy */}
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E06222]/15 border border-[#E06222]/30 text-[#F97316] text-[11px] font-bold tracking-wider uppercase mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C38B34]/15 border border-[#C38B34]/30 text-[#C38B34] text-[11px] font-bold tracking-wider uppercase mb-3">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Civic & Partner Collaboration</span>
               </div>
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight leading-snug">
                 Ready to Be Part of Bihar&apos;s Transformative Growth Story?
               </h3>
-              <p className="mt-2 text-[12.5px] sm:text-[13.5px] text-[#A7B9B2] leading-relaxed">
+              <p className="mt-2 text-[12.5px] sm:text-[13.5px] text-[#C7B5A7] leading-relaxed">
                 Whether you represent an institution, a thriving enterprise, an expert voice, or an aspiring young professional — your engagement accelerates meaningful impact on ground.
               </p>
             </div>
@@ -156,7 +157,7 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto shrink-0">
               <Link
                 to="/focus-areas"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#E06222] hover:bg-[#EA580C] text-white text-[13px] font-bold shadow-lg shadow-[#E06222]/20 transition-all hover:scale-[1.02] active:scale-95 text-center"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#C38B34] hover:bg-[#AF7625] text-white text-[13px] font-bold shadow-lg shadow-[#C38B34]/20 transition-all hover:scale-[1.02] active:scale-95 text-center"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Explore Focus Areas</span>
@@ -166,7 +167,7 @@ export default function Footer() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/15 text-[13px] font-semibold transition-all hover:scale-[1.02] active:scale-95 text-center"
               >
                 <span>Partner With Us</span>
-                <ArrowRight className="w-4 h-4 text-[#F97316]" />
+                <ArrowRight className="w-4 h-4 text-[#E0A34B]" />
               </Link>
             </div>
           </div>
@@ -179,18 +180,15 @@ export default function Footer() {
 
           {/* COL 1: Brand & Identity (4 cols on lg) */}
           <div className="lg:col-span-4 flex flex-col">
-            <Link to="/" className="inline-flex flex-col items-start group">
-              {/* Brand titles */}
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-black tracking-tight text-white">BIHAR</span>
-                <span className="text-2xl font-black tracking-tight text-[#34D399]">SETU</span>
-              </div>
-              <span className="text-[8.5px] font-semibold tracking-[0.2em] text-[#869A93] uppercase mt-1">
-                Connecting Bihar | Creating Opportunities
-              </span>
+            <Link to="/" className="inline-block group mb-1 -ml-2">
+              <img
+                src={biharSetuLogo}
+                alt="Bihar Setu Logo"
+                className="h-16 sm:h-20 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+              />
             </Link>
 
-            <p className="mt-4 text-[12.5px] text-[#93A7A0] leading-relaxed max-w-sm">
+            <p className="mt-4 text-[12.5px] text-[#C7B5A7] leading-relaxed max-w-sm">
               Bihar Setu is a dedicated civic-collaborative bridge uniting institutions, businesses,
               grassroots organizations, and youth across all 38 districts to build sustainable,
               future-ready opportunities for Bihar.
@@ -198,19 +196,19 @@ export default function Footer() {
 
             {/* Key trust badges */}
             <div className="mt-4 flex items-center gap-3">
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#132A22] border border-[#235243]/50 text-[11px] text-[#A7B9B2]">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#34D399]" />
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#1F0A04] border border-[#4F1707]/50 text-[11px] text-[#C7B5A7]">
+                <ShieldCheck className="w-3.5 h-3.5 text-[#C38B34]" />
                 <span>38 Districts Active</span>
               </div>
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#132A22] border border-[#235243]/50 text-[11px] text-[#A7B9B2]">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#F97316]" />
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#1F0A04] border border-[#4F1707]/50 text-[11px] text-[#C7B5A7]">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#E0A34B]" />
                 <span>Open Collaboration</span>
               </div>
             </div>
 
             {/* Social handles */}
             <div className="mt-6">
-              <span className="text-[10.5px] font-bold uppercase tracking-wider text-[#738880] block mb-2.5">
+              <span className="text-[10.5px] font-bold uppercase tracking-wider text-[#A89688] block mb-2.5">
                 Connect With Our Community
               </span>
               <div className="flex items-center gap-2">
@@ -221,7 +219,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.name}
-                    className="w-8 h-8 rounded-lg bg-[#112720] border border-[#1E4337] flex items-center justify-center text-[#93A7A0] hover:text-white hover:bg-[#17382E] hover:border-[#34D399]/40 transition-all hover:scale-105"
+                    className="w-8 h-8 rounded-lg bg-[#1F0A04] border border-[#3D180C] flex items-center justify-center text-[#C7B5A7] hover:text-white hover:bg-[#370C01] hover:border-[#C38B34]/40 transition-all hover:scale-105"
                   >
                     {s.icon}
                   </a>
@@ -233,7 +231,7 @@ export default function Footer() {
           {/* COL 2: Navigation Links (2.5 cols on lg) */}
           <div className="lg:col-span-2">
             <h4 className="text-[13px] font-bold text-white tracking-wide uppercase flex items-center gap-2 mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#34D399]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C38B34]" />
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-[12.5px]">
@@ -241,9 +239,9 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     to={link.path}
-                    className="text-[#93A7A0] hover:text-[#34D399] transition-colors flex items-center gap-1.5 group"
+                    className="text-[#C7B5A7] hover:text-[#C38B34] transition-colors flex items-center gap-1.5 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-[#235243] group-hover:bg-[#34D399] transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-[#4F1707] group-hover:bg-[#C38B34] transition-colors" />
                     <span>{link.name}</span>
                   </Link>
                 </li>
@@ -254,7 +252,7 @@ export default function Footer() {
           {/* COL 3: Focus Areas (3 cols on lg) */}
           <div className="lg:col-span-3">
             <h4 className="text-[13px] font-bold text-white tracking-wide uppercase flex items-center gap-2 mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#F97316]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E0A34B]" />
               Focus Areas & Programs
             </h4>
             <ul className="space-y-2.5 text-[12.5px] mb-5">
@@ -262,9 +260,9 @@ export default function Footer() {
                 <li key={sector.name}>
                   <Link
                     to={sector.path}
-                    className="text-[#93A7A0] hover:text-[#F97316] transition-colors flex items-center gap-1.5 group"
+                    className="text-[#C7B5A7] hover:text-[#E0A34B] transition-colors flex items-center gap-1.5 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-[#235243] group-hover:bg-[#F97316] transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-[#4F1707] group-hover:bg-[#E0A34B] transition-colors" />
                     <span>{sector.name}</span>
                   </Link>
                 </li>
@@ -275,34 +273,34 @@ export default function Footer() {
           {/* COL 4: Connect & Contact (3 cols on lg) */}
           <div className="lg:col-span-3">
             <h4 className="text-[13px] font-bold text-white tracking-wide uppercase flex items-center gap-2 mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#06B6D4]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C38B34]" />
               Get in Touch
             </h4>
 
-            <div className="space-y-3.5 text-[12.5px] text-[#93A7A0]">
+            <div className="space-y-3.5 text-[12.5px] text-[#C7B5A7]">
               <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-[#06B6D4] shrink-0" />
+                <Mail className="w-4 h-4 text-[#C38B34] shrink-0" />
                 <a
                   href="mailto:Biharsetu@gmail.com"
-                  className="text-[#A7B9B2] hover:text-white transition-colors underline-offset-2 hover:underline"
+                  className="text-[#C7B5A7] hover:text-white transition-colors underline-offset-2 hover:underline"
                 >
                   Biharsetu@gmail.com
                 </a>
               </div>
 
               <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-[#34D399] shrink-0 mt-0.5" />
+                <Phone className="w-4 h-4 text-[#C38B34] shrink-0 mt-0.5" />
                 <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
                   <a
                     href="tel:6206804300"
-                    className="text-[#A7B9B2] hover:text-white transition-colors"
+                    className="text-[#C7B5A7] hover:text-white transition-colors"
                   >
                     6206804300
                   </a>
-                  <span className="text-[#34D399]/40">•</span>
+                  <span className="text-[#C38B34]/40">•</span>
                   <a
                     href="tel:9153881025"
-                    className="text-[#A7B9B2] hover:text-white transition-colors"
+                    className="text-[#C7B5A7] hover:text-white transition-colors"
                   >
                     9153881025
                   </a>
@@ -310,22 +308,22 @@ export default function Footer() {
               </div>
 
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-[#F97316] shrink-0 mt-0.5" />
-                <span className="text-[#A7B9B2]">
+                <MapPin className="w-4 h-4 text-[#E0A34B] shrink-0 mt-0.5" />
+                <span className="text-[#C7B5A7]">
                   Ramkrishna Nagar Patna-800027
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <Clock className="w-4 h-4 text-[#F5A623] shrink-0" />
-                <span className="text-[11.5px] text-[#7F948D]">
+                <Clock className="w-4 h-4 text-[#C38B34] shrink-0" />
+                <span className="text-[11.5px] text-[#A89688]">
                   Mon – Sat: 9:30 AM – 6:00 PM IST
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <Globe className="w-4 h-4 text-[#06B6D4] shrink-0" />
-                <span className="text-[11.5px] text-[#7F948D]">
+                <Globe className="w-4 h-4 text-[#C38B34] shrink-0" />
+                <span className="text-[11.5px] text-[#A89688]">
                   Statewide Coverage: All 38 Districts
                 </span>
               </div>
@@ -336,29 +334,29 @@ export default function Footer() {
       </div>
 
       {/* ── DISTRICTS TICKER STRIP ── */}
-      <div className="relative z-10 bg-[#050E0B] border-b border-white/[0.05] py-2.5 px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 bg-[#0A0301] border-b border-white/[0.05] py-2.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-[11px]">
           <div className="flex items-center gap-2 shrink-0">
-            <Building2 className="w-3.5 h-3.5 text-[#34D399]" />
-            <span className="font-bold text-[#A7B9B2] uppercase tracking-wider text-[10px]">
+            <Building2 className="w-3.5 h-3.5 text-[#C38B34]" />
+            <span className="font-bold text-[#C7B5A7] uppercase tracking-wider text-[10px]">
               Active in all 38 Districts:
             </span>
           </div>
-          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-2 gap-y-1 text-[#647972] text-[11px]">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-2 gap-y-1 text-[#8F7D70] text-[11px]">
             {sampleDistricts.map((d, idx) => (
               <span key={d} className="inline-flex items-center gap-1.5">
-                <span className="hover:text-[#A7B9B2] transition-colors">{d}</span>
-                {idx < sampleDistricts.length - 1 && <span className="text-[#1E4337]">•</span>}
+                <span className="hover:text-[#C7B5A7] transition-colors">{d}</span>
+                {idx < sampleDistricts.length - 1 && <span className="text-[#3D180C]">•</span>}
               </span>
             ))}
-            <span className="text-[#34D399] font-medium">+ 20 More</span>
+            <span className="text-[#C38B34] font-medium">+ 20 More</span>
           </div>
         </div>
       </div>
 
       {/* ── BOTTOM COPYRIGHT & LEGAL ── */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-5">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-[11.5px] text-[#738880]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-[11.5px] text-[#8F7D70]">
           {/* Copyright */}
           <div className="flex items-center gap-1.5 text-center sm:text-left">
             <span>© {new Date().getFullYear()}</span>
@@ -366,18 +364,31 @@ export default function Footer() {
             <span>All rights reserved.</span>
           </div>
 
+          {/* Designed & Developed Attribution */}
+          <div className="flex items-center gap-1.5 text-center text-[11.5px] text-[#A89688]">
+            <span>Designed and Developed by</span>
+            <a
+              href="https://filliptechnologies.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C38B34] hover:text-[#E0A34B] font-semibold transition-colors underline-offset-2 hover:underline"
+            >
+              Fillip Technologies
+            </a>
+          </div>
+
           {/* Legal Links */}
           <div className="flex items-center gap-4 text-[11px]">
             <Link
               to="/privacy-policy"
-              className="text-[#93A7A0] hover:text-[#34D399] transition-colors"
+              className="text-[#C7B5A7] hover:text-[#C38B34] transition-colors"
             >
               Privacy Policy
             </Link>
             <span className="text-white/10">•</span>
             <Link
               to="/terms-of-use"
-              className="text-[#93A7A0] hover:text-[#34D399] transition-colors"
+              className="text-[#C7B5A7] hover:text-[#C38B34] transition-colors"
             >
               Terms of Use
             </Link>

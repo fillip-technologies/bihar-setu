@@ -206,7 +206,7 @@ export default function PartnerForm({
     <section
       id="partnership-form"
       aria-labelledby="partner-form-heading"
-      className="relative pt-6 sm:pt-8 lg:pt-10 pb-14 sm:pb-18 lg:pb-20 bg-[#FAF7F2]"
+      className="relative pt-6 sm:pt-8 lg:pt-10 pb-14 sm:pb-18 lg:pb-20 bg-[#FAF6EE]"
     >
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header: Aligned and free of extra eyebrow clutter */}
@@ -214,10 +214,10 @@ export default function PartnerForm({
           <div>
             <h2
               id="partner-form-heading"
-              className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-bold text-[#111827] tracking-tight leading-tight"
+              className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-bold text-[#231515] tracking-tight leading-tight"
             >
               {title}{' '}
-              <span className="text-[#A15D1C] font-serif font-bold">
+              <span className="text-[#C38B34] font-serif font-bold">
                 {highlight}
               </span>
             </h2>
@@ -236,48 +236,48 @@ export default function PartnerForm({
                 <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12 stroke-[2.2]" />
               </div>
 
-              <span className="inline-block px-3.5 py-1 rounded-full bg-[#A15D1C]/10 text-[#A15D1C] text-[12px] font-bold tracking-wide uppercase mb-2">
+              <span className="inline-block px-3.5 py-1 rounded-full bg-[#C38B34]/10 text-[#C38B34] text-[12px] font-bold tracking-wide uppercase mb-2">
                 Partnership Request Registered
               </span>
 
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#111827]">
+              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#231515]">
                 Thank You for Your Collaboration Proposal
               </h3>
 
               <p className="mt-2 text-[14.5px] sm:text-[15.5px] text-[#475569] max-w-lg mx-auto">
-                Thank you, <strong className="text-[#111827]">{formData.fullName}</strong> ({formData.organisationName}). Our partnerships desk will review your proposal and get in touch within 2 to 3 business days.
+                Thank you, <strong className="text-[#231515]">{formData.fullName}</strong> ({formData.organisationName}). Our partnerships desk will review your proposal and get in touch within 2 to 3 business days.
               </p>
 
               {/* Receipt Card */}
-              <div className="mt-6 max-w-md mx-auto bg-[#FAF7F2] border border-stone-200 rounded-2xl p-5 text-left text-[13px]">
+              <div className="mt-6 max-w-md mx-auto bg-[#FAF6EE] border border-stone-200 rounded-2xl p-5 text-left text-[13px]">
                 <div className="flex items-center justify-between pb-3 border-b border-stone-200/70">
                   <span className="text-[#64748B] font-medium">Proposal Reference:</span>
-                  <span className="font-mono font-bold text-[#A15D1C] tracking-wider text-[14px]">
+                  <span className="font-mono font-bold text-[#C38B34] tracking-wider text-[14px]">
                     {ticketId}
                   </span>
                 </div>
                 <div className="grid grid-cols-2 gap-2 pt-3 text-[12.5px]">
                   <div>
                     <span className="text-[#64748B] block">Category:</span>
-                    <span className="font-semibold text-[#111827]">{formData.category}</span>
+                    <span className="font-semibold text-[#231515]">{formData.category}</span>
                   </div>
                   <div>
                     <span className="text-[#64748B] block">Sector:</span>
-                    <span className="font-semibold text-[#111827]">{formData.sector}</span>
+                    <span className="font-semibold text-[#231515]">{formData.sector}</span>
                   </div>
                   <div>
                     <span className="text-[#64748B] block">District:</span>
-                    <span className="font-semibold text-[#111827]">{formData.district}</span>
+                    <span className="font-semibold text-[#231515]">{formData.district}</span>
                   </div>
                   <div>
                     <span className="text-[#64748B] block">Submitted On:</span>
-                    <span className="font-semibold text-[#111827]">{submittedAt}</span>
+                    <span className="font-semibold text-[#231515]">{submittedAt}</span>
                   </div>
                 </div>
 
                 {formData.attachment && (
                   <div className="mt-3 pt-3 border-t border-stone-200/70 flex items-center gap-2 text-[12px] text-[#475569]">
-                    <File className="w-3.5 h-3.5 text-[#A15D1C]" />
+                    <File className="w-3.5 h-3.5 text-[#C38B34]" />
                     <span className="truncate">Attached: {formData.attachment.name}</span>
                     <span className="text-[#64748B] shrink-0">({formatFileSize(formData.attachment.size)})</span>
                   </div>
@@ -293,7 +293,7 @@ export default function PartnerForm({
                 <button
                   type="button"
                   onClick={resetForm}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#A15D1C] text-white font-semibold text-[13.5px] hover:bg-[#8B4D14] transition-colors shadow-sm cursor-pointer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#C38B34] text-white font-semibold text-[13.5px] hover:bg-[#8B4D14] transition-colors shadow-sm cursor-pointer"
                 >
                   <RotateCcw className="w-4 h-4" />
                   <span>Submit Another Partnership</span>
@@ -309,7 +309,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-fullName"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Full Name <span className="text-[#EF4444]">*</span>
                     </label>
@@ -320,10 +320,10 @@ export default function PartnerForm({
                       value={formData.fullName}
                       onChange={handleChange}
                       placeholder="Enter your full name"
-                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
+                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
                         errors.fullName
                           ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                          : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                          : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                       }`}
                     />
                     {errors.fullName && (
@@ -337,7 +337,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-organisationName"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Organisation Name <span className="text-[#EF4444]">*</span>
                     </label>
@@ -348,10 +348,10 @@ export default function PartnerForm({
                       value={formData.organisationName}
                       onChange={handleChange}
                       placeholder="Enter organisation name"
-                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
+                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
                         errors.organisationName
                           ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                          : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                          : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                       }`}
                     />
                     {errors.organisationName && (
@@ -368,7 +368,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-designation"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Designation <span className="text-[#EF4444]">*</span>
                     </label>
@@ -379,10 +379,10 @@ export default function PartnerForm({
                       value={formData.designation}
                       onChange={handleChange}
                       placeholder="Enter your designation"
-                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
+                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
                         errors.designation
                           ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                          : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                          : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                       }`}
                     />
                     {errors.designation && (
@@ -396,12 +396,12 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-mobileNumber"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Mobile Number <span className="text-[#EF4444]">*</span>
                     </label>
-                    <div className="flex rounded-xl border border-stone-300 overflow-hidden focus-within:border-[#A15D1C] focus-within:ring-2 focus-within:ring-[#A15D1C]/15 transition-all">
-                      <div className="bg-[#FAF7F2] border-r border-stone-300 px-3 flex items-center gap-1.5 text-[13px] font-semibold text-[#111827] select-none">
+                    <div className="flex rounded-xl border border-stone-300 overflow-hidden focus-within:border-[#C38B34] focus-within:ring-2 focus-within:ring-[#C38B34]/15 transition-all">
+                      <div className="bg-[#FAF6EE] border-r border-stone-300 px-3 flex items-center gap-1.5 text-[13px] font-semibold text-[#231515] select-none">
                         <span>🇮🇳</span>
                         <span>+91</span>
                       </div>
@@ -413,7 +413,7 @@ export default function PartnerForm({
                         value={formData.mobileNumber}
                         onChange={handleChange}
                         placeholder="Enter mobile number"
-                        className="w-full px-3.5 py-2.5 text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white outline-none"
+                        className="w-full px-3.5 py-2.5 text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white outline-none"
                       />
                     </div>
                     {errors.mobileNumber && (
@@ -430,7 +430,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-email"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Email Address <span className="text-[#EF4444]">*</span>
                     </label>
@@ -441,10 +441,10 @@ export default function PartnerForm({
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="Enter your email address"
-                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
+                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
                         errors.email
                           ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                          : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                          : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                       }`}
                     />
                     {errors.email && (
@@ -458,7 +458,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-district"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       District <span className="text-[#EF4444]">*</span>
                     </label>
@@ -468,10 +468,10 @@ export default function PartnerForm({
                         name="district"
                         value={formData.district}
                         onChange={handleChange}
-                        className={`w-full px-4 pr-9 py-2.5 rounded-xl border text-[14px] text-[#111827] bg-white transition-all outline-none appearance-none cursor-pointer ${
+                        className={`w-full px-4 pr-9 py-2.5 rounded-xl border text-[14px] text-[#231515] bg-white transition-all outline-none appearance-none cursor-pointer ${
                           errors.district
                             ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                            : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                            : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                         }`}
                       >
                         <option value="" disabled>
@@ -503,7 +503,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-sector"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Sector <span className="text-[#EF4444]">*</span>
                     </label>
@@ -513,10 +513,10 @@ export default function PartnerForm({
                         name="sector"
                         value={formData.sector}
                         onChange={handleChange}
-                        className={`w-full px-4 pr-9 py-2.5 rounded-xl border text-[14px] text-[#111827] bg-white transition-all outline-none appearance-none cursor-pointer ${
+                        className={`w-full px-4 pr-9 py-2.5 rounded-xl border text-[14px] text-[#231515] bg-white transition-all outline-none appearance-none cursor-pointer ${
                           errors.sector
                             ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                            : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                            : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                         }`}
                       >
                         <option value="" disabled>
@@ -545,7 +545,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-category"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Partnership Category <span className="text-[#EF4444]">*</span>
                     </label>
@@ -555,10 +555,10 @@ export default function PartnerForm({
                         name="category"
                         value={formData.category}
                         onChange={handleChange}
-                        className={`w-full px-4 pr-9 py-2.5 rounded-xl border text-[14px] text-[#111827] bg-white transition-all outline-none appearance-none cursor-pointer ${
+                        className={`w-full px-4 pr-9 py-2.5 rounded-xl border text-[14px] text-[#231515] bg-white transition-all outline-none appearance-none cursor-pointer ${
                           errors.category
                             ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                            : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                            : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                         }`}
                       >
                         <option value="" disabled>
@@ -590,7 +590,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-proposedIdea"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Proposed Idea or Contribution <span className="text-[#EF4444]">*</span>
                     </label>
@@ -601,10 +601,10 @@ export default function PartnerForm({
                       value={formData.proposedIdea}
                       onChange={handleChange}
                       placeholder="Share your idea or contribution"
-                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none resize-y ${
+                      className={`w-full px-4 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none resize-y ${
                         errors.proposedIdea
                           ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                          : 'border-stone-300 focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15'
+                          : 'border-stone-300 focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15'
                       }`}
                     />
                     {errors.proposedIdea && (
@@ -618,7 +618,7 @@ export default function PartnerForm({
                   <div>
                     <label
                       htmlFor="partner-websiteOrSocial"
-                      className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                      className="block text-[13px] font-bold text-[#231515] mb-1.5"
                     >
                       Website or Social Media Link
                     </label>
@@ -629,14 +629,14 @@ export default function PartnerForm({
                       value={formData.websiteOrSocial}
                       onChange={handleChange}
                       placeholder="Enter website or social media link (optional)"
-                      className="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none focus:border-[#A15D1C] focus:ring-2 focus:ring-[#A15D1C]/15"
+                      className="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none focus:border-[#C38B34] focus:ring-2 focus:ring-[#C38B34]/15"
                     />
                   </div>
                 </div>
 
                 {/* Row 6: Upload Supporting Document */}
                 <div>
-                  <label className="block text-[13px] font-bold text-[#111827] mb-1.5">
+                  <label className="block text-[13px] font-bold text-[#231515] mb-1.5">
                     Upload Supporting Document
                   </label>
 
@@ -656,7 +656,7 @@ export default function PartnerForm({
                         onClick={() => fileInputRef.current?.click()}
                         className="flex items-center gap-3 cursor-pointer select-none"
                       >
-                        <div className="w-9 h-9 rounded-lg bg-[#FAF7F2] border border-stone-200 flex items-center justify-center text-[#8C5E35]">
+                        <div className="w-9 h-9 rounded-lg bg-[#FAF6EE] border border-stone-200 flex items-center justify-center text-[#7A3F16]">
                           <Upload className="w-4 h-4" />
                         </div>
                         <span className="text-[13.5px] text-[#64748B]">
@@ -675,10 +675,10 @@ export default function PartnerForm({
                       </span>
                     </div>
                   ) : (
-                    <div className="flex items-center justify-between p-3 bg-[#FAF7F2] border border-stone-200 rounded-xl">
+                    <div className="flex items-center justify-between p-3 bg-[#FAF6EE] border border-stone-200 rounded-xl">
                       <div className="flex items-center gap-3 overflow-hidden">
-                        <File className="w-4 h-4 text-[#A15D1C] shrink-0" />
-                        <span className="text-[13px] font-bold text-[#111827] truncate">
+                        <File className="w-4 h-4 text-[#C38B34] shrink-0" />
+                        <span className="text-[13px] font-bold text-[#231515] truncate">
                           {formData.attachment.name}
                         </span>
                         <span className="text-[11px] text-[#64748B] shrink-0">
@@ -713,7 +713,7 @@ export default function PartnerForm({
                       name="consent"
                       checked={formData.consent}
                       onChange={handleChange}
-                      className="mt-0.5 w-4 h-4 rounded border-stone-300 text-[#A15D1C] focus:ring-[#A15D1C] cursor-pointer"
+                      className="mt-0.5 w-4 h-4 rounded border-stone-300 text-[#C38B34] focus:ring-[#C38B34] cursor-pointer"
                     />
                     <span className="text-[12.5px] text-[#475569] leading-relaxed">
                       I consent to share the above information with Bihar Setu for partnership discussion and communication. <span className="text-[#EF4444] font-bold">*</span>
@@ -732,7 +732,7 @@ export default function PartnerForm({
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-10 py-3.5 rounded-full bg-[#A15D1C] hover:bg-[#8B4D14] active:bg-[#733F10] text-white text-[14px] font-bold shadow-md shadow-[#A15D1C]/25 transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed group"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-10 py-3.5 rounded-full bg-[#C38B34] hover:bg-[#8B4D14] active:bg-[#733F10] text-white text-[14px] font-bold shadow-md shadow-[#C38B34]/25 transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed group"
                   >
                     {isSubmitting ? (
                       <>

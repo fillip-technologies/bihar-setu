@@ -118,24 +118,31 @@ bihar-setu/
 
 To maintain visual harmony, prevent color drift, and ensure theme consistency, **all master colors and fonts must be defined in `src/styles/theme.js`** and mapped directly into `src/index.css`.
 
-### Master Color Palette
+### Master Color Palette (Derived Directly from Official Logo)
 
 | Token Key | CSS Variable / Hex | Semantic Meaning |
 | :--- | :--- | :--- |
-| `primary.base` / `primary.forest` | `#17382E` | **Pine Spruce / Deep Forest Green**: Primary brand color, CTA buttons, active indicators |
-| `primary.hover` | `#112B23` | Hover states for primary action buttons |
-| `primary.navy` | `#0B192C` | Authority, official state trust, deep header/card backgrounds |
-| `primary.navyLight` | `#1E3E62` | Subtle borders, elevated surface hover states |
-| `accent.saffron` | `#F97316` | **Pragati Saffron**: Energy, action, cultural significance |
-| `accent.saffronHover` | `#EA580C` | Active/hover states for primary action buttons |
-| `accent.gold` | `#F59E0B` | Secondary warm badge and milestone highlights |
+| `primary.base` / `primary.mahogany` | `#370C01` | **Royal Imperial Mahogany**: Primary brand color (from "BIHAR" text and Bodhi tree), CTA buttons, active indicators |
+| `primary.hover` | `#260800` | Hover states for primary action buttons |
+| `primary.dark` | `#1A0500` | Deepest tone for elevated active states |
+| `primary.navy` | `#190904` | Deep mahogany authority surface, dark mode card/footer base |
+| `primary.navyLight` | `#2D140A` | Elevated surface hover and border states |
+| `accent.gold` | `#C38B34` | **Heritage Amber Gold**: Secondary brand accent (from "SETU", Bodhi leaves, bridge & sun), badges and milestones |
+| `accent.goldHover` | `#AF7625` | Active/hover state for golden highlights |
+| `accent.goldLight` | `#E0A34B` | Glowing borders, light highlights |
+| `accent.saffron` | `#D97706` | Warm amber energy, cultural action accents |
 | `accent.gangaCyan` | `#06B6D4` | **Ganga Cyan**: Modern digital bridge, flow, connectivity |
 | `accent.teal` | `#0D9488` | Verification checkmarks, security, and stability |
-| `surface.dark` | `#050811` | Canvas base background (sleek high-contrast civic dark mode) |
-| `surface.card` | `#0E1626` | Content cards, modal panels, drop-downs |
-| `surface.border` | `#1E293B` | Structural boundary lines and dividers |
-| `text.primary` | `#F8FAFC` | High-emphasis titles, headlines, critical text |
-| `text.secondary` | `#94A3B8` | Body copy, descriptions, captions, labels |
+| `surface.dark` | `#100502` | Deep mahogany base background (sleek luxury dark surface) |
+| `surface.card` | `#1D0A04` | Dark mode content cards, modal panels, drop-downs |
+| `surface.border` | `#2E150B` | Dark mode structural boundary lines and dividers |
+| `light.ivory` | `#FAF6EE` | **Warm Heritage Ivory**: Light canvas background (matching reference sample) |
+| `light.ivoryDeep` | `#F2EADD` | Deeper parchment tone for alternating section backgrounds |
+| `light.ink` / `text.dark` | `#231515` | **Rich Espresso Ink**: Primary readable text (from logo tagline) |
+| `light.inkSoft` | `#5C443C` | Secondary body copy and descriptive text |
+| `light.inkMuted` | `#8A7268` | Captions, placeholders, disabled states |
+| `text.primary` | `#FDFBF7` | High-emphasis light text for dark backgrounds |
+| `text.secondary` | `#C7B5A7` | Warm secondary text for dark backgrounds |
 | `status.success` | `#10B981` | Approved statuses, active services |
 | `status.warning` | `#F59E0B` | In-review applications, scheduled maintenance |
 | `status.danger` | `#EF4444` | High-priority grievances, errors, overdue alerts |

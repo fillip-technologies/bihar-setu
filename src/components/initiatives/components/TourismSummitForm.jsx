@@ -189,7 +189,7 @@ export default function TourismSummitForm({ data }) {
     <section
       id="summit-registration-form"
       aria-labelledby="summit-registration-heading"
-      className="relative py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] text-slate-900 font-sans border-b border-stone-200/90"
+      className="relative py-16 sm:py-20 lg:py-24 bg-[#FAF6EE] text-slate-900 font-sans border-b border-stone-200/90"
     >
       <div id="initiatives-form" className="absolute -top-12 left-0 pointer-events-none" />
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -201,7 +201,7 @@ export default function TourismSummitForm({ data }) {
             className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.2] mb-3.5 text-balance"
           >
             Register for Bihar Setu <br className="hidden sm:inline" />
-            <span className="text-[#17382E]">Tourism Summit 2026</span>
+            <span className="text-[#370C01]">Tourism Summit 2026</span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto text-balance">
@@ -218,7 +218,7 @@ export default function TourismSummitForm({ data }) {
                 <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12 stroke-[2.2]" />
               </div>
 
-              <span className="inline-block px-3.5 py-1 rounded-full bg-[#17382E]/10 text-[#17382E] text-xs font-bold tracking-wide uppercase mb-3">
+              <span className="inline-block px-3.5 py-1 rounded-full bg-[#370C01]/10 text-[#370C01] text-xs font-bold tracking-wide uppercase mb-3">
                 Delegate Registration Confirmed
               </span>
 
@@ -233,13 +233,13 @@ export default function TourismSummitForm({ data }) {
               </p>
 
               {/* Pass Card */}
-              <div className="bg-[#FAF7F2] border border-stone-200 rounded-2xl p-5 sm:p-6 text-left mb-8 shadow-xs">
+              <div className="bg-[#FAF6EE] border border-stone-200 rounded-2xl p-5 sm:p-6 text-left mb-8 shadow-xs">
                 <div className="flex flex-wrap items-center justify-between gap-3 pb-4 mb-4 border-b border-stone-200">
                   <div>
                     <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">
                       Summit Pass / Registration ID
                     </span>
-                    <span className="text-xl sm:text-2xl font-black text-[#17382E] tracking-wider font-mono">
+                    <span className="text-xl sm:text-2xl font-black text-[#370C01] tracking-wider font-mono">
                       {passId}
                     </span>
                   </div>
@@ -313,7 +313,7 @@ export default function TourismSummitForm({ data }) {
                 <button
                   type="button"
                   onClick={resetForm}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#17382E] hover:bg-[#112B23] text-white font-bold text-xs sm:text-sm tracking-wide shadow-md transition-all hover:scale-[1.02] active:scale-95"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#370C01] hover:bg-[#260800] text-white font-bold text-xs sm:text-sm tracking-wide shadow-md transition-all hover:scale-[1.02] active:scale-95"
                 >
                   <RotateCcw className="w-4 h-4" />
                   <span>Register Another Delegate</span>
@@ -327,7 +327,7 @@ export default function TourismSummitForm({ data }) {
               {/* Section 1: Contact Information */}
               <div className="mb-8">
                 <div className="flex items-center gap-2 mb-4 pb-2 border-b border-stone-100">
-                  <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#17382E] flex items-center justify-center text-xs font-black">
+                  <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#370C01] flex items-center justify-center text-xs font-black">
                     1
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
@@ -358,7 +358,7 @@ export default function TourismSummitForm({ data }) {
                         className={`w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:bg-white ${
                           errors.fullName
                             ? 'border-red-400 focus:ring-red-200 focus:border-red-500 bg-red-50/20'
-                            : 'border-slate-200 focus:ring-[#17382E]/20 focus:border-[#17382E]'
+                            : 'border-slate-200 focus:ring-[#370C01]/20 focus:border-[#370C01]'
                         }`}
                       />
                     </div>
@@ -392,7 +392,7 @@ export default function TourismSummitForm({ data }) {
                         className={`w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:bg-white ${
                           errors.email
                             ? 'border-red-400 focus:ring-red-200 focus:border-red-500 bg-red-50/20'
-                            : 'border-slate-200 focus:ring-[#17382E]/20 focus:border-[#17382E]'
+                            : 'border-slate-200 focus:ring-[#370C01]/20 focus:border-[#370C01]'
                         }`}
                       />
                     </div>
@@ -426,7 +426,7 @@ export default function TourismSummitForm({ data }) {
                         className={`w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:bg-white ${
                           errors.mobileNumber
                             ? 'border-red-400 focus:ring-red-200 focus:border-red-500 bg-red-50/20'
-                            : 'border-slate-200 focus:ring-[#17382E]/20 focus:border-[#17382E]'
+                            : 'border-slate-200 focus:ring-[#370C01]/20 focus:border-[#370C01]'
                         }`}
                       />
                     </div>
@@ -443,7 +443,7 @@ export default function TourismSummitForm({ data }) {
               {/* Section 2: Organization & Stakeholder Category */}
               <div className="mb-8">
                 <div className="flex items-center gap-2 mb-4 pb-2 border-b border-stone-100">
-                  <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#17382E] flex items-center justify-center text-xs font-black">
+                  <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#370C01] flex items-center justify-center text-xs font-black">
                     2
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
@@ -471,7 +471,7 @@ export default function TourismSummitForm({ data }) {
                         value={formData.organisationName}
                         onChange={handleChange}
                         placeholder="e.g. Mithila Heritage Travels / Nalanda Homestay"
-                        className="w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#17382E]/20 focus:border-[#17382E] focus:bg-white"
+                        className="w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#370C01]/20 focus:border-[#370C01] focus:bg-white"
                       />
                     </div>
                   </div>
@@ -495,7 +495,7 @@ export default function TourismSummitForm({ data }) {
                         value={formData.designation}
                         onChange={handleChange}
                         placeholder="e.g. Founder, Operator, Guide"
-                        className="w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#17382E]/20 focus:border-[#17382E] focus:bg-white"
+                        className="w-full pl-10 pr-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#370C01]/20 focus:border-[#370C01] focus:bg-white"
                       />
                     </div>
                   </div>
@@ -520,7 +520,7 @@ export default function TourismSummitForm({ data }) {
                         className={`w-full pl-10 pr-8 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border text-xs sm:text-sm text-slate-900 transition-all focus:outline-hidden focus:ring-2 focus:bg-white cursor-pointer ${
                           errors.district
                             ? 'border-red-400 focus:ring-red-200 focus:border-red-500 bg-red-50/20'
-                            : 'border-slate-200 focus:ring-[#17382E]/20 focus:border-[#17382E]'
+                            : 'border-slate-200 focus:ring-[#370C01]/20 focus:border-[#370C01]'
                         }`}
                       >
                         <option value="">Select District / Region</option>
@@ -558,7 +558,7 @@ export default function TourismSummitForm({ data }) {
                         name="category"
                         value={formData.category}
                         onChange={handleChange}
-                        className="w-full pl-10 pr-8 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#17382E]/20 focus:border-[#17382E] focus:bg-white cursor-pointer"
+                        className="w-full pl-10 pr-8 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#370C01]/20 focus:border-[#370C01] focus:bg-white cursor-pointer"
                       >
                         {categories.map((cat) => (
                           <option key={cat} value={cat}>
@@ -585,7 +585,7 @@ export default function TourismSummitForm({ data }) {
                         name="participationRole"
                         value={formData.participationRole}
                         onChange={handleChange}
-                        className="w-full pl-10 pr-8 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#17382E]/20 focus:border-[#17382E] focus:bg-white cursor-pointer"
+                        className="w-full pl-10 pr-8 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#370C01]/20 focus:border-[#370C01] focus:bg-white cursor-pointer"
                       >
                         {participationRoles.map((role) => (
                           <option key={role} value={role}>
@@ -601,7 +601,7 @@ export default function TourismSummitForm({ data }) {
               {/* Section 3: Summit Track & Objectives */}
               <div className="mb-8">
                 <div className="flex items-center gap-2 mb-4 pb-2 border-b border-stone-100">
-                  <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#17382E] flex items-center justify-center text-xs font-black">
+                  <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#370C01] flex items-center justify-center text-xs font-black">
                     3
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
@@ -622,7 +622,7 @@ export default function TourismSummitForm({ data }) {
                       name="track"
                       value={formData.track}
                       onChange={handleChange}
-                      className="w-full px-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#17382E]/20 focus:border-[#17382E] focus:bg-white cursor-pointer"
+                      className="w-full px-4 py-2.5 sm:py-3 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#370C01]/20 focus:border-[#370C01] focus:bg-white cursor-pointer"
                     >
                       {tracks.map((trk) => (
                         <option key={trk} value={trk}>
@@ -646,7 +646,7 @@ export default function TourismSummitForm({ data }) {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Share details regarding your operational readiness, hotel/homestay location, culinary specialty, or ideas for the tourism summit..."
-                      className="w-full p-4 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#17382E]/20 focus:border-[#17382E] focus:bg-white resize-y"
+                      className="w-full p-4 rounded-xl bg-slate-50/70 border border-slate-200 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-[#370C01]/20 focus:border-[#370C01] focus:bg-white resize-y"
                     />
                   </div>
                 </div>
@@ -662,7 +662,7 @@ export default function TourismSummitForm({ data }) {
                     name="consent"
                     checked={formData.consent}
                     onChange={handleChange}
-                    className="mt-1 w-4 h-4 rounded-sm border-slate-300 text-[#17382E] focus:ring-[#17382E] cursor-pointer"
+                    className="mt-1 w-4 h-4 rounded-sm border-slate-300 text-[#370C01] focus:ring-[#370C01] cursor-pointer"
                   />
                   <div>
                     <label
@@ -683,16 +683,16 @@ export default function TourismSummitForm({ data }) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-[#17382E] hover:bg-[#112B23] text-white font-bold text-xs sm:text-sm tracking-wide shadow-md transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-60 disabled:pointer-events-none shrink-0"
+                  className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-[#370C01] hover:bg-[#260800] text-white font-bold text-xs sm:text-sm tracking-wide shadow-md transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-60 disabled:pointer-events-none shrink-0"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="w-4 h-4 animate-spin text-[#34D399]" />
+                      <Loader2 className="w-4 h-4 animate-spin text-[#C38B34]" />
                       <span>Registering Delegate...</span>
                     </>
                   ) : (
                     <>
-                      <Send className="w-4 h-4 text-[#34D399]" />
+                      <Send className="w-4 h-4 text-[#C38B34]" />
                       <span>Submit Summit Registration</span>
                     </>
                   )}

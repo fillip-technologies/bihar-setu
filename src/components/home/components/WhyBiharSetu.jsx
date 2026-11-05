@@ -1,81 +1,141 @@
 import { Link } from 'react-router-dom'
 import {
-  Lightbulb,
-  Settings,
   Users,
-  BarChart3,
-  Leaf,
-  TrendingUp,
+  Building2,
+  Landmark,
+  Handshake,
+  GraduationCap,
+  Network,
+  MapPin,
+  Lightbulb,
+  Globe,
   ArrowRight,
 } from 'lucide-react'
 import bridgeImage from '../../../assets/why_bridge.jpg'
 
 const bridgeCards = [
   {
-    id: 'ideas',
-    title: ['Ideas to', 'Implementation'],
+    id: 'people-opportunities',
+    number: '01',
+    from: 'People',
+    to: 'Opportunities',
+    title: ['People and', 'Opportunities'],
     description:
-      'Connecting innovative ideas with the right people, institutions and resources to implement them.',
-    icon: Lightbulb,
-    color: '#E06222',
-    bgTint: 'bg-[#FDF0E6]',
-    link: '/initiatives',
+      'Connecting regional talent, citizens and professionals with meaningful socio-economic and career opportunities.',
+    icon: Users,
+    color: '#370C01',
+    bgTint: 'bg-[#FAF2E8]',
+    link: '/focus-areas',
   },
   {
-    id: 'challenges',
-    title: ['Challenges', 'to Solutions'],
+    id: 'businesses-markets',
+    number: '02',
+    from: 'Businesses',
+    to: 'Markets',
+    title: ['Businesses and', 'Markets'],
     description:
-      'Identifying real challenges and bringing relevant stakeholders together to develop practical solutions.',
-    icon: Settings,
+      'Linking Bihar’s local enterprises, manufacturers and service providers with broader regional, national and global markets.',
+    icon: Building2,
     color: '#2563EB',
     bgTint: 'bg-[#EBF3FE]',
+    link: '/focus-areas',
+  },
+  {
+    id: 'government-industry',
+    number: '03',
+    from: 'Government',
+    to: 'Industry',
+    title: ['Government and', 'Industry'],
+    description:
+      'Facilitating collaborative dialogue, public policy alignment and proactive partnerships for state-wide industrial growth.',
+    icon: Landmark,
+    color: '#16A34A',
+    bgTint: 'bg-[#EAF7EE]',
     link: '/how-we-work',
   },
   {
-    id: 'institutions',
-    title: ['Institutions', 'to Communities'],
+    id: 'entrepreneurs-institutions',
+    number: '04',
+    from: 'Entrepreneurs',
+    to: 'Institutions',
+    title: ['Entrepreneurs and', 'Institutions'],
     description:
-      'Creating stronger connections between organisations, professionals and the communities they serve.',
-    icon: Users,
-    color: '#16A34A',
-    bgTint: 'bg-[#EAF7EE]',
+      'Connecting grassroots innovators and founders with incubators, research bodies and financial institutions.',
+    icon: Handshake,
+    color: '#7C3AED',
+    bgTint: 'bg-[#F4F0FD]',
     link: '/partner-with-us',
   },
   {
-    id: 'skills',
-    title: ['Skills to', 'Opportunities'],
+    id: 'youth-opportunities',
+    number: '05',
+    from: 'Youth',
+    to: 'Opportunities',
+    title: ['Youth and', 'Opportunities'],
     description:
-      'Connecting talent, experience and knowledge with employment, entrepreneurship and development opportunities.',
-    icon: BarChart3,
+      'Empowering Bihar’s youth through modern vocational skills, digital readiness, mentorship and career avenues.',
+    icon: GraduationCap,
     color: '#D97706',
     bgTint: 'bg-[#FEF3E7]',
     link: '/focus-areas',
   },
   {
-    id: 'tradition',
-    title: ['Tradition', 'to Technology'],
+    id: 'local-businesses-networks',
+    number: '06',
+    from: 'Local Businesses',
+    to: 'Larger Networks',
+    title: ['Local Businesses &', 'Larger Networks'],
     description:
-      "Preserving Bihar's cultural identity while encouraging innovation, technology and modern development.",
-    icon: Leaf,
-    color: '#059669',
-    bgTint: 'bg-[#E8F8EE]',
+      'Integrating district-level MSMEs and traditional ventures into established supply chains and trade networks.',
+    icon: Network,
+    color: '#0D9488',
+    bgTint: 'bg-[#E6F7F5]',
+    link: '/partner-with-us',
+  },
+  {
+    id: 'districts-ecosystem',
+    number: '07',
+    from: 'Districts',
+    to: 'Bihar Ecosystem',
+    title: ['Districts & the Wider', 'Bihar Ecosystem'],
+    description:
+      'Connecting all 38 districts with centralized resources, state initiatives and inclusive developmental tracking.',
+    icon: MapPin,
+    color: '#0284C7',
+    bgTint: 'bg-[#E0F2FE]',
+    link: '/about',
+  },
+  {
+    id: 'ideas-implementation',
+    number: '08',
+    from: 'Ideas',
+    to: 'Implementation',
+    title: ['Ideas and', 'Implementation'],
+    description:
+      'Connecting innovative ideas with the people, institutions and resources required to implement them on ground.',
+    icon: Lightbulb,
+    color: '#C38B34',
+    bgTint: 'bg-[#FAF2E8]',
     link: '/initiatives',
   },
   {
-    id: 'potential',
-    title: ['Potential', 'to Progress'],
+    id: 'local-stories-audiences',
+    number: '09',
+    from: 'Local Stories',
+    to: 'Wider Audiences',
+    title: ['Local Stories &', 'Wider Audiences'],
     description:
-      "Transforming Bihar's natural, cultural, human and economic potential into measurable progress.",
-    icon: TrendingUp,
-    color: '#0284C7',
-    bgTint: 'bg-[#E0F2FE]',
+      'Documenting and sharing authentic stories of Bihar’s talent, culture, heritage and transformation with wider audiences.',
+    icon: Globe,
+    color: '#DC2626',
+    bgTint: 'bg-[#FEE2E2]',
     link: '/about',
   },
 ]
 
 export default function WhyBiharSetu() {
   return (
-    <section className="relative w-full bg-[#FAF7F2] overflow-hidden border-t border-b border-stone-200/70">
+    <section className="relative w-full bg-[#FAF6EE] overflow-hidden border-t border-b border-stone-200/70">
       {/* ── Background Ambience & Symbolic Bridge Motifs ── */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         {/* Soft golden sunset ambient wash blending from the bridge photo */}
@@ -98,7 +158,7 @@ export default function WhyBiharSetu() {
 
         {/* Cable-stayed bridge suspension curves watermark */}
         <svg
-          className="absolute right-0 top-0 w-[780px] h-full opacity-[0.065] stroke-[#17382E]"
+          className="absolute right-0 top-0 w-[780px] h-full opacity-[0.065] stroke-[#370C01]"
           viewBox="0 0 850 400"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +198,7 @@ export default function WhyBiharSetu() {
           className="absolute inset-0 opacity-[0.035]"
           style={{
             backgroundImage:
-              'radial-gradient(#17382E 1px, transparent 1px)',
+              'radial-gradient(#370C01 1px, transparent 1px)',
             backgroundSize: '24px 24px',
           }}
         />
@@ -164,19 +224,19 @@ export default function WhyBiharSetu() {
             >
               <path
                 d="M0,0 C60,120 10,280 80,400 L120,400 L120,0 Z"
-                fill="#FAF7F2"
+                fill="#FAF6EE"
                 fillOpacity="0.4"
               />
               <path
                 d="M30,0 C100,130 20,270 100,400 L120,400 L120,0 Z"
-                fill="#FAF7F2"
+                fill="#FAF6EE"
               />
             </svg>
           </div>
           {/* Mobile bottom fade */}
           <div className="lg:hidden absolute inset-x-0 bottom-0 h-10 pointer-events-none">
             <svg viewBox="0 0 400 40" preserveAspectRatio="none" className="w-full h-full">
-              <path d="M0,30 C120,10 280,40 400,20 L400,40 L0,40 Z" fill="#FAF7F2" />
+              <path d="M0,30 C120,10 280,40 400,20 L400,40 L0,40 Z" fill="#FAF6EE" />
             </svg>
           </div>
         </div>
@@ -184,18 +244,18 @@ export default function WhyBiharSetu() {
         {/* CENTER: Eyebrow + Headline + Description */}
         <div className="flex-1 flex flex-col justify-center px-8 lg:px-10 xl:px-14 py-8 lg:py-0">
           <div className="flex items-center gap-2.5 mb-3">
-            <span className="w-7 h-[2px] bg-[#E06222] rounded-full shrink-0" />
-            <span className="text-[10.5px] font-extrabold tracking-[0.22em] text-[#8C5E35] uppercase">
+            <span className="w-7 h-[2px] bg-[#370C01] rounded-full shrink-0" />
+            <span className="text-[10.5px] font-extrabold tracking-[0.22em] text-[#7A3F16] uppercase">
               WHY BIHAR SETU
             </span>
           </div>
 
-          <h2 className="text-[26px] sm:text-[32px] lg:text-[38px] xl:text-[42px] font-bold text-[#111827] leading-[1.15] tracking-[-0.02em]">
+          <h2 className="text-[26px] sm:text-[32px] lg:text-[38px] xl:text-[42px] font-bold text-[#231515] leading-[1.15] tracking-[-0.02em]">
             Every Gap Needs a{' '}
-            <span className="text-[#E06222]">Bridge</span>
+            <span className="text-[#C38B34]">Bridge</span>
           </h2>
 
-          <p className="mt-3.5 text-[13px] sm:text-[13.5px] lg:text-[14px] text-[#475569] leading-[1.75] max-w-xl">
+          <p className="mt-3.5 text-[13px] sm:text-[13.5px] lg:text-[14px] text-[#5C443C] leading-[1.75] max-w-xl">
             The word Setu means a bridge. Bihar Setu represents a bridge between
             challenges and solutions, ideas and implementation, institutions and
             communities, and Bihar&apos;s potential and its future.
@@ -204,7 +264,7 @@ export default function WhyBiharSetu() {
           <div className="mt-5">
             <Link
               to="/about"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group w-fit"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#370C01] hover:bg-[#260800] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group w-fit"
             >
               <span>Explore The Bihar Setu Vision</span>
               <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] transition-transform duration-200 group-hover:translate-x-0.5" />
@@ -227,23 +287,23 @@ export default function WhyBiharSetu() {
               to Opportunities
             </p>
             <div className="flex items-center gap-1.5 mt-3 relative z-10">
-              <span className="w-6 h-[2.5px] bg-[#E06222] rounded-full" />
-              <span className="w-2 h-[2.5px] bg-[#17382E] rounded-full" />
+              <span className="w-6 h-[2.5px] bg-[#C38B34] rounded-full" />
+              <span className="w-2 h-[2.5px] bg-[#370C01] rounded-full" />
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── Bottom Strip: 6 flat columns with refined card interaction ── */}
-      <div className="relative z-10 border-t border-stone-200/80 bg-white/50 backdrop-blur-xs">
-        <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 divide-x divide-stone-200/70">
+      {/* ── Bottom Strip: 9 Bridges Grid ── */}
+      <div className="relative z-10 border-t border-stone-200/80 bg-stone-200/70">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-stone-200/70">
           {bridgeCards.map((card) => {
             const IconComponent = card.icon
             return (
               <Link
                 key={card.id}
                 to={card.link}
-                className="group px-5 sm:px-6 py-6 xl:py-7 flex flex-col gap-2.5 hover:bg-white/90 hover:shadow-xs transition-all duration-200 relative overflow-hidden"
+                className="group px-6 py-6 sm:py-7 bg-[#FAF6EE] hover:bg-white flex flex-col justify-between gap-3 transition-all duration-200 relative overflow-hidden"
               >
                 {/* Subtle top indicator hover line */}
                 <div
@@ -251,28 +311,43 @@ export default function WhyBiharSetu() {
                   style={{ backgroundColor: card.color }}
                 />
 
-                {/* Icon circle */}
-                <div
-                  className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200 ${card.bgTint}`}
-                  style={{ color: card.color }}
-                >
-                  <IconComponent className="w-[18px] h-[18px] stroke-[2.2]" />
+                <div>
+                  <div className="flex items-center justify-between mb-3.5">
+                    {/* Icon badge */}
+                    <div
+                      className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-200 ${card.bgTint}`}
+                      style={{ color: card.color }}
+                    >
+                      <IconComponent className="w-5 h-5 stroke-[2.2]" />
+                    </div>
+
+                    <span className="text-[11px] font-black tracking-widest text-stone-400 group-hover:text-[#370C01] transition-colors">
+                      {card.number}
+                    </span>
+                  </div>
+
+                  {/* Two-line bold title */}
+                  <h3 className="text-[14px] sm:text-[15px] font-bold text-[#231515] leading-snug flex items-center justify-between gap-1">
+                    <span>
+                      {card.title[0]}
+                      <br />
+                      <span style={{ color: card.color }}>{card.title[1]}</span>
+                    </span>
+                    <ArrowRight
+                      className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all shrink-0"
+                      style={{ color: card.color }}
+                    />
+                  </h3>
+
+                  {/* Description */}
+                  <p className="mt-2 text-[12px] sm:text-[12.5px] text-[#64748B] leading-[1.65]">
+                    {card.description}
+                  </p>
                 </div>
 
-                {/* Two-line bold title */}
-                <h3 className="text-[12.5px] sm:text-[13px] font-bold text-[#111827] leading-snug flex items-center justify-between gap-1">
-                  <span>
-                    {card.title[0]}
-                    <br />
-                    <span style={{ color: card.color }}>{card.title[1]}</span>
-                  </span>
-                  <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all shrink-0" style={{ color: card.color }} />
-                </h3>
-
-                {/* Description */}
-                <p className="text-[11px] sm:text-[11.5px] text-[#64748B] leading-[1.65]">
-                  {card.description}
-                </p>
+                <div className="pt-2 text-[11px] font-bold tracking-wide uppercase opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: card.color }}>
+                  Explore Pathway →
+                </div>
               </Link>
             )
           })}

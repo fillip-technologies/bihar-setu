@@ -6,7 +6,7 @@ import { howWeWorkData } from '../../data/howWeWorkData'
 
 export default function HowWeWorkPage() {
   return (
-    <div className="flex flex-col w-full bg-[#FAF7F2] min-h-screen">
+    <div className="flex flex-col w-full bg-[#FAF6EE] min-h-screen">
       {/* ── Section 1: Hero ── */}
       <HowWeWorkHero data={howWeWorkData.hero} />
 

@@ -69,7 +69,7 @@ export default function ContactHero({ data }) {
     <section
       ref={sectionRef}
       aria-labelledby="contact-hero-heading"
-      className="relative overflow-hidden bg-[#FAF7F2] border-b border-stone-200/80 pt-12 pb-14 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-24"
+      className="relative overflow-hidden bg-[#FAF6EE] border-b border-stone-200/80 pt-12 pb-14 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-24"
     >
       {/* ── Background Image Layer (Matching About Page Hero) ── */}
       <div
@@ -106,7 +106,7 @@ export default function ContactHero({ data }) {
           {/* Eyebrow */}
           <div data-ch="eyebrow" className="inline-flex items-center gap-2 mb-3.5">
             <span className="w-6 h-[2px] bg-[#E06222] rounded-full shrink-0" />
-            <span className="text-[11.5px] font-extrabold tracking-[0.22em] text-[#8C5E35] uppercase font-sans">
+            <span className="text-[11.5px] font-extrabold tracking-[0.22em] text-[#7A3F16] uppercase font-sans">
               {eyebrow}
             </span>
           </div>
@@ -115,7 +115,7 @@ export default function ContactHero({ data }) {
           <h1
             id="contact-hero-heading"
             data-ch="title"
-            className="text-[32px] sm:text-[44px] lg:text-[52px] font-serif font-bold text-[#111827] leading-[1.12] tracking-[-0.025em]"
+            className="text-[32px] sm:text-[44px] lg:text-[52px] font-serif font-bold text-[#231515] leading-[1.12] tracking-[-0.025em]"
           >
             {title}
           </h1>
@@ -123,7 +123,7 @@ export default function ContactHero({ data }) {
           {/* Headline */}
           <p
             data-ch="headline"
-            className="mt-2 text-[20px] sm:text-[24px] lg:text-[28px] font-serif font-medium text-[#17382E] leading-snug"
+            className="mt-2 text-[20px] sm:text-[24px] lg:text-[28px] font-serif font-medium text-[#370C01] leading-snug"
           >
             {headline}
           </p>
@@ -140,7 +140,7 @@ export default function ContactHero({ data }) {
           <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
             <div
               data-ch="pill"
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#17382E]"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#370C01]"
             >
               <MessageSquare className="w-3.5 h-3.5 text-[#E06222]" />
               <span>8 Dedicated Streams</span>
@@ -148,15 +148,15 @@ export default function ContactHero({ data }) {
 
             <div
               data-ch="pill"
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#17382E]"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#370C01]"
             >
-              <MapPin className="w-3.5 h-3.5 text-[#17382E]" />
+              <MapPin className="w-3.5 h-3.5 text-[#370C01]" />
               <span>All 38 Districts Covered</span>
             </div>
 
             <div
               data-ch="pill"
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#17382E]"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#370C01]"
             >
               <Clock className="w-3.5 h-3.5 text-[#E06222]" />
               <span>24 - 48h Response Commitment</span>
@@ -164,7 +164,7 @@ export default function ContactHero({ data }) {
 
             <div
               data-ch="pill"
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#17382E]"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-xs text-[12px] font-semibold text-[#370C01]"
             >
               <ShieldCheck className="w-3.5 h-3.5 text-[#10B981]" />
               <span>Official State Portal</span>

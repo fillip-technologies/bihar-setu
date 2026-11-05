@@ -24,7 +24,7 @@ export default function FocusAreasPage() {
   const infrastructureData = getSector('infrastructure-environment')
 
   return (
-    <div className="flex flex-col w-full bg-[#FAF7F2]">
+    <div className="flex flex-col w-full bg-[#FAF6EE]">
       {/* ── Section 1: Hero Section ── */}
       <FocusAreasHero data={focusAreasPageData.hero} />
 

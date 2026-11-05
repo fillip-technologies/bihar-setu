@@ -72,7 +72,7 @@ export default function InitiativesTourismSummit() {
   return (
     <section
       id="tourism-summit-section"
-      className="relative py-16 sm:py-20 lg:py-24 bg-white text-slate-900 overflow-hidden font-sans border-b border-slate-200"
+      className="relative py-16 sm:py-20 lg:py-24 bg-[#F2EADD] text-[#231515] overflow-hidden font-sans border-b border-[#E8DCCF]"
     >
       <div id="tourism-summit" className="absolute -top-16 left-0 pointer-events-none" />
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -84,14 +84,14 @@ export default function InitiativesTourismSummit() {
           <div className="lg:col-span-7 flex flex-col justify-start">
             
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15] mb-2">
-              Bihar Setu <span className="text-[#17382E]">Tourism Summit 2026</span>
+              Bihar Setu <span className="text-[#370C01]">Tourism Summit 2026</span>
             </h2>
 
             <div className="text-base sm:text-lg font-bold text-[#E06222] mb-3">
               Season 1
             </div>
 
-            <p className="text-lg sm:text-xl font-bold text-[#17382E] tracking-tight mb-6">
+            <p className="text-lg sm:text-xl font-bold text-[#370C01] tracking-tight mb-6">
               Tourism Preparedness Before Tourism Promotion
             </p>
 
@@ -115,10 +115,10 @@ export default function InitiativesTourismSummit() {
                 return (
                   <div
                     key={idx}
-                    className="p-3.5 rounded-xl bg-white border border-slate-200/80 hover:border-[#17382E]/40 hover:shadow-xs transition-all"
+                    className="p-3.5 rounded-xl bg-white border border-slate-200/80 hover:border-[#370C01]/40 hover:shadow-xs transition-all"
                   >
                     <div className="flex items-center gap-2 mb-1.5">
-                      <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#17382E] flex items-center justify-center shrink-0">
+                      <div className="w-6 h-6 rounded-md bg-[#EAF5F1] text-[#370C01] flex items-center justify-center shrink-0">
                         <IconComponent className="w-3.5 h-3.5" />
                       </div>
                       <h4 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">

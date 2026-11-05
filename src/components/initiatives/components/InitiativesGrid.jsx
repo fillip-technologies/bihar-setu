@@ -18,16 +18,16 @@ export default function InitiativesGrid({ categories, items }) {
       : items.filter((item) => item.category === selectedCategory)
 
   return (
-    <section id="initiatives-catalog" className="py-16 sm:py-20 bg-[#FAF7F2] text-slate-900 font-sans">
+    <section id="initiatives-catalog" className="py-16 sm:py-20 bg-[#FAF6EE] text-slate-900 font-sans">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17382E]/10 border border-[#17382E]/20 text-[#17382E] text-xs font-bold uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#370C01]/10 border border-[#370C01]/20 text-[#370C01] text-xs font-bold uppercase tracking-wider mb-3">
             <Sparkles className="w-3.5 h-3.5 text-[#E06222]" />
             <span>Statewide Portfolios</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#111827] tracking-tight mb-4">
-            Active & Upcoming <span className="text-[#17382E]">Initiatives</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#231515] tracking-tight mb-4">
+            Active & Upcoming <span className="text-[#370C01]">Initiatives</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             Every initiative is designed with measurable milestones, multi-stakeholder participation, and deep regional resonance across Bihar’s 38 districts.
@@ -43,7 +43,7 @@ export default function InitiativesGrid({ categories, items }) {
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
                 selectedCategory === cat
-                  ? 'bg-[#17382E] text-white shadow-md'
+                  ? 'bg-[#370C01] text-white shadow-md'
                   : 'bg-white text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-slate-200'
               }`}
             >
@@ -57,12 +57,12 @@ export default function InitiativesGrid({ categories, items }) {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="group flex flex-col justify-between bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/90 shadow-sm hover:shadow-xl hover:border-[#17382E]/30 transition-all duration-300"
+              className="group flex flex-col justify-between bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/90 shadow-sm hover:shadow-xl hover:border-[#370C01]/30 transition-all duration-300"
             >
               <div>
                 {/* Status & Category Bar */}
                 <div className="flex items-center justify-between gap-2 mb-4">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#17382E] bg-[#EAF5F1] px-2.5 py-1 rounded-md border border-[#C5E5D8]">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#370C01] bg-[#EAF5F1] px-2.5 py-1 rounded-md border border-[#C5E5D8]">
                     {item.category}
                   </span>
                   <span
@@ -79,7 +79,7 @@ export default function InitiativesGrid({ categories, items }) {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#17382E] transition-colors leading-snug mb-3">
+                <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#370C01] transition-colors leading-snug mb-3">
                   {item.title}
                 </h3>
 
@@ -102,7 +102,7 @@ export default function InitiativesGrid({ categories, items }) {
 
                 {/* Impact Highlight */}
                 <div className="p-3 rounded-xl bg-[#F6FAF8] border border-[#D5EAE0] mb-5">
-                  <div className="flex items-start gap-2 text-xs text-[#17382E] font-medium leading-relaxed">
+                  <div className="flex items-start gap-2 text-xs text-[#370C01] font-medium leading-relaxed">
                     <TrendingUp className="w-4 h-4 text-[#0D9488] shrink-0 mt-0.5" />
                     <span><strong>Projected Impact:</strong> {item.impact}</span>
                   </div>
@@ -125,7 +125,7 @@ export default function InitiativesGrid({ categories, items }) {
 
                 <Link
                   to="/partner-with-us"
-                  className="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-slate-50 hover:bg-[#17382E] text-slate-700 hover:text-white border border-slate-200 hover:border-[#17382E] text-xs font-bold transition-all group/btn"
+                  className="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-slate-50 hover:bg-[#370C01] text-slate-700 hover:text-white border border-slate-200 hover:border-[#370C01] text-xs font-bold transition-all group/btn"
                 >
                   <span>Support or Participate</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-1" />

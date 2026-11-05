@@ -96,7 +96,7 @@ export default function PartnerHero({ data }) {
     <section
       ref={sectionRef}
       aria-labelledby="partner-hero-heading"
-      className="relative min-h-[460px] sm:min-h-[500px] lg:min-h-[530px] xl:min-h-[560px] flex flex-col justify-center overflow-hidden border-b border-stone-200/80 bg-[#FAF7F2]"
+      className="relative min-h-[460px] sm:min-h-[500px] lg:min-h-[530px] xl:min-h-[560px] flex flex-col justify-center overflow-hidden border-b border-stone-200/80 bg-[#FAF6EE]"
     >
       {/* ── Background Image Layer (Full Background) ── */}
       <div
@@ -134,7 +134,7 @@ export default function PartnerHero({ data }) {
           {/* Eyebrow */}
           <div data-ph="eyebrow" className="inline-flex items-center gap-2 mb-2 sm:mb-2.5">
             <span className="w-6 sm:w-8 h-[1.5px] bg-[#C67D33]/60" />
-            <div className="inline-flex items-center gap-1.5 text-[10.5px] sm:text-[11.5px] font-extrabold tracking-[0.2em] text-[#8C5E35] uppercase">
+            <div className="inline-flex items-center gap-1.5 text-[10.5px] sm:text-[11.5px] font-extrabold tracking-[0.2em] text-[#7A3F16] uppercase">
               <MandalaIcon className="w-3.5 h-3.5 text-[#C67D33]" />
               <span>{eyebrow}</span>
             </div>
@@ -145,11 +145,11 @@ export default function PartnerHero({ data }) {
           <h1
             id="partner-hero-heading"
             data-ph="title"
-            className="text-[30px] sm:text-[38px] lg:text-[44px] font-serif font-bold text-[#111827] leading-[1.1] tracking-[-0.025em]"
+            className="text-[30px] sm:text-[38px] lg:text-[44px] font-serif font-bold text-[#231515] leading-[1.1] tracking-[-0.025em]"
           >
             {titleLine1} <br />
             {titleLine2}{' '}
-            <span className="text-[#A15D1C] font-serif font-bold">
+            <span className="text-[#C38B34] font-serif font-bold">
               {titleHighlight}
             </span>
           </h1>
@@ -172,7 +172,7 @@ export default function PartnerHero({ data }) {
             <a
               href={ctaPrimary.targetId}
               onClick={(e) => handleScrollTo(e, ctaPrimary.targetId)}
-              className="inline-flex items-center gap-2 px-5 py-2.5 sm:py-3 rounded-full bg-[#A15D1C] hover:bg-[#8B4D14] active:bg-[#733F10] text-white text-[13px] sm:text-[13.5px] font-bold shadow-md shadow-[#A15D1C]/25 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer group"
+              className="inline-flex items-center gap-2 px-5 py-2.5 sm:py-3 rounded-full bg-[#C38B34] hover:bg-[#8B4D14] active:bg-[#733F10] text-white text-[13px] sm:text-[13.5px] font-bold shadow-md shadow-[#C38B34]/25 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer group"
             >
               <span>{ctaPrimary.label}</span>
               <ArrowRight className="w-4 h-4 stroke-[2.2] group-hover:translate-x-0.5 transition-transform" />
@@ -180,10 +180,10 @@ export default function PartnerHero({ data }) {
 
             <Link
               to={ctaSecondary.path || '/initiatives#summit-registration-form'}
-              className="inline-flex items-center gap-2 px-5 py-2.5 sm:py-3 rounded-full bg-white/90 backdrop-blur-xs border border-stone-300 hover:border-stone-400 text-[#111827] text-[13px] sm:text-[13.5px] font-semibold transition-all duration-200 hover:-translate-y-0.5 shadow-2xs hover:bg-white cursor-pointer group"
+              className="inline-flex items-center gap-2 px-5 py-2.5 sm:py-3 rounded-full bg-white/90 backdrop-blur-xs border border-stone-300 hover:border-stone-400 text-[#231515] text-[13px] sm:text-[13.5px] font-semibold transition-all duration-200 hover:-translate-y-0.5 shadow-2xs hover:bg-white cursor-pointer group"
             >
               <span>{ctaSecondary.label}</span>
-              <ArrowRight className="w-4 h-4 stroke-[2] text-[#8C5E35] group-hover:translate-x-0.5 transition-transform" />
+              <ArrowRight className="w-4 h-4 stroke-[2] text-[#7A3F16] group-hover:translate-x-0.5 transition-transform" />
             </Link>
           </div>
         </div>

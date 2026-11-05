@@ -89,7 +89,7 @@ export default function FocusAreasHero({ data }) {
     <section
       ref={sectionRef}
       aria-labelledby="focus-areas-hero-heading"
-      className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] xl:min-h-[740px] flex flex-col justify-center overflow-hidden border-b border-stone-200/80 bg-[#FAF7F2]"
+      className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] xl:min-h-[740px] flex flex-col justify-center overflow-hidden border-b border-stone-200/80 bg-[#FAF6EE]"
     >
       {/* ── Background Image Layer (Showcasing Sector Montage & Bodh Gaya) ── */}
       <div
@@ -131,7 +131,7 @@ export default function FocusAreasHero({ data }) {
           {/* Eyebrow Label */}
           <div data-fah="eyebrow" className="inline-flex items-center gap-2 mb-3">
             <span className="w-6 h-[2px] bg-[#E06222] rounded-full shrink-0" />
-            <span className="text-[11px] font-extrabold tracking-[0.22em] text-[#8C5E35] uppercase font-sans">
+            <span className="text-[11px] font-extrabold tracking-[0.22em] text-[#7A3F16] uppercase font-sans">
               {eyebrow}
             </span>
           </div>
@@ -140,10 +140,10 @@ export default function FocusAreasHero({ data }) {
           <h1
             id="focus-areas-hero-heading"
             data-fah="headline"
-            className="text-[34px] sm:text-[46px] lg:text-[54px] font-serif font-bold text-[#111827] leading-[1.12] tracking-[-0.025em]"
+            className="text-[34px] sm:text-[46px] lg:text-[54px] font-serif font-bold text-[#231515] leading-[1.12] tracking-[-0.025em]"
           >
             {titleLine1} <br />
-            <span className="text-[#17382E] italic font-serif font-medium">
+            <span className="text-[#370C01] italic font-serif font-medium">
               {titleLine2}
             </span>
           </h1>
@@ -162,10 +162,10 @@ export default function FocusAreasHero({ data }) {
               <div className="grid grid-cols-3 gap-3 sm:gap-6">
                 {stats.map((stat, i) => (
                   <div key={i} className="flex flex-col">
-                    <span className="text-[24px] sm:text-[30px] font-serif font-black text-[#17382E] tracking-tight">
+                    <span className="text-[24px] sm:text-[30px] font-serif font-black text-[#370C01] tracking-tight">
                       {stat.value}
                     </span>
-                    <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#111827] leading-tight mt-0.5">
+                    <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#231515] leading-tight mt-0.5">
                       {stat.label}
                     </span>
                     <span className="text-[10px] sm:text-[11px] text-[#64748B] mt-0.5 hidden sm:block">
@@ -186,7 +186,7 @@ export default function FocusAreasHero({ data }) {
               <a
                 href={ctaPrimary.targetId}
                 onClick={(e) => handleScrollTo(e, ctaPrimary.targetId)}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#17382E] text-white text-[13.5px] sm:text-[14px] font-bold shadow-md hover:bg-[#E06222] transition-colors duration-200 group"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#370C01] text-white text-[13.5px] sm:text-[14px] font-bold shadow-md hover:bg-[#E06222] transition-colors duration-200 group"
               >
                 <span>{ctaPrimary.label}</span>
                 <ArrowDown className="w-4 h-4 stroke-[2.2] group-hover:translate-y-0.5 transition-transform" />
@@ -196,7 +196,7 @@ export default function FocusAreasHero({ data }) {
             {ctaSecondary && (
               <Link
                 to={ctaSecondary.path}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/80 backdrop-blur-sm border border-stone-300/80 text-[#17382E] text-[13.5px] sm:text-[14px] font-bold hover:bg-white hover:border-[#17382E]/40 transition-all duration-200 shadow-xs"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/80 backdrop-blur-sm border border-stone-300/80 text-[#370C01] text-[13.5px] sm:text-[14px] font-bold hover:bg-white hover:border-[#370C01]/40 transition-all duration-200 shadow-xs"
               >
                 <Handshake className="w-4 h-4 text-[#E06222]" />
                 <span>{ctaSecondary.label}</span>

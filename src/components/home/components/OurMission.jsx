@@ -29,8 +29,8 @@ const missionCards = [
     description:
       'Connect institutions, industries, professionals, experts, communities and emerging talent.',
     image: tourismImg,
-    color: '#E06222',
-    bgTint: 'bg-[#FDF0E6]',
+    color: '#C38B34',
+    bgTint: 'bg-[#FAF2E8]',
     link: '/partner-with-us',
   },
   {
@@ -153,7 +153,7 @@ function MissionCard({ card }) {
 
       {/* ── Bottom: Content ── */}
       <div className="flex flex-col flex-1 px-3.5 pt-3 pb-3.5">
-        <h3 className="text-[12.5px] sm:text-[13px] font-bold text-[#111827] leading-snug tracking-tight group-hover:text-[#17382E] transition-colors">
+        <h3 className="text-[12.5px] sm:text-[13px] font-bold text-[#231515] leading-snug tracking-tight group-hover:text-[#370C01] transition-colors">
           {card.title}
         </h3>
 
@@ -183,7 +183,7 @@ export default function OurMission() {
   const row2 = missionCards.slice(4)
 
   return (
-    <section className="relative w-full bg-[#FAF7F2] overflow-hidden border-t border-b border-stone-200/70">
+    <section className="relative w-full bg-[#FAF6EE] overflow-hidden border-t border-b border-stone-200/70">
       {/* ── Background Ambience ── */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         {/* Warm saffron ambient wash top-left */}
@@ -206,7 +206,7 @@ export default function OurMission() {
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: 'radial-gradient(#17382E 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(#370C01 1px, transparent 1px)',
             backgroundSize: '24px 24px',
           }}
         />
@@ -216,43 +216,49 @@ export default function OurMission() {
       <div className="relative z-10 flex flex-col lg:flex-row items-stretch">
 
         {/* LEFT: Eyebrow + Headline + Description */}
-        <div className="flex-1 flex flex-col justify-center px-10 sm:px-14 lg:px-16 xl:px-20 py-4 lg:py-5">
+        <div className="flex-1 flex flex-col justify-center px-10 sm:px-14 lg:px-16 xl:px-20 py-8 lg:py-10">
           {/* Eyebrow */}
           <div className="flex items-center gap-2 mb-2">
-            <span className="w-5 h-[2px] bg-[#E06222] rounded-full shrink-0" />
-            <span className="text-[9.5px] font-extrabold tracking-[0.22em] text-[#8C5E35] uppercase">
+            <span className="w-5 h-[2px] bg-[#370C01] rounded-full shrink-0" />
+            <span className="text-[10px] font-extrabold tracking-[0.22em] text-[#C38B34] uppercase">
               Our Mission
             </span>
           </div>
 
           {/* Headline */}
-          <h2 className="text-[20px] sm:text-[24px] lg:text-[27px] xl:text-[30px] font-bold text-[#111827] leading-[1.15] tracking-[-0.02em]">
+          <h2 className="text-[22px] sm:text-[26px] lg:text-[30px] xl:text-[34px] font-bold text-[#231515] leading-[1.18] tracking-[-0.02em]">
             Turning Connections
             <br />
-            <span className="text-[#E06222]">Into Meaningful Action</span>
+            <span className="text-[#C38B34]">Into Meaningful Action</span>
           </h2>
 
           {/* Description */}
-          <p className="mt-1.5 text-[11px] sm:text-[11.5px] text-[#475569] leading-[1.6] max-w-sm lg:max-w-md">
-            We bring together stakeholders, create opportunities, address key
-            challenges and support initiatives that drive long-term, inclusive
-            and impact-oriented development across Bihar.
-          </p>
+          <div className="mt-4 space-y-3 text-[13px] sm:text-[14px] text-[#5C443C] leading-[1.65] max-w-xl">
+            <p>
+              To build a strong network around Bihar where information, people, businesses, institutions and opportunities can connect more easily.
+            </p>
+            <p>
+              We continuously identify what Bihar has, who is working in Bihar, what opportunities and challenges exist, who can help, who needs help and where collaboration is possible — and gradually convert these connections into meaningful initiatives.
+            </p>
+            <p className="font-medium text-[#231515]">
+              Bihar already has people, potential, businesses, institutions and knowledge. The requirement is to connect them better.
+            </p>
+          </div>
 
           {/* Action CTA */}
-          <div className="mt-3">
+          <div className="mt-5">
             <Link
               to="/about"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group w-fit"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#370C01] hover:bg-[#260800] text-white font-semibold text-xs sm:text-sm rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group w-fit"
             >
               <span>Explore Our Mission & Values</span>
-              <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] transition-transform duration-200 group-hover:translate-x-0.5" />
+              <ArrowRight className="w-4 h-4 stroke-[2.2] transition-transform duration-200 group-hover:translate-x-0.5" />
             </Link>
           </div>
         </div>
 
         {/* RIGHT: Hero image with editorial tag overlay */}
-        <div className="relative w-full lg:w-[46%] xl:w-[50%] shrink-0 min-h-[100px] lg:min-h-0 overflow-hidden" style={{ maxHeight: '200px' }}>
+        <div className="relative w-full lg:w-[46%] xl:w-[50%] shrink-0 min-h-[280px] lg:min-h-0 overflow-hidden">
           <img
             src={tourismImg}
             alt="Bihar heritage temple — our mission visual"
@@ -268,19 +274,19 @@ export default function OurMission() {
             >
               <path
                 d="M120,0 C60,120 110,280 40,400 L0,400 L0,0 Z"
-                fill="#FAF7F2"
+                fill="#FAF6EE"
                 fillOpacity="0.45"
               />
               <path
                 d="M90,0 C20,130 100,270 20,400 L0,400 L0,0 Z"
-                fill="#FAF7F2"
+                fill="#FAF6EE"
               />
             </svg>
           </div>
           {/* Mobile bottom fade */}
           <div className="lg:hidden absolute inset-x-0 bottom-0 h-10 pointer-events-none">
             <svg viewBox="0 0 400 40" preserveAspectRatio="none" className="w-full h-full">
-              <path d="M0,30 C120,10 280,40 400,20 L400,40 L0,40 Z" fill="#FAF7F2" />
+              <path d="M0,30 C120,10 280,40 400,20 L400,40 L0,40 Z" fill="#FAF6EE" />
             </svg>
           </div>
 
@@ -331,9 +337,9 @@ export default function OurMission() {
             <MissionCard key={card.id} card={card} />
           ))}
           {/* Decorative quote placeholder card on the 4th slot */}
-          <div className="hidden xl:flex flex-col justify-center items-start p-5 rounded-2xl bg-gradient-to-b from-white/90 to-[#FAF7F2]/80 border border-slate-200/80 relative overflow-hidden shadow-xs">
+          <div className="hidden xl:flex flex-col justify-center items-start p-5 rounded-2xl bg-gradient-to-b from-white/90 to-[#FAF6EE]/80 border border-slate-200/80 relative overflow-hidden shadow-xs">
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#FAF2E8] via-transparent to-transparent pointer-events-none" />
-            <span className="text-4xl font-serif text-[#17382E]/40 leading-none select-none mb-1">
+            <span className="text-4xl font-serif text-[#370C01]/40 leading-none select-none mb-1">
               &ldquo;
             </span>
             <p className="text-sm font-serif italic text-[#1F2937] leading-[1.4] relative z-10">
@@ -341,7 +347,7 @@ export default function OurMission() {
               <br />
               Future Together
             </p>
-            <span className="w-8 h-[2.5px] bg-[#E06222] rounded-full mt-4 relative z-10" />
+            <span className="w-8 h-[2.5px] bg-[#C38B34] rounded-full mt-4 relative z-10" />
           </div>
         </div>
       </div>

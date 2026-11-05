@@ -5,7 +5,7 @@ import { contactPageData } from '../../data/contactData'
 
 export default function ContactPage() {
   return (
-    <div className="flex flex-col w-full bg-[#FAF7F2] min-h-screen">
+    <div className="flex flex-col w-full bg-[#FAF6EE] min-h-screen">
       {/* ── Section 1: Hero Section ── */}
       <ContactHero data={contactPageData.hero} />
 

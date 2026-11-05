@@ -85,7 +85,7 @@ const steps = [
     number: '07',
     label: 'Measure',
     icon: BarChart2,
-    color: '#17382E',
+    color: '#370C01',
     bgTint: 'bg-[#E8F5F0]',
     borderColor: 'border-[#6EE7B7]',
     description:
@@ -195,7 +195,7 @@ function StepCard({ step, index, isLast }) {
 // ─────────────────────────────────────────────
 export default function HowWeWork() {
   return (
-    <section className="relative w-full bg-[#F5F1EA] overflow-hidden border-t border-stone-200/70">
+    <section className="relative w-full bg-[#F2EADD] overflow-hidden border-t border-stone-200/70">
 
       {/* ── Background Decoration ── */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
@@ -219,12 +219,12 @@ export default function HowWeWork() {
         <div
           className="absolute inset-0 opacity-[0.035]"
           style={{
-            backgroundImage: 'radial-gradient(#17382E 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(#370C01 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
         {/* Large watermark number */}
-        <span className="absolute -right-4 top-0 text-[220px] xl:text-[260px] font-black text-[#17382E]/[0.025] leading-none select-none tracking-tighter pointer-events-none">
+        <span className="absolute -right-4 top-0 text-[220px] xl:text-[260px] font-black text-[#370C01]/[0.025] leading-none select-none tracking-tighter pointer-events-none">
           07
         </span>
       </div>
@@ -238,13 +238,13 @@ export default function HowWeWork() {
             {/* Eyebrow */}
             <div className="flex items-center gap-2 mb-2.5">
               <span className="w-5 h-[2px] bg-[#E06222] rounded-full shrink-0" />
-              <span className="text-[9.5px] font-extrabold tracking-[0.22em] text-[#8C5E35] uppercase">
+              <span className="text-[9.5px] font-extrabold tracking-[0.22em] text-[#7A3F16] uppercase">
                 How We Work
               </span>
             </div>
 
             {/* Headline */}
-            <h2 className="text-[22px] sm:text-[28px] lg:text-[32px] xl:text-[36px] font-bold text-[#111827] leading-[1.15] tracking-[-0.02em]">
+            <h2 className="text-[22px] sm:text-[28px] lg:text-[32px] xl:text-[36px] font-bold text-[#231515] leading-[1.15] tracking-[-0.02em]">
               From an Idea to{' '}
               <span className="text-[#E06222]">Measurable Impact</span>
             </h2>
@@ -273,7 +273,7 @@ export default function HowWeWork() {
 
             <Link
               to="/how-we-work"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#370C01] hover:bg-[#260800] text-white font-semibold text-xs rounded-lg shadow-sm transition-all duration-200 hover:-translate-y-0.5 group"
             >
               <span>Explore Methodology</span>
               <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] transition-transform group-hover:translate-x-0.5" />
@@ -303,7 +303,7 @@ export default function HowWeWork() {
             ← Start
           </span>
           <div className="flex-1 mx-4 border-t border-dashed border-stone-300/80" />
-          <span className="text-[10px] font-semibold text-[#17382E] tracking-widest uppercase">
+          <span className="text-[10px] font-semibold text-[#370C01] tracking-widest uppercase">
             Impact →
           </span>
         </div>

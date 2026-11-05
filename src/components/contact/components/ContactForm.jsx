@@ -238,23 +238,23 @@ export default function ContactForm({ categories, districts }) {
             <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12 stroke-[2.2]" />
           </div>
 
-          <span className="inline-block px-3.5 py-1 rounded-full bg-[#17382E]/10 text-[#17382E] text-[12px] font-bold tracking-wide uppercase mb-2">
+          <span className="inline-block px-3.5 py-1 rounded-full bg-[#370C01]/10 text-[#370C01] text-[12px] font-bold tracking-wide uppercase mb-2">
             Acknowledgement Generated
           </span>
 
-          <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#111827]">
+          <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#231515]">
             Enquiry Submitted Successfully
           </h3>
 
           <p className="mt-2 text-[14.5px] sm:text-[15.5px] text-[#475569] max-w-lg mx-auto">
-            Thank you, <strong className="text-[#111827]">{formData.fullName}</strong>. Your enquiry has been registered with the Bihar Setu state coordination desk.
+            Thank you, <strong className="text-[#231515]">{formData.fullName}</strong>. Your enquiry has been registered with the Bihar Setu state coordination desk.
           </p>
 
           {/* Reference Receipt Card */}
-          <div className="mt-6 max-w-md mx-auto bg-[#FAF7F2] border border-stone-200 rounded-xl p-5 text-left text-[13.5px]">
+          <div className="mt-6 max-w-md mx-auto bg-[#FAF6EE] border border-stone-200 rounded-xl p-5 text-left text-[13.5px]">
             <div className="flex items-center justify-between pb-3 border-b border-stone-200/70">
               <span className="text-[#64748B] font-medium">Tracking Reference:</span>
-              <span className="font-mono font-bold text-[#17382E] tracking-wider text-[14px]">
+              <span className="font-mono font-bold text-[#370C01] tracking-wider text-[14px]">
                 {ticketId}
               </span>
             </div>
@@ -262,25 +262,25 @@ export default function ContactForm({ categories, districts }) {
             <div className="grid grid-cols-2 gap-2 pt-3 text-[12.5px]">
               <div>
                 <span className="text-[#64748B] block">Category:</span>
-                <span className="font-semibold text-[#111827]">{formData.category}</span>
+                <span className="font-semibold text-[#231515]">{formData.category}</span>
               </div>
               <div>
                 <span className="text-[#64748B] block">District / Origin:</span>
-                <span className="font-semibold text-[#111827]">{formData.district}</span>
+                <span className="font-semibold text-[#231515]">{formData.district}</span>
               </div>
               <div>
                 <span className="text-[#64748B] block">Email:</span>
-                <span className="font-semibold text-[#111827] truncate block">{formData.email}</span>
+                <span className="font-semibold text-[#231515] truncate block">{formData.email}</span>
               </div>
               <div>
                 <span className="text-[#64748B] block">Registered On:</span>
-                <span className="font-semibold text-[#111827]">{submittedAt}</span>
+                <span className="font-semibold text-[#231515]">{submittedAt}</span>
               </div>
             </div>
 
             {formData.attachment && (
               <div className="mt-3 pt-3 border-t border-stone-200/70 flex items-center gap-2 text-[12px] text-[#475569]">
-                <File className="w-3.5 h-3.5 text-[#17382E]" />
+                <File className="w-3.5 h-3.5 text-[#370C01]" />
                 <span className="truncate">Attached: {formData.attachment.name}</span>
                 <span className="text-[#64748B] shrink-0">({formatFileSize(formData.attachment.size)})</span>
               </div>
@@ -296,7 +296,7 @@ export default function ContactForm({ categories, districts }) {
             <button
               type="button"
               onClick={resetForm}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#17382E] text-white font-semibold text-[13.5px] hover:bg-[#112B23] transition-colors shadow-sm cursor-pointer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#370C01] text-white font-semibold text-[13.5px] hover:bg-[#260800] transition-colors shadow-sm cursor-pointer"
             >
               <RotateCcw className="w-4 h-4" />
               <span>Send Another Enquiry</span>
@@ -308,7 +308,7 @@ export default function ContactForm({ categories, districts }) {
         <form onSubmit={handleSubmit} noValidate>
           {/* Header */}
           <div className="mb-6">
-            <h2 className="text-[20px] sm:text-[22px] font-serif font-bold text-[#111827] mb-1.5">
+            <h2 className="text-[20px] sm:text-[22px] font-serif font-bold text-[#231515] mb-1.5">
               Submit Your Enquiry
             </h2>
             <p className="text-[13.5px] text-[#64748B]">
@@ -324,7 +324,7 @@ export default function ContactForm({ categories, districts }) {
               <div data-error={!!errors.fullName}>
                 <label
                   htmlFor="contact-fullName"
-                  className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                  className="block text-[13px] font-bold text-[#231515] mb-1.5"
                 >
                   Full Name <span className="text-[#EF4444]">*</span>
                 </label>
@@ -339,10 +339,10 @@ export default function ContactForm({ categories, districts }) {
                     value={formData.fullName}
                     onChange={handleChange}
                     placeholder="Enter your full name"
-                    className={`w-full pl-10 pr-3.5 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
+                    className={`w-full pl-10 pr-3.5 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
                       errors.fullName
                         ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444] focus:ring-2 focus:ring-[#EF4444]/20'
-                        : 'border-stone-300 focus:border-[#17382E] focus:ring-2 focus:ring-[#17382E]/15'
+                        : 'border-stone-300 focus:border-[#370C01] focus:ring-2 focus:ring-[#370C01]/15'
                     }`}
                   />
                 </div>
@@ -358,7 +358,7 @@ export default function ContactForm({ categories, districts }) {
               <div>
                 <label
                   htmlFor="contact-organisation"
-                  className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                  className="block text-[13px] font-bold text-[#231515] mb-1.5"
                 >
                   Organisation <span className="text-[11px] font-normal text-[#64748B]">(Optional)</span>
                 </label>
@@ -373,7 +373,7 @@ export default function ContactForm({ categories, districts }) {
                     value={formData.organisation}
                     onChange={handleChange}
                     placeholder="Company, NGO, Institution or Govt Body"
-                    className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-stone-300 text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none focus:border-[#17382E] focus:ring-2 focus:ring-[#17382E]/15"
+                    className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-stone-300 text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none focus:border-[#370C01] focus:ring-2 focus:ring-[#370C01]/15"
                   />
                 </div>
               </div>
@@ -385,12 +385,12 @@ export default function ContactForm({ categories, districts }) {
               <div data-error={!!errors.mobileNumber}>
                 <label
                   htmlFor="contact-mobileNumber"
-                  className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                  className="block text-[13px] font-bold text-[#231515] mb-1.5"
                 >
                   Mobile Number <span className="text-[#EF4444]">*</span>
                 </label>
-                <div className="relative flex rounded-xl border border-stone-300 overflow-hidden focus-within:border-[#17382E] focus-within:ring-2 focus-within:ring-[#17382E]/15 transition-all">
-                  <div className="bg-[#FAF7F2] border-r border-stone-300 px-3 flex items-center gap-1.5 text-[13px] font-semibold text-[#17382E] select-none">
+                <div className="relative flex rounded-xl border border-stone-300 overflow-hidden focus-within:border-[#370C01] focus-within:ring-2 focus-within:ring-[#370C01]/15 transition-all">
+                  <div className="bg-[#FAF6EE] border-r border-stone-300 px-3 flex items-center gap-1.5 text-[13px] font-semibold text-[#370C01] select-none">
                     <Phone className="w-3.5 h-3.5" />
                     <span>+91</span>
                   </div>
@@ -402,7 +402,7 @@ export default function ContactForm({ categories, districts }) {
                     value={formData.mobileNumber}
                     onChange={handleChange}
                     placeholder="98765 43210"
-                    className={`w-full px-3.5 py-2.5 text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white outline-none ${
+                    className={`w-full px-3.5 py-2.5 text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white outline-none ${
                       errors.mobileNumber ? 'bg-[#FEF2F2]/30' : ''
                     }`}
                   />
@@ -419,7 +419,7 @@ export default function ContactForm({ categories, districts }) {
               <div data-error={!!errors.email}>
                 <label
                   htmlFor="contact-email"
-                  className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                  className="block text-[13px] font-bold text-[#231515] mb-1.5"
                 >
                   Email Address <span className="text-[#EF4444]">*</span>
                 </label>
@@ -434,10 +434,10 @@ export default function ContactForm({ categories, districts }) {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="you@organisation.com"
-                    className={`w-full pl-10 pr-3.5 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
+                    className={`w-full pl-10 pr-3.5 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
                       errors.email
                         ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444] focus:ring-2 focus:ring-[#EF4444]/20'
-                        : 'border-stone-300 focus:border-[#17382E] focus:ring-2 focus:ring-[#17382E]/15'
+                        : 'border-stone-300 focus:border-[#370C01] focus:ring-2 focus:ring-[#370C01]/15'
                     }`}
                   />
                 </div>
@@ -456,7 +456,7 @@ export default function ContactForm({ categories, districts }) {
               <div data-error={!!errors.district}>
                 <label
                   htmlFor="contact-district"
-                  className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                  className="block text-[13px] font-bold text-[#231515] mb-1.5"
                 >
                   District <span className="text-[#EF4444]">*</span>
                 </label>
@@ -469,10 +469,10 @@ export default function ContactForm({ categories, districts }) {
                     name="district"
                     value={formData.district}
                     onChange={handleChange}
-                    className={`w-full pl-10 pr-8 py-2.5 rounded-xl border text-[14px] text-[#111827] bg-white transition-all outline-none appearance-none cursor-pointer ${
+                    className={`w-full pl-10 pr-8 py-2.5 rounded-xl border text-[14px] text-[#231515] bg-white transition-all outline-none appearance-none cursor-pointer ${
                       errors.district
                         ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444]'
-                        : 'border-stone-300 focus:border-[#17382E] focus:ring-2 focus:ring-[#17382E]/15'
+                        : 'border-stone-300 focus:border-[#370C01] focus:ring-2 focus:ring-[#370C01]/15'
                     }`}
                   >
                     <option value="" disabled>
@@ -502,7 +502,7 @@ export default function ContactForm({ categories, districts }) {
               <div data-error={!!errors.category}>
                 <label
                   htmlFor="contact-category"
-                  className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                  className="block text-[13px] font-bold text-[#231515] mb-1.5"
                 >
                   Enquiry Category <span className="text-[#EF4444]">*</span>
                 </label>
@@ -515,7 +515,7 @@ export default function ContactForm({ categories, districts }) {
                     name="category"
                     value={formData.category}
                     onChange={handleChange}
-                    className="w-full pl-10 pr-8 py-2.5 rounded-xl border border-stone-300 text-[14px] text-[#111827] bg-white transition-all outline-none appearance-none cursor-pointer focus:border-[#17382E] focus:ring-2 focus:ring-[#17382E]/15"
+                    className="w-full pl-10 pr-8 py-2.5 rounded-xl border border-stone-300 text-[14px] text-[#231515] bg-white transition-all outline-none appearance-none cursor-pointer focus:border-[#370C01] focus:ring-2 focus:ring-[#370C01]/15"
                   >
                     {categories.map((cat) => (
                       <option key={cat} value={cat}>
@@ -536,7 +536,7 @@ export default function ContactForm({ categories, districts }) {
             <div data-error={!!errors.subject}>
               <label
                 htmlFor="contact-subject"
-                className="block text-[13px] font-bold text-[#111827] mb-1.5"
+                className="block text-[13px] font-bold text-[#231515] mb-1.5"
               >
                 Subject <span className="text-[#EF4444]">*</span>
               </label>
@@ -551,10 +551,10 @@ export default function ContactForm({ categories, districts }) {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Summary of your proposal, partnership or enquiry"
-                  className={`w-full pl-10 pr-3.5 py-2.5 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
+                  className={`w-full pl-10 pr-3.5 py-2.5 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none ${
                     errors.subject
                       ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444] focus:ring-2 focus:ring-[#EF4444]/20'
-                      : 'border-stone-300 focus:border-[#17382E] focus:ring-2 focus:ring-[#17382E]/15'
+                      : 'border-stone-300 focus:border-[#370C01] focus:ring-2 focus:ring-[#370C01]/15'
                   }`}
                 />
               </div>
@@ -571,7 +571,7 @@ export default function ContactForm({ categories, districts }) {
               <div className="flex items-center justify-between mb-1.5">
                 <label
                   htmlFor="contact-message"
-                  className="block text-[13px] font-bold text-[#111827]"
+                  className="block text-[13px] font-bold text-[#231515]"
                 >
                   Message <span className="text-[#EF4444]">*</span>
                 </label>
@@ -587,10 +587,10 @@ export default function ContactForm({ categories, districts }) {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Please provide comprehensive details about your initiative, institutional profile, proposed collaboration, or enquiry..."
-                  className={`w-full px-3.5 py-3 rounded-xl border text-[14px] text-[#111827] placeholder:text-[#94A3B8] bg-white transition-all outline-none resize-y ${
+                  className={`w-full px-3.5 py-3 rounded-xl border text-[14px] text-[#231515] placeholder:text-[#94A3B8] bg-white transition-all outline-none resize-y ${
                     errors.message
                       ? 'border-[#EF4444] bg-[#FEF2F2]/30 focus:border-[#EF4444] focus:ring-2 focus:ring-[#EF4444]/20'
-                      : 'border-stone-300 focus:border-[#17382E] focus:ring-2 focus:ring-[#17382E]/15'
+                      : 'border-stone-300 focus:border-[#370C01] focus:ring-2 focus:ring-[#370C01]/15'
                   }`}
                 />
               </div>
@@ -604,7 +604,7 @@ export default function ContactForm({ categories, districts }) {
 
             {/* Row 6: Attachment (File Upload with Drag-and-Drop & Preview) */}
             <div>
-              <label className="block text-[13px] font-bold text-[#111827] mb-1.5">
+              <label className="block text-[13px] font-bold text-[#231515] mb-1.5">
                 Attachment <span className="text-[11px] font-normal text-[#64748B]">(Optional • PDF, DOCX, JPG, PNG up to 10MB)</span>
               </label>
 
@@ -627,14 +627,14 @@ export default function ContactForm({ categories, districts }) {
                   onClick={() => fileInputRef.current?.click()}
                   className={`border-2 border-dashed rounded-xl p-5 text-center cursor-pointer transition-all ${
                     dragActive
-                      ? 'border-[#17382E] bg-[#17382E]/5'
-                      : 'border-stone-300 hover:border-[#17382E]/50 hover:bg-[#FAF7F2]/50'
+                      ? 'border-[#370C01] bg-[#370C01]/5'
+                      : 'border-stone-300 hover:border-[#370C01]/50 hover:bg-[#FAF6EE]/50'
                   }`}
                 >
-                  <div className="w-10 h-10 mx-auto rounded-full bg-[#FAF7F2] border border-stone-200 flex items-center justify-center text-[#17382E] mb-2">
+                  <div className="w-10 h-10 mx-auto rounded-full bg-[#FAF6EE] border border-stone-200 flex items-center justify-center text-[#370C01] mb-2">
                     <Upload className="w-5 h-5" />
                   </div>
-                  <p className="text-[13px] font-semibold text-[#111827]">
+                  <p className="text-[13px] font-semibold text-[#231515]">
                     Click to browse <span className="text-[#64748B] font-normal">or drag & drop your document here</span>
                   </p>
                   <p className="text-[11px] text-[#64748B] mt-1">
@@ -642,13 +642,13 @@ export default function ContactForm({ categories, districts }) {
                   </p>
                 </div>
               ) : (
-                <div className="flex items-center justify-between p-3.5 bg-[#FAF7F2] border border-stone-200 rounded-xl">
+                <div className="flex items-center justify-between p-3.5 bg-[#FAF6EE] border border-stone-200 rounded-xl">
                   <div className="flex items-center gap-3 overflow-hidden">
-                    <div className="w-9 h-9 rounded-lg bg-[#17382E]/10 border border-[#17382E]/20 flex items-center justify-center text-[#17382E] shrink-0">
+                    <div className="w-9 h-9 rounded-lg bg-[#370C01]/10 border border-[#370C01]/20 flex items-center justify-center text-[#370C01] shrink-0">
                       <File className="w-4 h-4" />
                     </div>
                     <div className="overflow-hidden">
-                      <p className="text-[13px] font-bold text-[#111827] truncate">
+                      <p className="text-[13px] font-bold text-[#231515] truncate">
                         {formData.attachment.name}
                       </p>
                       <p className="text-[11px] text-[#64748B]">
@@ -684,7 +684,7 @@ export default function ContactForm({ categories, districts }) {
                   name="consent"
                   checked={formData.consent}
                   onChange={handleChange}
-                  className="mt-0.5 w-4 h-4 rounded border-stone-300 text-[#17382E] focus:ring-[#17382E] cursor-pointer"
+                  className="mt-0.5 w-4 h-4 rounded border-stone-300 text-[#370C01] focus:ring-[#370C01] cursor-pointer"
                 />
                 <span className="text-[12.5px] text-[#475569] leading-relaxed">
                   I agree and consent to Bihar Setu processing and routing the submitted information to the concerned desk or authority for redressal and follow-up in accordance with official communication guidelines. <span className="text-[#EF4444] font-bold">*</span>
@@ -703,7 +703,7 @@ export default function ContactForm({ categories, districts }) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-[#17382E] text-white text-[14px] font-bold shadow-md hover:bg-[#112B23] active:bg-[#0B1E18] transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-[#370C01] text-white text-[14px] font-bold shadow-md hover:bg-[#260800] active:bg-[#1A0500] transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed group"
               >
                 {isSubmitting ? (
                   <>

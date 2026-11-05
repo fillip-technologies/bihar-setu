@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { gsap } from 'gsap'
-import aboutHeroBg from '../../../assets/about/about-bg.png'
+import aboutHeroImg from '../../../assets/about/about-hero.png'
 
 export default function AboutHero({ data }) {
   const {
@@ -76,7 +76,7 @@ export default function AboutHero({ data }) {
     <section
       ref={sectionRef}
       aria-labelledby="about-hero-heading"
-      className="relative min-h-[560px] sm:min-h-[620px] lg:min-h-[680px] xl:min-h-[720px] flex flex-col justify-center overflow-hidden border-b border-stone-200/80 bg-[#FAF7F2]"
+      className="relative min-h-[560px] sm:min-h-[620px] lg:min-h-[680px] xl:min-h-[720px] flex flex-col justify-center overflow-hidden border-b border-stone-200/80 bg-[#FAF6EE]"
     >
       {/* ── Background Image Layer (High Visibility) ── */}
       <div
@@ -84,17 +84,17 @@ export default function AboutHero({ data }) {
         className="absolute inset-0 z-0 overflow-hidden pointer-events-none"
       >
         <img
-          src={aboutHeroBg}
-          alt="Lord Buddha meditating overlooking Bihar sunrise"
+          src={aboutHeroImg}
+          alt="Bihar Setu About Hero visual"
           className="w-full h-full object-cover object-[80%_center] sm:object-[84%_center] lg:object-[88%_center]"
         />
 
-        {/* Minimal feather gradient on the far left only: keeps the Buddha & scenery 100% visible */}
+        {/* Minimal feather gradient on the far left only: keeps the hero imagery visible */}
         <div
           className="hidden sm:block absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(to right, rgba(250, 247, 242, 0.82) 0%, rgba(250, 247, 242, 0.5) 28%, rgba(250, 247, 242, 0.08) 46%, transparent 58%)',
+              'linear-gradient(to right, rgba(250, 246, 238, 0.85) 0%, rgba(250, 246, 238, 0.52) 28%, rgba(250, 246, 238, 0.1) 46%, transparent 58%)',
           }}
         />
 
@@ -103,7 +103,7 @@ export default function AboutHero({ data }) {
           className="sm:hidden absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(to bottom, rgba(250, 247, 242, 0.88) 0%, rgba(250, 247, 242, 0.5) 50%, rgba(250, 247, 242, 0.1) 100%)',
+              'linear-gradient(to bottom, rgba(250, 246, 238, 0.9) 0%, rgba(250, 246, 238, 0.55) 50%, rgba(250, 246, 238, 0.12) 100%)',
           }}
         />
       </div>
@@ -120,14 +120,14 @@ export default function AboutHero({ data }) {
             <h1
               id="about-hero-heading"
               data-ah="headline"
-              className="text-[38px] sm:text-[50px] lg:text-[58px] font-serif font-bold text-[#111827] leading-[1.06] tracking-[-0.025em] drop-shadow-2xs"
+              className="text-[38px] sm:text-[50px] lg:text-[58px] font-serif font-bold text-[#231515] leading-[1.06] tracking-[-0.025em] drop-shadow-2xs"
             >
               {heading.title}
             </h1>
 
             <p
               data-ah="subtitle"
-              className="text-[20px] sm:text-[25px] lg:text-[28px] font-serif italic text-[#17382E] leading-[1.25]"
+              className="text-[20px] sm:text-[25px] lg:text-[28px] font-serif italic text-[#370C01] leading-[1.25]"
             >
               {heading.subtitle}
             </p>
@@ -136,7 +136,7 @@ export default function AboutHero({ data }) {
           {/* Minimal Lead Description */}
           <p
             data-ah="desc"
-            className="mt-5 sm:mt-6 text-[15px] sm:text-[16.5px] text-[#334155] leading-[1.75] font-normal max-w-lg"
+            className="mt-5 sm:mt-6 text-[15px] sm:text-[16.5px] text-[#5C443C] leading-[1.75] font-normal max-w-lg"
           >
             {paragraphs[0]}
           </p>
@@ -150,7 +150,7 @@ export default function AboutHero({ data }) {
                     key={act.label}
                     href={act.path}
                     onClick={(e) => handleScrollTo(e, act.path)}
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#17382E] hover:bg-[#112B23] text-white font-semibold text-[13px] shadow-sm hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#370C01] hover:bg-[#260800] text-white font-semibold text-[13px] shadow-sm hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
                   >
                     <span>{act.label}</span>
                     <ArrowRight className="w-4 h-4 stroke-[2.2]" />
@@ -164,10 +164,10 @@ export default function AboutHero({ data }) {
                     key={act.label}
                     href={act.path}
                     onClick={(e) => handleScrollTo(e, act.path)}
-                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/95 hover:bg-white text-[#17382E] border border-stone-300 font-semibold text-[13px] shadow-2xs hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/95 hover:bg-white text-[#370C01] border border-stone-300 font-semibold text-[13px] shadow-2xs hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
                   >
                     <span>{act.label}</span>
-                    <ArrowRight className="w-3.5 h-3.5 stroke-[2] text-[#E06222]" />
+                    <ArrowRight className="w-3.5 h-3.5 stroke-[2] text-[#C38B34]" />
                   </a>
                 )
               }
@@ -177,7 +177,7 @@ export default function AboutHero({ data }) {
                   key={act.label}
                   href={act.path}
                   onClick={(e) => handleScrollTo(e, act.path)}
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#FAF7F2] hover:bg-white text-[#17382E] border border-stone-300/80 font-semibold text-[13px] shadow-2xs hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#FAF6EE] hover:bg-white text-[#370C01] border border-stone-300/80 font-semibold text-[13px] shadow-2xs hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>{act.label}</span>
                   <ArrowRight className="w-3.5 h-3.5 stroke-[2]" />

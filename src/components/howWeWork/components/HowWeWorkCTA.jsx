@@ -26,7 +26,7 @@ export default function HowWeWorkCTA({ data }) {
     <section
       id="how-we-work-cta"
       aria-labelledby="hww-cta-heading"
-      className="relative overflow-hidden py-8 sm:py-10 lg:py-12 bg-[#0B1E18]"
+      className="relative overflow-hidden py-8 sm:py-10 lg:py-12 bg-[#1A0500]"
     >
       {/* ── Background Image Layer ── */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -76,10 +76,10 @@ export default function HowWeWorkCTA({ data }) {
             {primaryCta && (
               <Link
                 to={primaryCta.href}
-                className="inline-flex items-center gap-2 px-6 py-2.5 sm:py-3 rounded-full bg-white hover:bg-stone-100 text-[#111827] text-[13px] sm:text-[13.5px] font-bold shadow-md transition-all duration-200 hover:-translate-y-0.5 group"
+                className="inline-flex items-center gap-2 px-6 py-2.5 sm:py-3 rounded-full bg-white hover:bg-stone-100 text-[#231515] text-[13px] sm:text-[13.5px] font-bold shadow-md transition-all duration-200 hover:-translate-y-0.5 group"
               >
                 <span>{primaryCta.label}</span>
-                <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] text-[#A15D1C] group-hover:translate-x-0.5 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5 stroke-[2.2] text-[#C38B34] group-hover:translate-x-0.5 transition-transform" />
               </Link>
             )}
 
